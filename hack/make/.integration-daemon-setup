@@ -5,3 +5,10 @@ source "$MAKEDIR/.detect-daemon-osarch"
 if [ "$DOCKER_ENGINE_GOOS" != "windows" ]; then
 	bundle .ensure-emptyfs
 fi
+
+# Overwrite the default TIMEOUT (5m) if architecture is not amd64.
+if [ "${DOCKER_ENGINE_GOARCH}" == "arm64" ] || [ "${DOCKER_ENGINE_GOARCH}" == "arm" ]; then
+	TIMEOUT=10m
+elif [ "${DOCKER_ENGINE_GOARCH}" == "windows" ]; then
+	TIMEOUT=8m
+fi

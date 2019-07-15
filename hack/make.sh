@@ -150,14 +150,8 @@ ORIG_BUILDFLAGS=( -tags "autogen netgo osusergo static_build $DOCKER_BUILDTAGS" 
 
 BUILDFLAGS=( ${BUILDFLAGS} "${ORIG_BUILDFLAGS[@]}" )
 
-# Test timeout.
-if [ "${DOCKER_ENGINE_GOARCH}" == "arm64" ] || [ "${DOCKER_ENGINE_GOARCH}" == "arm" ]; then
-	: ${TIMEOUT:=10m}
-elif [ "${DOCKER_ENGINE_GOARCH}" == "windows" ]; then
-	: ${TIMEOUT:=8m}
-else
-	: ${TIMEOUT:=5m}
-fi
+# Test timeout default.
+TIMEOUT=5m
 
 LDFLAGS_STATIC_DOCKER="
 	$LDFLAGS_STATIC
