@@ -3,6 +3,7 @@ package bridge
 import (
 	"fmt"
 	"strings"
+	"time"
 
 	"github.com/docker/libnetwork/ns"
 	"github.com/docker/libnetwork/types"
@@ -11,6 +12,8 @@ import (
 )
 
 func setupVerifyAndReconcile(config *networkConfiguration, i *bridgeInterface) error {
+	logrus.Info("step: 4")
+	logrus.Info(time.Now())
 	// Fetch a slice of IPv4 addresses and a slice of IPv6 addresses from the bridge.
 	addrsv4, addrsv6, err := i.addresses()
 	if err != nil {

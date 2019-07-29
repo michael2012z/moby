@@ -711,6 +711,11 @@ func (c *controller) NewNetwork(networkType, name string, id string, options ...
 		t   *network
 	)
 
+	logrus.Info("--------------------------")
+	logrus.Info("controller.go::NewNetwork")
+	lastTime := time.Now()
+	nowTime := lastTime
+
 	if id != "" {
 		c.networkLocker.Lock(id)
 		defer c.networkLocker.Unlock(id)
@@ -719,6 +724,10 @@ func (c *controller) NewNetwork(networkType, name string, id string, options ...
 			return nil, NetworkNameError(id)
 		}
 	}
+
+	nowTime = time.Now()
+	logrus.Info("flag 0: ", nowTime.Sub(lastTime))
+	lastTime = time.Now()
 
 	if !config.IsValidName(name) {
 		return nil, ErrInvalidName(name)
@@ -743,10 +752,18 @@ func (c *controller) NewNetwork(networkType, name string, id string, options ...
 		loadBalancerMode: loadBalancerModeDefault,
 	}
 
+	nowTime = time.Now()
+	logrus.Info("flag 1: ", nowTime.Sub(lastTime))
+	lastTime = time.Now()
+
 	network.processOptions(options...)
 	if err = network.validateConfiguration(); err != nil {
 		return nil, err
 	}
+
+	nowTime = time.Now()
+	logrus.Info("flag 2: ", nowTime.Sub(lastTime))
+	lastTime = time.Now()
 
 	// Reset network types, force local scope and skip allocation and
 	// plumbing for configuration networks. Reset of the config-only
@@ -762,6 +779,10 @@ func (c *controller) NewNetwork(networkType, name string, id string, options ...
 	if err != nil {
 		return nil, err
 	}
+
+	nowTime = time.Now()
+	logrus.Info("flag 3: ", nowTime.Sub(lastTime))
+	lastTime = time.Now()
 
 	if network.scope == datastore.LocalScope && cap.DataScope == datastore.GlobalScope {
 		return nil, types.ForbiddenErrorf("cannot downgrade network scope for %s networks", networkType)
@@ -785,11 +806,19 @@ func (c *controller) NewNetwork(networkType, name string, id string, options ...
 		return nil, types.ForbiddenErrorf("cannot create a swarm scoped network when swarm is not active")
 	}
 
+	nowTime = time.Now()
+	logrus.Info("flag 4: ", nowTime.Sub(lastTime))
+	lastTime = time.Now()
+
 	// Make sure we have a driver available for this network type
 	// before we allocate anything.
 	if _, err := network.driver(true); err != nil {
 		return nil, err
 	}
+
+	nowTime = time.Now()
+	logrus.Info("flag 5: ", nowTime.Sub(lastTime))
+	lastTime = time.Now()
 
 	// From this point on, we need the network specific configuration,
 	// which may come from a configuration-only network
@@ -811,6 +840,10 @@ func (c *controller) NewNetwork(networkType, name string, id string, options ...
 		}()
 	}
 
+	nowTime = time.Now()
+	logrus.Info("flag 6: ", nowTime.Sub(lastTime))
+	lastTime = time.Now()
+
 	err = network.ipamAllocate()
 	if err != nil {
 		return nil, err
@@ -821,10 +854,17 @@ func (c *controller) NewNetwork(networkType, name string, id string, options ...
 		}
 	}()
 
+	nowTime = time.Now()
+	logrus.Info("flag 7: ", nowTime.Sub(lastTime))
+	lastTime = time.Now()
+
 	err = c.addNetwork(network)
 	if err != nil {
 		return nil, err
 	}
+	nowTime = time.Now()
+	logrus.Info("flag 7.5: ", nowTime.Sub(lastTime))
+	lastTime = time.Now()
 	defer func() {
 		if err != nil {
 			if e := network.deleteNetwork(); e != nil {
@@ -832,6 +872,10 @@ func (c *controller) NewNetwork(networkType, name string, id string, options ...
 			}
 		}
 	}()
+
+	nowTime = time.Now()
+	logrus.Info("flag 8: ", nowTime.Sub(lastTime))
+	lastTime = time.Now()
 
 	// XXX If the driver type is "overlay" check the options for DSR
 	// being set.  If so, set the network's load balancing mode to DSR.
@@ -847,6 +891,10 @@ func (c *controller) NewNetwork(networkType, name string, id string, options ...
 			network.loadBalancerMode = loadBalancerModeDSR
 		}
 	}
+
+	nowTime = time.Now()
+	logrus.Info("flag 9: ", nowTime.Sub(lastTime))
+	lastTime = time.Now()
 
 addToStore:
 	// First store the endpoint count, then the network. To avoid to
@@ -864,6 +912,10 @@ addToStore:
 		}
 	}()
 
+	nowTime = time.Now()
+	logrus.Info("flag a: ", nowTime.Sub(lastTime))
+	lastTime = time.Now()
+
 	network.epCnt = epCnt
 	if err = c.updateToStore(network); err != nil {
 		return nil, err
@@ -879,6 +931,10 @@ addToStore:
 	if network.configOnly {
 		return network, nil
 	}
+
+	nowTime = time.Now()
+	logrus.Info("flag b: ", nowTime.Sub(lastTime))
+	lastTime = time.Now()
 
 	joinCluster(network)
 	defer func() {
@@ -901,6 +957,10 @@ addToStore:
 		arrangeIngressFilterRule()
 		c.Unlock()
 	}
+
+	nowTime = time.Now()
+	logrus.Info("flag c: ", nowTime.Sub(lastTime))
+	lastTime = time.Now()
 
 	c.arrangeUserFilterRule()
 

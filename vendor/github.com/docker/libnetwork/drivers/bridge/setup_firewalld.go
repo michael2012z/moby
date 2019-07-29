@@ -1,8 +1,15 @@
 package bridge
 
-import "github.com/docker/libnetwork/iptables"
+import (
+	"time"
+
+	"github.com/docker/libnetwork/iptables"
+	"github.com/sirupsen/logrus"
+)
 
 func (n *bridgeNetwork) setupFirewalld(config *networkConfiguration, i *bridgeInterface) error {
+	logrus.Info("step: 9")
+	logrus.Info(time.Now())
 	d := n.driver
 	d.Lock()
 	driverConfig := d.config

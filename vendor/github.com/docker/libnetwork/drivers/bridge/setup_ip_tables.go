@@ -4,6 +4,7 @@ import (
 	"errors"
 	"fmt"
 	"net"
+	"time"
 
 	"github.com/docker/libnetwork/iptables"
 	"github.com/sirupsen/logrus"
@@ -96,6 +97,9 @@ func setupIPChains(config *configuration) (*iptables.ChainInfo, *iptables.ChainI
 func (n *bridgeNetwork) setupIPTables(config *networkConfiguration, i *bridgeInterface) error {
 	var err error
 
+	logrus.Info("step: 8a")
+	logrus.Info(time.Now())
+
 	d := n.driver
 	d.Lock()
 	driverConfig := d.config
@@ -156,6 +160,8 @@ func (n *bridgeNetwork) setupIPTables(config *networkConfiguration, i *bridgeInt
 		return err
 	}
 
+	logrus.Info("step: 8b")
+	logrus.Info(time.Now())
 	return nil
 }
 

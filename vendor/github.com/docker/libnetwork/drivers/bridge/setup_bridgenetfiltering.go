@@ -6,6 +6,7 @@ import (
 	"io/ioutil"
 	"os"
 	"syscall"
+	"time"
 
 	"github.com/sirupsen/logrus"
 )
@@ -30,6 +31,8 @@ func getIPVersion(config *networkConfiguration) ipVersion {
 }
 
 func setupBridgeNetFiltering(config *networkConfiguration, i *bridgeInterface) error {
+	logrus.Info("step: d")
+	logrus.Info(time.Now())
 	err := checkBridgeNetFiltering(config, i)
 	if err != nil {
 		if ptherr, ok := err.(*os.PathError); ok {

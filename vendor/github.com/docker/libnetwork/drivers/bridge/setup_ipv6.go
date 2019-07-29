@@ -5,6 +5,7 @@ import (
 	"io/ioutil"
 	"net"
 	"os"
+	"time"
 
 	"github.com/docker/libnetwork/types"
 	"github.com/sirupsen/logrus"
@@ -30,6 +31,8 @@ func init() {
 }
 
 func setupBridgeIPv6(config *networkConfiguration, i *bridgeInterface) error {
+	logrus.Info("step: 3")
+	logrus.Info(time.Now())
 	procFile := "/proc/sys/net/ipv6/conf/" + config.BridgeName + "/disable_ipv6"
 	ipv6BridgeData, err := ioutil.ReadFile(procFile)
 	if err != nil {
@@ -77,6 +80,8 @@ func setupBridgeIPv6(config *networkConfiguration, i *bridgeInterface) error {
 }
 
 func setupGatewayIPv6(config *networkConfiguration, i *bridgeInterface) error {
+	logrus.Info("step: b")
+	logrus.Info(time.Now())
 	if config.AddressIPv6 == nil {
 		return &ErrInvalidContainerSubnet{}
 	}
@@ -91,6 +96,8 @@ func setupGatewayIPv6(config *networkConfiguration, i *bridgeInterface) error {
 }
 
 func setupIPv6Forwarding(config *networkConfiguration, i *bridgeInterface) error {
+	logrus.Info("step: 5")
+	logrus.Info(time.Now())
 	// Get current IPv6 default forwarding setup
 	ipv6ForwardDataDefault, err := ioutil.ReadFile(ipv6ForwardConfDefault)
 	if err != nil {

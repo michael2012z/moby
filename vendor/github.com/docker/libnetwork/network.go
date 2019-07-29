@@ -911,24 +911,30 @@ func NetworkDeleteOptionRemoveLB(p *networkDeleteParams) {
 func (n *network) resolveDriver(name string, load bool) (driverapi.Driver, *driverapi.Capability, error) {
 	c := n.getController()
 
+	logrus.Info("network.go: resolveDriver: name = ", name)
 	// Check if a driver for the specified network type is available
 	d, cap := c.drvRegistry.Driver(name)
 	if d == nil {
 		if load {
+			logrus.Info("network.go: resolveDriver: flag 0")
 			err := c.loadDriver(name)
 			if err != nil {
 				return nil, nil, err
 			}
 
+			logrus.Info("network.go: resolveDriver: flag 1")
 			d, cap = c.drvRegistry.Driver(name)
 			if d == nil {
 				return nil, nil, fmt.Errorf("could not resolve driver %s in registry", name)
 			}
 		} else {
 			// don't fail if driver loading is not required
+			logrus.Info("network.go: resolveDriver: flag 2")
 			return nil, nil, nil
 		}
 	}
+
+	logrus.Info("network.go: resolveDriver: driver = ", d)
 
 	return d, cap, nil
 }

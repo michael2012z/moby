@@ -8,6 +8,7 @@ import (
 	"strconv"
 	"strings"
 	"sync"
+	"time"
 
 	"github.com/docker/docker/api/types"
 	containertypes "github.com/docker/docker/api/types/container"
@@ -291,9 +292,18 @@ func (daemon *Daemon) CreateNetwork(create types.NetworkCreateRequest) (*types.N
 }
 
 func (daemon *Daemon) createNetwork(create types.NetworkCreateRequest, id string, agent bool) (*types.NetworkCreateResponse, error) {
+	logrus.Info("--------------------------")
+	logrus.Info("network::createNetwork")
+	lastTime := time.Now()
+	nowTime := lastTime
+
 	if runconfig.IsPreDefinedNetwork(create.Name) {
 		return nil, PredefinedNetworkError(create.Name)
 	}
+
+	nowTime = time.Now()
+	logrus.Info("flag 0: ", nowTime.Sub(lastTime))
+	lastTime = time.Now()
 
 	var warning string
 	nw, err := daemon.GetNetworkByName(create.Name)
@@ -319,6 +329,10 @@ func (daemon *Daemon) createNetwork(create types.NetworkCreateRequest, id string
 		driver = c.Config().Daemon.DefaultDriver
 	}
 
+	nowTime = time.Now()
+	logrus.Info("flag 1: ", nowTime.Sub(lastTime))
+	lastTime = time.Now()
+
 	nwOptions := []libnetwork.NetworkOption{
 		libnetwork.NetworkOptionEnableIPv6(create.EnableIPv6),
 		libnetwork.NetworkOptionDriverOpts(create.Options),
@@ -331,6 +345,10 @@ func (daemon *Daemon) createNetwork(create types.NetworkCreateRequest, id string
 	if create.ConfigOnly {
 		nwOptions = append(nwOptions, libnetwork.NetworkOptionConfigOnly())
 	}
+
+	nowTime = time.Now()
+	logrus.Info("flag 2: ", nowTime.Sub(lastTime))
+	lastTime = time.Now()
 
 	if create.IPAM != nil {
 		ipam := create.IPAM
@@ -353,6 +371,10 @@ func (daemon *Daemon) createNetwork(create types.NetworkCreateRequest, id string
 		nwOptions = append(nwOptions, libnetwork.NetworkOptionConfigFrom(create.ConfigFrom.Network))
 	}
 
+	nowTime = time.Now()
+	logrus.Info("flag 3: ", nowTime.Sub(lastTime))
+	lastTime = time.Now()
+
 	if agent && driver == "overlay" {
 		nodeIP, exists := daemon.GetAttachmentStore().GetIPForNetwork(id)
 		if !exists {
@@ -361,6 +383,10 @@ func (daemon *Daemon) createNetwork(create types.NetworkCreateRequest, id string
 
 		nwOptions = append(nwOptions, libnetwork.NetworkOptionLBEndpoint(nodeIP))
 	}
+
+	nowTime = time.Now()
+	logrus.Info("flag 4: ", nowTime.Sub(lastTime))
+	lastTime = time.Now()
 
 	n, err := c.NewNetwork(driver, create.Name, id, nwOptions...)
 	if err != nil {
@@ -371,11 +397,19 @@ func (daemon *Daemon) createNetwork(create types.NetworkCreateRequest, id string
 		return nil, err
 	}
 
+	nowTime = time.Now()
+	logrus.Info("flag 5: ", nowTime.Sub(lastTime))
+	lastTime = time.Now()
+
 	daemon.pluginRefCount(driver, driverapi.NetworkPluginEndpointType, plugingetter.Acquire)
 	if create.IPAM != nil {
 		daemon.pluginRefCount(create.IPAM.Driver, ipamapi.PluginEndpointType, plugingetter.Acquire)
 	}
 	daemon.LogNetworkEvent(n, "create")
+
+	nowTime = time.Now()
+	logrus.Info("flag 6: ", nowTime.Sub(lastTime))
+	lastTime = time.Now()
 
 	return &types.NetworkCreateResponse{
 		ID:      n.ID(),

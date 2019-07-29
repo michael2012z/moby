@@ -2,6 +2,7 @@ package bridge
 
 import (
 	"fmt"
+	"time"
 
 	"github.com/docker/docker/pkg/parsers/kernel"
 	"github.com/docker/libnetwork/netutils"
@@ -13,6 +14,8 @@ import (
 func setupDevice(config *networkConfiguration, i *bridgeInterface) error {
 	var setMac bool
 
+	logrus.Info("step: setupDevice")
+	logrus.Info(time.Now())
 	// We only attempt to create the bridge when the requested device name is
 	// the default one.
 	if config.BridgeName != DefaultBridgeName && config.DefaultBridge {

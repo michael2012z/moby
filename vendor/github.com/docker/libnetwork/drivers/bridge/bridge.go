@@ -11,6 +11,7 @@ import (
 	"strconv"
 	"sync"
 	"syscall"
+	"time"
 
 	"github.com/docker/libnetwork/datastore"
 	"github.com/docker/libnetwork/discoverapi"
@@ -615,6 +616,11 @@ func (d *driver) checkConflict(config *networkConfiguration) error {
 }
 
 func (d *driver) createNetwork(config *networkConfiguration) (err error) {
+
+	logrus.Info("bridge::createNetwork")
+	lastTime := time.Now()
+	nowTime := lastTime
+
 	defer osl.InitOSContext()()
 
 	networkList := d.getNetworks()
@@ -625,6 +631,10 @@ func (d *driver) createNetwork(config *networkConfiguration) (err error) {
 		d.nlh = ns.NlHandle()
 	}
 	d.Unlock()
+
+	nowTime = time.Now()
+	logrus.Info("flag 0: ", nowTime.Sub(lastTime))
+	lastTime = time.Now()
 
 	// Create or retrieve the bridge L3 interface
 	bridgeIface, err := newInterface(d.nlh, config)
@@ -657,6 +667,8 @@ func (d *driver) createNetwork(config *networkConfiguration) (err error) {
 
 	// Add inter-network communication rules.
 	setupNetworkIsolationRules := func(config *networkConfiguration, i *bridgeInterface) error {
+		logrus.Info("step: ca")
+		logrus.Info(time.Now())
 		if err := network.isolateNetwork(networkList, true); err != nil {
 			if err = network.isolateNetwork(networkList, false); err != nil {
 				logrus.Warnf("Failed on removing the inter-network iptables rules on cleanup: %v", err)
@@ -668,8 +680,14 @@ func (d *driver) createNetwork(config *networkConfiguration) (err error) {
 			nwList := d.getNetworks()
 			return network.isolateNetwork(nwList, false)
 		})
+		logrus.Info("step: cb")
+		logrus.Info(time.Now())
 		return nil
 	}
+
+	nowTime = time.Now()
+	logrus.Info("flag 1: ", nowTime.Sub(lastTime))
+	lastTime = time.Now()
 
 	// Prepare the bridge setup configuration
 	bridgeSetup := newBridgeSetup(config, bridgeIface)
@@ -731,9 +749,19 @@ func (d *driver) createNetwork(config *networkConfiguration) (err error) {
 		}
 	}
 
+	nowTime = time.Now()
+	logrus.Info("flag 3: ", nowTime.Sub(lastTime))
+	lastTime = time.Now()
+
 	// Apply the prepared list of steps, and abort at the first error.
 	bridgeSetup.queueStep(setupDeviceUp)
-	return bridgeSetup.apply()
+	x := bridgeSetup.apply()
+
+	nowTime = time.Now()
+	logrus.Info("flag 4: ", nowTime.Sub(lastTime))
+	lastTime = time.Now()
+
+	return x
 }
 
 func (d *driver) DeleteNetwork(nid string) error {

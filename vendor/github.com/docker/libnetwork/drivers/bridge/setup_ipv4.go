@@ -6,6 +6,7 @@ import (
 	"io/ioutil"
 	"net"
 	"path/filepath"
+	"time"
 
 	"github.com/docker/libnetwork/types"
 	"github.com/sirupsen/logrus"
@@ -27,6 +28,10 @@ func selectIPv4Address(addresses []netlink.Addr, selector *net.IPNet) (netlink.A
 }
 
 func setupBridgeIPv4(config *networkConfiguration, i *bridgeInterface) error {
+
+	logrus.Info("step: 2")
+	logrus.Info(time.Now())
+
 	addrv4List, _, err := i.addresses()
 	if err != nil {
 		return fmt.Errorf("failed to retrieve bridge interface addresses: %v", err)
@@ -54,6 +59,9 @@ func setupBridgeIPv4(config *networkConfiguration, i *bridgeInterface) error {
 }
 
 func setupGatewayIPv4(config *networkConfiguration, i *bridgeInterface) error {
+	logrus.Info("step: a")
+	logrus.Info(time.Now())
+
 	if !i.bridgeIPv4.Contains(config.DefaultGatewayIPv4) {
 		return &ErrInvalidGateway{}
 	}
@@ -65,6 +73,8 @@ func setupGatewayIPv4(config *networkConfiguration, i *bridgeInterface) error {
 }
 
 func setupLoopbackAddressesRouting(config *networkConfiguration, i *bridgeInterface) error {
+	logrus.Info("step: 6")
+	logrus.Info(time.Now())
 	sysPath := filepath.Join("/proc/sys/net/ipv4/conf", config.BridgeName, "route_localnet")
 	ipv4LoRoutingData, err := ioutil.ReadFile(sysPath)
 	if err != nil {
