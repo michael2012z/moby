@@ -807,7 +807,7 @@ func (c *controller) NewNetwork(networkType, name string, id string, options ...
 	}
 
 	nowTime = time.Now()
-	logrus.Info("flag 4: ", nowTime.Sub(lastTime))
+	logrus.Info("controller flag 4: ", nowTime.Sub(lastTime))
 	lastTime = time.Now()
 
 	// Make sure we have a driver available for this network type
@@ -817,7 +817,7 @@ func (c *controller) NewNetwork(networkType, name string, id string, options ...
 	}
 
 	nowTime = time.Now()
-	logrus.Info("flag 5: ", nowTime.Sub(lastTime))
+	logrus.Info("controller flag 5: ", nowTime.Sub(lastTime))
 	lastTime = time.Now()
 
 	// From this point on, we need the network specific configuration,
@@ -893,7 +893,7 @@ func (c *controller) NewNetwork(networkType, name string, id string, options ...
 	}
 
 	nowTime = time.Now()
-	logrus.Info("flag 9: ", nowTime.Sub(lastTime))
+	logrus.Info("controller flag 9: ", nowTime.Sub(lastTime))
 	lastTime = time.Now()
 
 addToStore:
@@ -913,7 +913,7 @@ addToStore:
 	}()
 
 	nowTime = time.Now()
-	logrus.Info("flag a: ", nowTime.Sub(lastTime))
+	logrus.Info("controller flag a: ", nowTime.Sub(lastTime))
 	lastTime = time.Now()
 
 	network.epCnt = epCnt
@@ -933,7 +933,7 @@ addToStore:
 	}
 
 	nowTime = time.Now()
-	logrus.Info("flag b: ", nowTime.Sub(lastTime))
+	logrus.Info("controller flag b: ", nowTime.Sub(lastTime))
 	lastTime = time.Now()
 
 	joinCluster(network)

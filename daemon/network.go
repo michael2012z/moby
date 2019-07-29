@@ -385,7 +385,7 @@ func (daemon *Daemon) createNetwork(create types.NetworkCreateRequest, id string
 	}
 
 	nowTime = time.Now()
-	logrus.Info("flag 4: ", nowTime.Sub(lastTime))
+	logrus.Info("network flag 4: ", nowTime.Sub(lastTime))
 	lastTime = time.Now()
 
 	n, err := c.NewNetwork(driver, create.Name, id, nwOptions...)
@@ -398,7 +398,7 @@ func (daemon *Daemon) createNetwork(create types.NetworkCreateRequest, id string
 	}
 
 	nowTime = time.Now()
-	logrus.Info("flag 5: ", nowTime.Sub(lastTime))
+	logrus.Info("network flag 5: ", nowTime.Sub(lastTime))
 	lastTime = time.Now()
 
 	daemon.pluginRefCount(driver, driverapi.NetworkPluginEndpointType, plugingetter.Acquire)
