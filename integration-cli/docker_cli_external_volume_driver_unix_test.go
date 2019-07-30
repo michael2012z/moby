@@ -296,15 +296,19 @@ func (s *DockerExternalVolumeSuite) TestVolumeCLICreateOptionConflict(c *check.C
 }
 
 func (s *DockerExternalVolumeSuite) TestExternalVolumeDriverNamed(c *check.C) {
+	fmt.Println("----------------------- 0, ", time.Now())
 	s.d.StartWithBusybox(c)
 
+	fmt.Println("----------------------- 1, ", time.Now())
 	out, err := s.d.Cmd("run", "--rm", "--name", "test-data", "-v", "external-volume-test:/tmp/external-volume-test", "--volume-driver", volumePluginName, "busybox:latest", "cat", "/tmp/external-volume-test/test")
 	assert.NilError(c, err, out)
 	c.Assert(out, checker.Contains, s.Server.URL)
 
+	fmt.Println("----------------------- 2, ", time.Now())
 	_, err = s.d.Cmd("volume", "rm", "external-volume-test")
 	assert.NilError(c, err)
 
+	fmt.Println("----------------------- 3, ", time.Now())
 	p := hostVolumePath("external-volume-test")
 	_, err = os.Lstat(p)
 	assert.ErrorContains(c, err, "")
@@ -315,6 +319,7 @@ func (s *DockerExternalVolumeSuite) TestExternalVolumeDriverNamed(c *check.C) {
 	c.Assert(s.ec.removals, checker.Equals, 1)
 	c.Assert(s.ec.mounts, checker.Equals, 1)
 	c.Assert(s.ec.unmounts, checker.Equals, 1)
+	fmt.Println("----------------------- 4, ", time.Now())
 }
 
 func (s *DockerExternalVolumeSuite) TestExternalVolumeDriverUnnamed(c *check.C) {
