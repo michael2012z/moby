@@ -182,12 +182,27 @@ func setupIPTablesInternal(bridgeIface string, addr net.Addr, icc, ipmasq, hairp
 		outRule   = iptRule{table: iptables.Filter, chain: "FORWARD", args: []string{"-i", bridgeIface, "!", "-o", bridgeIface, "-j", "ACCEPT"}}
 	)
 
+	logrus.Debug("setupIPTablesInternal: 0")
 	// Set NAT.
 	if ipmasq {
+		logrus.Debug("setupIPTablesInternal: 1")
+		if err := programChainRule(natRule, "NAT", enable); err != nil {
+			return err
+		}
+		if err := programChainRule(natRule, "NAT", enable); err != nil {
+			return err
+		}
+		if err := programChainRule(natRule, "NAT", enable); err != nil {
+			return err
+		}
+		if err := programChainRule(natRule, "NAT", enable); err != nil {
+			return err
+		}
 		if err := programChainRule(natRule, "NAT", enable); err != nil {
 			return err
 		}
 	}
+	logrus.Debug("setupIPTablesInternal: 2")
 
 	if ipmasq && !hairpin {
 		if err := programChainRule(skipDNAT, "SKIP DNAT", enable); err != nil {

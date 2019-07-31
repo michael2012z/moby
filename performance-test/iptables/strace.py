@@ -17,10 +17,11 @@ def strace(fileName):
         else:
             continue
         outLines.append(outLine)
-    if len(outLines) % 91 != 0:
-        print("Something is wrong !!!")
     fout = open("time." + fileName, 'w')
     fout.write("\n".join(outLines))
     fout.close()
 
-strace("strace.vm.txt")
+#strace("strace.vm.txt")
+#strace("strace.dt05.txt")
+#strace("strace.dell.txt")
+strace("strace.qual.txt")
