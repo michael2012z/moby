@@ -163,5 +163,6 @@ func Passthrough(ipv IPV, args ...string) ([]byte, error) {
 	if err := connection.sysobj.Call(dbusInterface+".direct.passthrough", 0, ipv, args).Store(&output); err != nil {
 		return nil, err
 	}
+	logrus.Debug("Firewalld passthrough finish")
 	return []byte(output), nil
 }

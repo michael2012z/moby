@@ -445,6 +445,7 @@ func filterOutput(start time.Time, output []byte, args ...string) []byte {
 
 // Raw calls 'iptables' system command, passing supplied arguments.
 func Raw(args ...string) ([]byte, error) {
+	logrus.Debug("Raw(), firewalldRunning = ", firewalldRunning)
 	if firewalldRunning {
 		startTime := time.Now()
 		output, err := Passthrough(Iptables, args...)
@@ -473,7 +474,7 @@ func raw(args ...string) ([]byte, error) {
 	if err != nil {
 		return nil, fmt.Errorf("iptables failed: iptables %v: %s (%s)", strings.Join(args, " "), output, err)
 	}
-
+	logrus.Debug("exec.Command returned")
 	return filterOutput(startTime, output, args...), err
 }
 
