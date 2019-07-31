@@ -467,14 +467,14 @@ func raw(args ...string) ([]byte, error) {
 		defer bestEffortLock.Unlock()
 	}
 
-	logrus.Debugf("%s, %v", iptablesPath, args)
-
 	startTime := time.Now()
+	logrus.Debugf("%s, %v", iptablesPath, args)
 	output, err := exec.Command(iptablesPath, args...).CombinedOutput()
+	logrus.Debug("exec.Command returned")
 	if err != nil {
 		return nil, fmt.Errorf("iptables failed: iptables %v: %s (%s)", strings.Join(args, " "), output, err)
 	}
-	logrus.Debug("exec.Command returned")
+
 	return filterOutput(startTime, output, args...), err
 }
 
