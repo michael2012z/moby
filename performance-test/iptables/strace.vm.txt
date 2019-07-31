@@ -1,0 +1,1840 @@
+     0.000000 execve("/sbin/iptables", ["/sbin/iptables", "--wait", "-t", "filter", "-C", "DOCKER-ISOLATION-STAGE-1", "-i", "docker0", "!", "-o", "docker0", "-j", "DOCKER-ISOLATION-STAGE-2"], [/* 19 vars */]) = 0 <0.000234>
+     0.001680 brk(NULL)                 = 0x556201b4a000 <0.000008>
+     0.000421 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000009>
+     0.000238 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory) <0.000009>
+     0.000173 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3 <0.000012>
+     0.000260 fstat(3, {st_mode=S_IFREG|0644, st_size=19777, ...}) = 0 <0.000008>
+     0.000173 mmap(NULL, 19777, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f756e8e7000 <0.000009>
+     0.000172 close(3)                  = 0 <0.000008>
+     0.000156 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000009>
+     0.000161 open("/usr/lib/x86_64-linux-gnu/libip4tc.so.0", O_RDONLY|O_CLOEXEC) = 3 <0.000080>
+     0.000255 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\30\0\0\0\0\0\0"..., 832) = 832 <0.000008>
+     0.000163 fstat(3, {st_mode=S_IFREG|0644, st_size=27088, ...}) = 0 <0.000008>
+     0.000171 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f756e8e5000 <0.000009>
+     0.000173 mmap(NULL, 2122304, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f756e4c2000 <0.000009>
+     0.000161 mprotect(0x7f756e4c8000, 2093056, PROT_NONE) = 0 <0.000010>
+     0.000196 mmap(0x7f756e6c7000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x7f756e6c7000 <0.000011>
+     0.000154 close(3)                  = 0 <0.000007>
+     0.000159 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000009>
+     0.000171 open("/usr/lib/x86_64-linux-gnu/libip6tc.so.0", O_RDONLY|O_CLOEXEC) = 3 <0.000012>
+     0.000185 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\31\0\0\0\0\0\0"..., 832) = 832 <0.000009>
+     0.000158 fstat(3, {st_mode=S_IFREG|0644, st_size=31184, ...}) = 0 <0.000009>
+     0.000195 mmap(NULL, 2126400, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f756e2ba000 <0.000009>
+     0.000155 mprotect(0x7f756e2c0000, 2097152, PROT_NONE) = 0 <0.000010>
+     0.000159 mmap(0x7f756e4c0000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f756e4c0000 <0.000011>
+     0.000176 close(3)                  = 0 <0.000008>
+     0.000173 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000008>
+     0.000172 open("/usr/lib/x86_64-linux-gnu/libxtables.so.12", O_RDONLY|O_CLOEXEC) = 3 <0.000013>
+     0.000224 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\2401\0\0\0\0\0\0"..., 832) = 832 <0.000009>
+     0.000167 fstat(3, {st_mode=S_IFREG|0644, st_size=51120, ...}) = 0 <0.000008>
+     0.000170 mmap(NULL, 2148184, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f756e0ad000 <0.000009>
+     0.000165 mprotect(0x7f756e0b9000, 2093056, PROT_NONE) = 0 <0.000010>
+     0.000165 mmap(0x7f756e2b8000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000) = 0x7f756e2b8000 <0.000011>
+     0.000160 close(3)                  = 0 <0.000005>
+     0.000025 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000007>
+     0.000027 open("/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000010>
+     0.000027 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200V\0\0\0\0\0\0"..., 832) = 832 <0.000006>
+     0.000025 fstat(3, {st_mode=S_IFREG|0644, st_size=1063328, ...}) = 0 <0.000005>
+     0.000025 mmap(NULL, 3158248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f756dda9000 <0.000007>
+     0.000024 mprotect(0x7f756deac000, 2093056, PROT_NONE) = 0 <0.000007>
+     0.000022 mmap(0x7f756e0ab000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x102000) = 0x7f756e0ab000 <0.000008>
+     0.000032 close(3)                  = 0 <0.000005>
+     0.000024 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000006>
+     0.000025 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000009>
+     0.000026 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\4\2\0\0\0\0\0"..., 832) = 832 <0.000006>
+     0.000173 fstat(3, {st_mode=S_IFREG|0755, st_size=1689360, ...}) = 0 <0.000009>
+     0.000173 mmap(NULL, 3795296, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f756da0a000 <0.000009>
+     0.000172 mprotect(0x7f756db9f000, 2097152, PROT_NONE) = 0 <0.000011>
+     0.000211 mmap(0x7f756dd9f000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x195000) = 0x7f756dd9f000 <0.000011>
+     0.000035 mmap(0x7f756dda5000, 14688, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f756dda5000 <0.000008>
+     0.000029 close(3)                  = 0 <0.000006>
+     0.000029 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000008>
+     0.000028 open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3 <0.000010>
+     0.000029 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200\r\0\0\0\0\0\0"..., 832) = 832 <0.000006>
+     0.000025 fstat(3, {st_mode=S_IFREG|0644, st_size=14640, ...}) = 0 <0.000006>
+     0.000024 mmap(NULL, 2109680, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f756d806000 <0.000007>
+     0.000025 mprotect(0x7f756d809000, 2093056, PROT_NONE) = 0 <0.000007>
+     0.000023 mmap(0x7f756da08000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f756da08000 <0.000008>
+     0.000153 close(3)                  = 0 <0.000008>
+     0.000175 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f756e8e3000 <0.000009>
+     0.000180 arch_prctl(ARCH_SET_FS, 0x7f756e8e4280) = 0 <0.000007>
+     0.000200 mprotect(0x7f756dd9f000, 16384, PROT_READ) = 0 <0.000009>
+     0.000033 mprotect(0x7f756da08000, 4096, PROT_READ) = 0 <0.000007>
+     0.000034 mprotect(0x7f756e0ab000, 4096, PROT_READ) = 0 <0.000007>
+     0.000053 mprotect(0x7f756e2b8000, 4096, PROT_READ) = 0 <0.000008>
+     0.000037 mprotect(0x7f756e4c0000, 4096, PROT_READ) = 0 <0.000007>
+     0.000033 mprotect(0x7f756e6c7000, 4096, PROT_READ) = 0 <0.000007>
+     0.000054 mprotect(0x55620041d000, 4096, PROT_READ) = 0 <0.000007>
+     0.000132 mprotect(0x7f756e8ec000, 4096, PROT_READ) = 0 <0.000010>
+     0.000173 munmap(0x7f756e8e7000, 19777) = 0 <0.000012>
+     0.000223 stat("/usr/lib/x86_64-linux-gnu/xtables/libipt_DOCKER-ISOLATION-STAGE-2.so", 0x7ffe9c6e2300) = -1 ENOENT (No such file or directory) <0.000010>
+     0.000177 stat("/usr/lib/x86_64-linux-gnu/xtables/libxt_DOCKER-ISOLATION-STAGE-2.so", 0x7ffe9c6e2300) = -1 ENOENT (No such file or directory) <0.000007>
+     0.000051 brk(NULL)                 = 0x556201b4a000 <0.000005>
+     0.000021 brk(0x556201b6b000)       = 0x556201b6b000 <0.000007>
+     0.000030 open("/run/xtables.lock", O_RDONLY|O_CREAT, 0600) = 3 <0.000009>
+     0.000028 flock(3, LOCK_EX|LOCK_NB) = 0 <0.000007>
+     0.000023 socket(AF_INET, SOCK_RAW, IPPROTO_RAW) = 4 <0.000011>
+     0.000028 fcntl(4, F_SETFD, FD_CLOEXEC) = 0 <0.000005>
+     0.000021 getsockopt(4, SOL_IP, IPT_SO_GET_INFO, "filter\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., [84]) = 0 <0.000020>
+     0.000042 getsockopt(4, SOL_IP, IPT_SO_GET_ENTRIES, "filter\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., [3224]) = 0 <0.000170>
+     0.000302 stat("/usr/lib/x86_64-linux-gnu/xtables/libipt_standard.so", 0x7ffe9c6e2300) = -1 ENOENT (No such file or directory) <0.000010>
+     0.000176 stat("/usr/lib/x86_64-linux-gnu/xtables/libxt_standard.so", {st_mode=S_IFREG|0644, st_size=6208, ...}) = 0 <0.000010>
+     0.000177 open("/usr/lib/x86_64-linux-gnu/xtables/libxt_standard.so", O_RDONLY|O_CLOEXEC) = 5 <0.000013>
+     0.002278 read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\6\0\0\0\0\0\0"..., 832) = 832 <0.000007>
+     0.000029 fstat(5, {st_mode=S_IFREG|0644, st_size=6208, ...}) = 0 <0.000006>
+     0.000025 mmap(NULL, 2101488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7f756d604000 <0.000008>
+     0.000025 mprotect(0x7f756d605000, 2093056, PROT_NONE) = 0 <0.000008>
+     0.000024 mmap(0x7f756d804000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0) = 0x7f756d804000 <0.000009>
+     0.000034 close(5)                  = 0 <0.000006>
+     0.000033 mprotect(0x7f756d804000, 4096, PROT_READ) = 0 <0.000007>
+     0.000029 close(4)                  = 0 <0.000010>
+     0.000035 exit_group(0)             = ?
+     0.000082 +++ exited with 0 +++
+     0.000000 execve("/sbin/iptables", ["/sbin/iptables", "--wait", "-t", "filter", "-C", "DOCKER-ISOLATION-STAGE-1", "-i", "docker0", "!", "-o", "docker0", "-j", "DOCKER-ISOLATION-STAGE-2"], [/* 19 vars */]) = 0 <0.000104>
+     0.000457 brk(NULL)                 = 0x559ff25bb000 <0.000009>
+     0.000182 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000011>
+     0.000153 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory) <0.000010>
+     0.000150 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3 <0.000013>
+     0.000151 fstat(3, {st_mode=S_IFREG|0644, st_size=19777, ...}) = 0 <0.000009>
+     0.000150 mmap(NULL, 19777, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f41ce52e000 <0.000011>
+     0.000147 close(3)                  = 0 <0.000009>
+     0.000145 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000059>
+     0.000216 open("/usr/lib/x86_64-linux-gnu/libip4tc.so.0", O_RDONLY|O_CLOEXEC) = 3 <0.000017>
+     0.000158 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\30\0\0\0\0\0\0"..., 832) = 832 <0.000011>
+     0.000153 fstat(3, {st_mode=S_IFREG|0644, st_size=27088, ...}) = 0 <0.000010>
+     0.000150 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f41ce52c000 <0.000010>
+     0.000153 mmap(NULL, 2122304, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f41ce109000 <0.000012>
+     0.000150 mprotect(0x7f41ce10f000, 2093056, PROT_NONE) = 0 <0.000044>
+     0.000133 mmap(0x7f41ce30e000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x7f41ce30e000 <0.000013>
+     0.000046 close(3)                  = 0 <0.000007>
+     0.000031 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000009>
+     0.000035 open("/usr/lib/x86_64-linux-gnu/libip6tc.so.0", O_RDONLY|O_CLOEXEC) = 3 <0.000014>
+     0.000037 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\31\0\0\0\0\0\0"..., 832) = 832 <0.000008>
+     0.000031 fstat(3, {st_mode=S_IFREG|0644, st_size=31184, ...}) = 0 <0.000007>
+     0.000031 mmap(NULL, 2126400, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f41cdf01000 <0.000008>
+     0.000031 mprotect(0x7f41cdf07000, 2097152, PROT_NONE) = 0 <0.000010>
+     0.000030 mmap(0x7f41ce107000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f41ce107000 <0.000010>
+     0.000040 close(3)                  = 0 <0.000007>
+     0.000031 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000009>
+     0.000161 open("/usr/lib/x86_64-linux-gnu/libxtables.so.12", O_RDONLY|O_CLOEXEC) = 3 <0.000016>
+     0.000159 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\2401\0\0\0\0\0\0"..., 832) = 832 <0.000010>
+     0.000151 fstat(3, {st_mode=S_IFREG|0644, st_size=51120, ...}) = 0 <0.000009>
+     0.000182 mmap(NULL, 2148184, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f41cdcf4000 <0.000010>
+     0.000134 mprotect(0x7f41cdd00000, 2093056, PROT_NONE) = 0 <0.000009>
+     0.000116 mmap(0x7f41cdeff000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000) = 0x7f41cdeff000 <0.000011>
+     0.000127 close(3)                  = 0 <0.000007>
+     0.000136 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000010>
+     0.000125 open("/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000012>
+     0.000127 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200V\0\0\0\0\0\0"..., 832) = 832 <0.000008>
+     0.000156 fstat(3, {st_mode=S_IFREG|0644, st_size=1063328, ...}) = 0 <0.000008>
+     0.000100 mmap(NULL, 3158248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f41cd9f0000 <0.000008>
+     0.000095 mprotect(0x7f41cdaf3000, 2093056, PROT_NONE) = 0 <0.000008>
+     0.000025 mmap(0x7f41cdcf2000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x102000) = 0x7f41cdcf2000 <0.000009>
+     0.000062 close(3)                  = 0 <0.000005>
+     0.000026 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000006>
+     0.000026 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000028>
+     0.000045 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\4\2\0\0\0\0\0"..., 832) = 832 <0.000006>
+     0.000024 fstat(3, {st_mode=S_IFREG|0755, st_size=1689360, ...}) = 0 <0.000006>
+     0.000025 mmap(NULL, 3795296, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f41cd651000 <0.000007>
+     0.000036 mprotect(0x7f41cd7e6000, 2097152, PROT_NONE) = 0 <0.000008>
+     0.000042 mmap(0x7f41cd9e6000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x195000) = 0x7f41cd9e6000 <0.000014>
+     0.000044 mmap(0x7f41cd9ec000, 14688, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f41cd9ec000 <0.000010>
+     0.000037 close(3)                  = 0 <0.000007>
+     0.000033 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000008>
+     0.000030 open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3 <0.000024>
+     0.000067 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200\r\0\0\0\0\0\0"..., 832) = 832 <0.000006>
+     0.000024 fstat(3, {st_mode=S_IFREG|0644, st_size=14640, ...}) = 0 <0.000005>
+     0.000026 mmap(NULL, 2109680, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f41cd44d000 <0.000008>
+     0.000024 mprotect(0x7f41cd450000, 2093056, PROT_NONE) = 0 <0.000008>
+     0.000023 mmap(0x7f41cd64f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f41cd64f000 <0.000008>
+     0.000031 close(3)                  = 0 <0.000005>
+     0.000029 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f41ce52a000 <0.000007>
+     0.000031 arch_prctl(ARCH_SET_FS, 0x7f41ce52b280) = 0 <0.000006>
+     0.000093 mprotect(0x7f41cd9e6000, 16384, PROT_READ) = 0 <0.000010>
+     0.000039 mprotect(0x7f41cd64f000, 4096, PROT_READ) = 0 <0.000007>
+     0.000033 mprotect(0x7f41cdcf2000, 4096, PROT_READ) = 0 <0.000007>
+     0.000287 mprotect(0x7f41cdeff000, 4096, PROT_READ) = 0 <0.000010>
+     0.000251 mprotect(0x7f41ce107000, 4096, PROT_READ) = 0 <0.000010>
+     0.000245 mprotect(0x7f41ce30e000, 4096, PROT_READ) = 0 <0.000010>
+     0.000185 mprotect(0x559ff1f82000, 4096, PROT_READ) = 0 <0.000008>
+     0.000028 mprotect(0x7f41ce533000, 4096, PROT_READ) = 0 <0.000007>
+     0.000024 munmap(0x7f41ce52e000, 19777) = 0 <0.000012>
+     0.000094 stat("/usr/lib/x86_64-linux-gnu/xtables/libipt_DOCKER-ISOLATION-STAGE-2.so", 0x7ffeb41079b0) = -1 ENOENT (No such file or directory) <0.000010>
+     0.000049 stat("/usr/lib/x86_64-linux-gnu/xtables/libxt_DOCKER-ISOLATION-STAGE-2.so", 0x7ffeb41079b0) = -1 ENOENT (No such file or directory) <0.000007>
+     0.000048 brk(NULL)                 = 0x559ff25bb000 <0.000018>
+     0.000224 brk(0x559ff25dc000)       = 0x559ff25dc000 <0.000009>
+     0.000231 open("/run/xtables.lock", O_RDONLY|O_CREAT, 0600) = 3 <0.000012>
+     0.000285 flock(3, LOCK_EX|LOCK_NB) = 0 <0.000007>
+     0.000028 socket(AF_INET, SOCK_RAW, IPPROTO_RAW) = 4 <0.000012>
+     0.000028 fcntl(4, F_SETFD, FD_CLOEXEC) = 0 <0.000005>
+     0.000022 getsockopt(4, SOL_IP, IPT_SO_GET_INFO, "filter\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., [84]) = 0 <0.000020>
+     0.000041 getsockopt(4, SOL_IP, IPT_SO_GET_ENTRIES, "filter\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., [3224]) = 0 <0.000020>
+     0.000047 stat("/usr/lib/x86_64-linux-gnu/xtables/libipt_standard.so", 0x7ffeb41079b0) = -1 ENOENT (No such file or directory) <0.000008>
+     0.000027 stat("/usr/lib/x86_64-linux-gnu/xtables/libxt_standard.so", {st_mode=S_IFREG|0644, st_size=6208, ...}) = 0 <0.000008>
+     0.000217 open("/usr/lib/x86_64-linux-gnu/xtables/libxt_standard.so", O_RDONLY|O_CLOEXEC) = 5 <0.000011>
+     0.000229 read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\6\0\0\0\0\0\0"..., 832) = 832 <0.000009>
+     0.000288 fstat(5, {st_mode=S_IFREG|0644, st_size=6208, ...}) = 0 <0.000008>
+     0.000049 mmap(NULL, 2101488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7f41cd24b000 <0.000008>
+     0.000027 mprotect(0x7f41cd24c000, 2093056, PROT_NONE) = 0 <0.000008>
+     0.000023 mmap(0x7f41cd44b000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0) = 0x7f41cd44b000 <0.000008>
+     0.000034 close(5)                  = 0 <0.000005>
+     0.000033 mprotect(0x7f41cd44b000, 4096, PROT_READ) = 0 <0.000008>
+     0.000030 close(4)                  = 0 <0.000011>
+     0.000037 exit_group(0)             = ?
+     0.000087 +++ exited with 0 +++
+     0.000000 execve("/sbin/iptables", ["/sbin/iptables", "--wait", "-t", "filter", "-C", "DOCKER-ISOLATION-STAGE-1", "-i", "docker0", "!", "-o", "docker0", "-j", "DOCKER-ISOLATION-STAGE-2"], [/* 19 vars */]) = 0 <0.000467>
+     0.002320 brk(NULL)                 = 0x556c50afa000 <0.000034>
+     0.001302 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000057>
+     0.001413 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory) <0.000040>
+     0.001242 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3 <0.000045>
+     0.001104 fstat(3, {st_mode=S_IFREG|0644, st_size=19777, ...}) = 0 <0.000034>
+     0.000645 mmap(NULL, 19777, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f61ca61a000 <0.000041>
+     0.000944 close(3)                  = 0 <0.000020>
+     0.000176 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000026>
+     0.000166 open("/usr/lib/x86_64-linux-gnu/libip4tc.so.0", O_RDONLY|O_CLOEXEC) = 3 <0.000030>
+     0.000083 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\30\0\0\0\0\0\0"..., 832) = 832 <0.000018>
+     0.000068 fstat(3, {st_mode=S_IFREG|0644, st_size=27088, ...}) = 0 <0.000017>
+     0.000068 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f61ca618000 <0.000019>
+     0.000076 mmap(NULL, 2122304, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f61ca1f5000 <0.000019>
+     0.000065 mprotect(0x7f61ca1fb000, 2093056, PROT_NONE) = 0 <0.000023>
+     0.000066 mmap(0x7f61ca3fa000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x7f61ca3fa000 <0.000036>
+     0.000978 close(3)                  = 0 <0.000021>
+     0.000215 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000020>
+     0.000076 open("/usr/lib/x86_64-linux-gnu/libip6tc.so.0", O_RDONLY|O_CLOEXEC) = 3 <0.000027>
+     0.000078 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\31\0\0\0\0\0\0"..., 832) = 832 <0.000017>
+     0.000068 fstat(3, {st_mode=S_IFREG|0644, st_size=31184, ...}) = 0 <0.000017>
+     0.000066 mmap(NULL, 2126400, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f61c9fed000 <0.000020>
+     0.000067 mprotect(0x7f61c9ff3000, 2097152, PROT_NONE) = 0 <0.000023>
+     0.000066 mmap(0x7f61ca1f3000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f61ca1f3000 <0.000022>
+     0.000087 close(3)                  = 0 <0.000015>
+     0.002414 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000019>
+     0.000094 open("/usr/lib/x86_64-linux-gnu/libxtables.so.12", O_RDONLY|O_CLOEXEC) = 3 <0.000025>
+     0.000065 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\2401\0\0\0\0\0\0"..., 832) = 832 <0.000027>
+     0.000081 fstat(3, {st_mode=S_IFREG|0644, st_size=51120, ...}) = 0 <0.000013>
+     0.000055 mmap(NULL, 2148184, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f61c9de0000 <0.000311>
+     0.000505 mprotect(0x7f61c9dec000, 2093056, PROT_NONE) = 0 <0.000025>
+     0.000185 mmap(0x7f61c9feb000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000) = 0x7f61c9feb000 <0.000021>
+     0.000077 close(3)                  = 0 <0.000012>
+     0.000054 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000015>
+     0.000059 open("/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000022>
+     0.000060 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200V\0\0\0\0\0\0"..., 832) = 832 <0.000013>
+     0.000052 fstat(3, {st_mode=S_IFREG|0644, st_size=1063328, ...}) = 0 <0.000013>
+     0.000056 mmap(NULL, 3158248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f61c9adc000 <0.000015>
+     0.000051 mprotect(0x7f61c9bdf000, 2093056, PROT_NONE) = 0 <0.000017>
+     0.000215 mmap(0x7f61c9dde000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x102000) = 0x7f61c9dde000 <0.000023>
+     0.000399 close(3)                  = 0 <0.000015>
+     0.000277 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000020>
+     0.000280 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000025>
+     0.000321 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\4\2\0\0\0\0\0"..., 832) = 832 <0.000014>
+     0.000060 fstat(3, {st_mode=S_IFREG|0755, st_size=1689360, ...}) = 0 <0.000016>
+     0.000100 mmap(NULL, 3795296, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f61c973d000 <0.000023>
+     0.001105 mprotect(0x7f61c98d2000, 2097152, PROT_NONE) = 0 <0.000023>
+     0.000272 mmap(0x7f61c9ad2000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x195000) = 0x7f61c9ad2000 <0.000026>
+     0.000154 mmap(0x7f61c9ad8000, 14688, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f61c9ad8000 <0.000022>
+     0.000214 close(3)                  = 0 <0.000016>
+     0.000146 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000017>
+     0.000076 open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3 <0.000018>
+     0.000051 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200\r\0\0\0\0\0\0"..., 832) = 832 <0.000011>
+     0.000045 fstat(3, {st_mode=S_IFREG|0644, st_size=14640, ...}) = 0 <0.000012>
+     0.000046 mmap(NULL, 2109680, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f61c9539000 <0.000015>
+     0.000045 mprotect(0x7f61c953c000, 2093056, PROT_NONE) = 0 <0.000015>
+     0.000043 mmap(0x7f61c973b000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f61c973b000 <0.000014>
+     0.000057 close(3)                  = 0 <0.000010>
+     0.000052 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f61ca616000 <0.000017>
+     0.000716 arch_prctl(ARCH_SET_FS, 0x7f61ca617280) = 0 <0.000010>
+     0.000112 mprotect(0x7f61c9ad2000, 16384, PROT_READ) = 0 <0.000016>
+     0.000054 mprotect(0x7f61c973b000, 4096, PROT_READ) = 0 <0.000014>
+     0.000062 mprotect(0x7f61c9dde000, 4096, PROT_READ) = 0 <0.000014>
+     0.000091 mprotect(0x7f61c9feb000, 4096, PROT_READ) = 0 <0.000013>
+     0.000065 mprotect(0x7f61ca1f3000, 4096, PROT_READ) = 0 <0.000013>
+     0.000061 mprotect(0x7f61ca3fa000, 4096, PROT_READ) = 0 <0.000013>
+     0.000096 mprotect(0x556c4f390000, 4096, PROT_READ) = 0 <0.000014>
+     0.000071 mprotect(0x7f61ca61f000, 4096, PROT_READ) = 0 <0.000018>
+     0.000440 munmap(0x7f61ca61a000, 19777) = 0 <0.000023>
+     0.003518 stat("/usr/lib/x86_64-linux-gnu/xtables/libipt_DOCKER-ISOLATION-STAGE-2.so", 0x7ffc4d95fed0) = -1 ENOENT (No such file or directory) <0.000018>
+     0.000239 stat("/usr/lib/x86_64-linux-gnu/xtables/libxt_DOCKER-ISOLATION-STAGE-2.so", 0x7ffc4d95fed0) = -1 ENOENT (No such file or directory) <0.000014>
+     0.000225 brk(NULL)                 = 0x556c50afa000 <0.000011>
+     0.000181 brk(0x556c50b1b000)       = 0x556c50b1b000 <0.000012>
+     0.000191 open("/run/xtables.lock", O_RDONLY|O_CREAT, 0600) = 3 <0.000078>
+     0.000269 flock(3, LOCK_EX|LOCK_NB) = 0 <0.000013>
+     0.000185 socket(AF_INET, SOCK_RAW, IPPROTO_RAW) = 4 <0.000019>
+     0.000189 fcntl(4, F_SETFD, FD_CLOEXEC) = 0 <0.000011>
+     0.000145 getsockopt(4, SOL_IP, IPT_SO_GET_INFO, "filter\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., [84]) = 0 <0.000027>
+     0.000124 getsockopt(4, SOL_IP, IPT_SO_GET_ENTRIES, "filter\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., [3224]) = 0 <0.000034>
+     0.000180 stat("/usr/lib/x86_64-linux-gnu/xtables/libipt_standard.so", 0x7ffc4d95fed0) = -1 ENOENT (No such file or directory) <0.000015>
+     0.000137 stat("/usr/lib/x86_64-linux-gnu/xtables/libxt_standard.so", {st_mode=S_IFREG|0644, st_size=6208, ...}) = 0 <0.000013>
+     0.000119 open("/usr/lib/x86_64-linux-gnu/xtables/libxt_standard.so", O_RDONLY|O_CLOEXEC) = 5 <0.000014>
+     0.000109 read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\6\0\0\0\0\0\0"..., 832) = 832 <0.000011>
+     0.000043 fstat(5, {st_mode=S_IFREG|0644, st_size=6208, ...}) = 0 <0.000012>
+     0.000111 mmap(NULL, 2101488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7f61c9337000 <0.000012>
+     0.000104 mprotect(0x7f61c9338000, 2093056, PROT_NONE) = 0 <0.000013>
+     0.000040 mmap(0x7f61c9537000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0) = 0x7f61c9537000 <0.000018>
+     0.000123 close(5)                  = 0 <0.000009>
+     0.000116 mprotect(0x7f61c9537000, 4096, PROT_READ) = 0 <0.000045>
+     0.000167 close(4)                  = 0 <0.000014>
+     0.000116 exit_group(0)             = ?
+     0.000122 +++ exited with 0 +++
+     0.000000 execve("/sbin/iptables", ["/sbin/iptables", "--wait", "-t", "filter", "-C", "DOCKER-ISOLATION-STAGE-1", "-i", "docker0", "!", "-o", "docker0", "-j", "DOCKER-ISOLATION-STAGE-2"], [/* 19 vars */]) = 0 <0.000399>
+     0.004849 brk(NULL)                 = 0x55b1b104a000 <0.000040>
+     0.001181 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000049>
+     0.001117 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory) <0.000048>
+     0.001027 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3 <0.000060>
+     0.001858 fstat(3, {st_mode=S_IFREG|0644, st_size=19777, ...}) = 0 <0.000043>
+     0.000784 mmap(NULL, 19777, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f13757fb000 <0.000030>
+     0.000534 close(3)                  = 0 <0.000024>
+     0.000414 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000023>
+     0.000218 open("/usr/lib/x86_64-linux-gnu/libip4tc.so.0", O_RDONLY|O_CLOEXEC) = 3 <0.000035>
+     0.000263 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\30\0\0\0\0\0\0"..., 832) = 832 <0.000030>
+     0.001187 fstat(3, {st_mode=S_IFREG|0644, st_size=27088, ...}) = 0 <0.000020>
+     0.000083 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f13757f9000 <0.000023>
+     0.000089 mmap(NULL, 2122304, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f13753d6000 <0.000022>
+     0.000077 mprotect(0x7f13753dc000, 2093056, PROT_NONE) = 0 <0.000027>
+     0.000077 mmap(0x7f13755db000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x7f13755db000 <0.000027>
+     0.000104 close(3)                  = 0 <0.000018>
+     0.000080 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000023>
+     0.000087 open("/usr/lib/x86_64-linux-gnu/libip6tc.so.0", O_RDONLY|O_CLOEXEC) = 3 <0.000041>
+     0.000173 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\31\0\0\0\0\0\0"..., 832) = 832 <0.000020>
+     0.000082 fstat(3, {st_mode=S_IFREG|0644, st_size=31184, ...}) = 0 <0.000019>
+     0.000079 mmap(NULL, 2126400, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f13751ce000 <0.000023>
+     0.000077 mprotect(0x7f13751d4000, 2097152, PROT_NONE) = 0 <0.000026>
+     0.000077 mmap(0x7f13753d4000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f13753d4000 <0.000026>
+     0.001948 close(3)                  = 0 <0.000019>
+     0.000310 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000022>
+     0.000359 open("/usr/lib/x86_64-linux-gnu/libxtables.so.12", O_RDONLY|O_CLOEXEC) = 3 <0.000026>
+     0.000080 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\2401\0\0\0\0\0\0"..., 832) = 832 <0.000015>
+     0.000059 fstat(3, {st_mode=S_IFREG|0644, st_size=51120, ...}) = 0 <0.000014>
+     0.000059 mmap(NULL, 2148184, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f1374fc1000 <0.000019>
+     0.000061 mprotect(0x7f1374fcd000, 2093056, PROT_NONE) = 0 <0.000021>
+     0.000058 mmap(0x7f13751cc000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000) = 0x7f13751cc000 <0.000021>
+     0.000078 close(3)                  = 0 <0.000013>
+     0.000059 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000017>
+     0.000063 open("/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000022>
+     0.000065 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200V\0\0\0\0\0\0"..., 832) = 832 <0.000014>
+     0.000057 fstat(3, {st_mode=S_IFREG|0644, st_size=1063328, ...}) = 0 <0.000014>
+     0.000442 mmap(NULL, 3158248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f1374cbd000 <0.000023>
+     0.000308 mprotect(0x7f1374dc0000, 2093056, PROT_NONE) = 0 <0.000026>
+     0.000301 mmap(0x7f1374fbf000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x102000) = 0x7f1374fbf000 <0.000078>
+     0.000303 close(3)                  = 0 <0.000015>
+     0.000066 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000016>
+     0.000065 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000023>
+     0.000066 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\4\2\0\0\0\0\0"..., 832) = 832 <0.000015>
+     0.000058 fstat(3, {st_mode=S_IFREG|0755, st_size=1689360, ...}) = 0 <0.000014>
+     0.000060 mmap(NULL, 3795296, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f137491e000 <0.000018>
+     0.000060 mprotect(0x7f1374ab3000, 2097152, PROT_NONE) = 0 <0.000019>
+     0.000057 mmap(0x7f1374cb3000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x195000) = 0x7f1374cb3000 <0.000021>
+     0.000068 mmap(0x7f1374cb9000, 14688, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f1374cb9000 <0.000027>
+     0.000786 close(3)                  = 0 <0.000018>
+     0.000310 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000017>
+     0.000313 open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3 <0.000023>
+     0.000253 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200\r\0\0\0\0\0\0"..., 832) = 832 <0.000016>
+     0.002490 fstat(3, {st_mode=S_IFREG|0644, st_size=14640, ...}) = 0 <0.000061>
+     0.000114 mmap(NULL, 2109680, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f137471a000 <0.000016>
+     0.000051 mprotect(0x7f137471d000, 2093056, PROT_NONE) = 0 <0.000017>
+     0.000047 mmap(0x7f137491c000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f137491c000 <0.000015>
+     0.000062 close(3)                  = 0 <0.000011>
+     0.000056 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f13757f7000 <0.000013>
+     0.000062 arch_prctl(ARCH_SET_FS, 0x7f13757f8280) = 0 <0.000011>
+     0.000121 mprotect(0x7f1374cb3000, 16384, PROT_READ) = 0 <0.000017>
+     0.000057 mprotect(0x7f137491c000, 4096, PROT_READ) = 0 <0.000014>
+     0.000062 mprotect(0x7f1374fbf000, 4096, PROT_READ) = 0 <0.000014>
+     0.000099 mprotect(0x7f13751cc000, 4096, PROT_READ) = 0 <0.000014>
+     0.000070 mprotect(0x7f13753d4000, 4096, PROT_READ) = 0 <0.000014>
+     0.000066 mprotect(0x7f13755db000, 4096, PROT_READ) = 0 <0.000013>
+     0.000101 mprotect(0x55b1b085c000, 4096, PROT_READ) = 0 <0.000015>
+     0.000086 mprotect(0x7f1375800000, 4096, PROT_READ) = 0 <0.000016>
+     0.000276 munmap(0x7f13757fb000, 19777) = 0 <0.000025>
+     0.000353 stat("/usr/lib/x86_64-linux-gnu/xtables/libipt_DOCKER-ISOLATION-STAGE-2.so", 0x7fff8794a490) = -1 ENOENT (No such file or directory) <0.000020>
+     0.000266 stat("/usr/lib/x86_64-linux-gnu/xtables/libxt_DOCKER-ISOLATION-STAGE-2.so", 0x7fff8794a490) = -1 ENOENT (No such file or directory) <0.000016>
+     0.000179 brk(NULL)                 = 0x55b1b104a000 <0.000009>
+     0.000037 brk(0x55b1b106b000)       = 0x55b1b106b000 <0.000012>
+     0.000049 open("/run/xtables.lock", O_RDONLY|O_CREAT, 0600) = 3 <0.000017>
+     0.000050 flock(3, LOCK_EX|LOCK_NB) = 0 <0.000012>
+     0.000040 socket(AF_INET, SOCK_RAW, IPPROTO_RAW) = 4 <0.000016>
+     0.000044 fcntl(4, F_SETFD, FD_CLOEXEC) = 0 <0.000010>
+     0.000036 getsockopt(4, SOL_IP, IPT_SO_GET_INFO, "filter\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., [84]) = 0 <0.000030>
+     0.000064 getsockopt(4, SOL_IP, IPT_SO_GET_ENTRIES, "filter\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., [3224]) = 0 <0.000031>
+     0.000199 stat("/usr/lib/x86_64-linux-gnu/xtables/libipt_standard.so", 0x7fff8794a490) = -1 ENOENT (No such file or directory) <0.000015>
+     0.000209 stat("/usr/lib/x86_64-linux-gnu/xtables/libxt_standard.so", {st_mode=S_IFREG|0644, st_size=6208, ...}) = 0 <0.000016>
+     0.000225 open("/usr/lib/x86_64-linux-gnu/xtables/libxt_standard.so", O_RDONLY|O_CLOEXEC) = 5 <0.000015>
+     0.000048 read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\6\0\0\0\0\0\0"..., 832) = 832 <0.000010>
+     0.000039 fstat(5, {st_mode=S_IFREG|0644, st_size=6208, ...}) = 0 <0.000009>
+     0.000041 mmap(NULL, 2101488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7f1374518000 <0.000012>
+     0.000040 mprotect(0x7f1374519000, 2093056, PROT_NONE) = 0 <0.000013>
+     0.000038 mmap(0x7f1374718000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0) = 0x7f1374718000 <0.000014>
+     0.000053 close(5)                  = 0 <0.000009>
+     0.000053 mprotect(0x7f1374718000, 4096, PROT_READ) = 0 <0.000013>
+     0.000167 close(4)                  = 0 <0.000018>
+     0.000229 exit_group(0)             = ?
+     0.000332 +++ exited with 0 +++
+     0.000000 execve("/sbin/iptables", ["/sbin/iptables", "--wait", "-t", "filter", "-C", "DOCKER-ISOLATION-STAGE-1", "-i", "docker0", "!", "-o", "docker0", "-j", "DOCKER-ISOLATION-STAGE-2"], [/* 19 vars */]) = 0 <0.000088>
+     0.000415 brk(NULL)                 = 0x55768024d000 <0.000008>
+     0.000184 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000009>
+     0.000131 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory) <0.000008>
+     0.000127 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3 <0.000011>
+     0.000127 fstat(3, {st_mode=S_IFREG|0644, st_size=19777, ...}) = 0 <0.000007>
+     0.000124 mmap(NULL, 19777, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fe478696000 <0.000009>
+     0.000123 close(3)                  = 0 <0.000007>
+     0.000119 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000008>
+     0.000126 open("/usr/lib/x86_64-linux-gnu/libip4tc.so.0", O_RDONLY|O_CLOEXEC) = 3 <0.000014>
+     0.000089 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\30\0\0\0\0\0\0"..., 832) = 832 <0.000006>
+     0.000026 fstat(3, {st_mode=S_IFREG|0644, st_size=27088, ...}) = 0 <0.000005>
+     0.000023 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe478694000 <0.000007>
+     0.000027 mmap(NULL, 2122304, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe478271000 <0.000006>
+     0.000024 mprotect(0x7fe478277000, 2093056, PROT_NONE) = 0 <0.000008>
+     0.000023 mmap(0x7fe478476000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x7fe478476000 <0.000008>
+     0.000031 close(3)                  = 0 <0.000006>
+     0.000024 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000007>
+     0.000027 open("/usr/lib/x86_64-linux-gnu/libip6tc.so.0", O_RDONLY|O_CLOEXEC) = 3 <0.000010>
+     0.000027 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\31\0\0\0\0\0\0"..., 832) = 832 <0.000006>
+     0.000024 fstat(3, {st_mode=S_IFREG|0644, st_size=31184, ...}) = 0 <0.000005>
+     0.000023 mmap(NULL, 2126400, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe478069000 <0.000007>
+     0.000024 mprotect(0x7fe47806f000, 2097152, PROT_NONE) = 0 <0.000007>
+     0.000022 mmap(0x7fe47826f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7fe47826f000 <0.000007>
+     0.000030 close(3)                  = 0 <0.000005>
+     0.000024 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000006>
+     0.000025 open("/usr/lib/x86_64-linux-gnu/libxtables.so.12", O_RDONLY|O_CLOEXEC) = 3 <0.000009>
+     0.000027 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\2401\0\0\0\0\0\0"..., 832) = 832 <0.000006>
+     0.000023 fstat(3, {st_mode=S_IFREG|0644, st_size=51120, ...}) = 0 <0.000005>
+     0.000023 mmap(NULL, 2148184, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe477e5c000 <0.000124>
+     0.000210 mprotect(0x7fe477e68000, 2093056, PROT_NONE) = 0 <0.000010>
+     0.000122 mmap(0x7fe478067000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000) = 0x7fe478067000 <0.000010>
+     0.000150 close(3)                  = 0 <0.000006>
+     0.000029 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000007>
+     0.000027 open("/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000010>
+     0.000029 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200V\0\0\0\0\0\0"..., 832) = 832 <0.000007>
+     0.000026 fstat(3, {st_mode=S_IFREG|0644, st_size=1063328, ...}) = 0 <0.000007>
+     0.000026 mmap(NULL, 3158248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe477b58000 <0.000007>
+     0.000025 mprotect(0x7fe477c5b000, 2093056, PROT_NONE) = 0 <0.000008>
+     0.000024 mmap(0x7fe477e5a000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x102000) = 0x7fe477e5a000 <0.000008>
+     0.000033 close(3)                  = 0 <0.000005>
+     0.000025 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000007>
+     0.000026 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000009>
+     0.000027 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\4\2\0\0\0\0\0"..., 832) = 832 <0.000006>
+     0.000024 fstat(3, {st_mode=S_IFREG|0755, st_size=1689360, ...}) = 0 <0.000006>
+     0.000150 mmap(NULL, 3795296, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe4777b9000 <0.000009>
+     0.000124 mprotect(0x7fe47794e000, 2097152, PROT_NONE) = 0 <0.000011>
+     0.000122 mmap(0x7fe477b4e000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x195000) = 0x7fe477b4e000 <0.000011>
+     0.000131 mmap(0x7fe477b54000, 14688, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fe477b54000 <0.000010>
+     0.000117 close(3)                  = 0 <0.000005>
+     0.000029 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000006>
+     0.000027 open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3 <0.000010>
+     0.000027 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200\r\0\0\0\0\0\0"..., 832) = 832 <0.000006>
+     0.000024 fstat(3, {st_mode=S_IFREG|0644, st_size=14640, ...}) = 0 <0.000006>
+     0.000024 mmap(NULL, 2109680, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe4775b5000 <0.000007>
+     0.000024 mprotect(0x7fe4775b8000, 2093056, PROT_NONE) = 0 <0.000009>
+     0.000025 mmap(0x7fe4777b7000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fe4777b7000 <0.000008>
+     0.000033 close(3)                  = 0 <0.000005>
+     0.000029 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe478692000 <0.000006>
+     0.000032 arch_prctl(ARCH_SET_FS, 0x7fe478693280) = 0 <0.000005>
+     0.000053 mprotect(0x7fe477b4e000, 16384, PROT_READ) = 0 <0.000009>
+     0.000029 mprotect(0x7fe4777b7000, 4096, PROT_READ) = 0 <0.000094>
+     0.000187 mprotect(0x7fe477e5a000, 4096, PROT_READ) = 0 <0.000009>
+     0.000154 mprotect(0x7fe478067000, 4096, PROT_READ) = 0 <0.000009>
+     0.000135 mprotect(0x7fe47826f000, 4096, PROT_READ) = 0 <0.000009>
+     0.000224 mprotect(0x7fe478476000, 4096, PROT_READ) = 0 <0.000008>
+     0.000057 mprotect(0x55767f501000, 4096, PROT_READ) = 0 <0.000009>
+     0.000107 mprotect(0x7fe47869b000, 4096, PROT_READ) = 0 <0.000008>
+     0.000024 munmap(0x7fe478696000, 19777) = 0 <0.000010>
+     0.000074 stat("/usr/lib/x86_64-linux-gnu/xtables/libipt_DOCKER-ISOLATION-STAGE-2.so", 0x7ffdb414b240) = -1 ENOENT (No such file or directory) <0.000008>
+     0.000030 stat("/usr/lib/x86_64-linux-gnu/xtables/libxt_DOCKER-ISOLATION-STAGE-2.so", 0x7ffdb414b240) = -1 ENOENT (No such file or directory) <0.000007>
+     0.000156 brk(NULL)                 = 0x55768024d000 <0.000008>
+     0.000232 brk(0x55768026e000)       = 0x55768026e000 <0.000008>
+     0.000219 open("/run/xtables.lock", O_RDONLY|O_CREAT, 0600) = 3 <0.000010>
+     0.000032 flock(3, LOCK_EX|LOCK_NB) = 0 <0.000007>
+     0.000022 socket(AF_INET, SOCK_RAW, IPPROTO_RAW) = 4 <0.000011>
+     0.000027 fcntl(4, F_SETFD, FD_CLOEXEC) = 0 <0.000005>
+     0.000021 getsockopt(4, SOL_IP, IPT_SO_GET_INFO, "filter\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., [84]) = 0 <0.000019>
+     0.000041 getsockopt(4, SOL_IP, IPT_SO_GET_ENTRIES, "filter\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., [3224]) = 0 <0.000020>
+     0.000050 stat("/usr/lib/x86_64-linux-gnu/xtables/libipt_standard.so", 0x7ffdb414b240) = -1 ENOENT (No such file or directory) <0.000007>
+     0.000027 stat("/usr/lib/x86_64-linux-gnu/xtables/libxt_standard.so", {st_mode=S_IFREG|0644, st_size=6208, ...}) = 0 <0.000008>
+     0.000030 open("/usr/lib/x86_64-linux-gnu/xtables/libxt_standard.so", O_RDONLY|O_CLOEXEC) = 5 <0.000007>
+     0.000223 read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\6\0\0\0\0\0\0"..., 832) = 832 <0.000009>
+     0.000236 fstat(5, {st_mode=S_IFREG|0644, st_size=6208, ...}) = 0 <0.000008>
+     0.000272 mmap(NULL, 2101488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7fe4773b3000 <0.000010>
+     0.000054 mprotect(0x7fe4773b4000, 2093056, PROT_NONE) = 0 <0.000009>
+     0.000025 mmap(0x7fe4775b3000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0) = 0x7fe4775b3000 <0.000009>
+     0.000034 close(5)                  = 0 <0.000006>
+     0.000034 mprotect(0x7fe4775b3000, 4096, PROT_READ) = 0 <0.000008>
+     0.000029 close(4)                  = 0 <0.000010>
+     0.000035 exit_group(0)             = ?
+     0.000075 +++ exited with 0 +++
+     0.000000 execve("/sbin/iptables", ["/sbin/iptables", "--wait", "-t", "filter", "-C", "DOCKER-ISOLATION-STAGE-1", "-i", "docker0", "!", "-o", "docker0", "-j", "DOCKER-ISOLATION-STAGE-2"], [/* 19 vars */]) = 0 <0.000096>
+     0.000430 brk(NULL)                 = 0x56177457c000 <0.000009>
+     0.000173 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000012>
+     0.000206 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory) <0.000010>
+     0.000210 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3 <0.000012>
+     0.000040 fstat(3, {st_mode=S_IFREG|0644, st_size=19777, ...}) = 0 <0.000008>
+     0.000032 mmap(NULL, 19777, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fae82780000 <0.000076>
+     0.000177 close(3)                  = 0 <0.000008>
+     0.000148 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000011>
+     0.000154 open("/usr/lib/x86_64-linux-gnu/libip4tc.so.0", O_RDONLY|O_CLOEXEC) = 3 <0.000017>
+     0.000151 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\30\0\0\0\0\0\0"..., 832) = 832 <0.000009>
+     0.000034 fstat(3, {st_mode=S_IFREG|0644, st_size=27088, ...}) = 0 <0.000008>
+     0.000031 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fae8277e000 <0.000009>
+     0.000034 mmap(NULL, 2122304, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fae8235b000 <0.000008>
+     0.000031 mprotect(0x7fae82361000, 2093056, PROT_NONE) = 0 <0.000010>
+     0.000030 mmap(0x7fae82560000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x7fae82560000 <0.000011>
+     0.000040 close(3)                  = 0 <0.000007>
+     0.000031 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000009>
+     0.000033 open("/usr/lib/x86_64-linux-gnu/libip6tc.so.0", O_RDONLY|O_CLOEXEC) = 3 <0.000012>
+     0.000035 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\31\0\0\0\0\0\0"..., 832) = 832 <0.000008>
+     0.000176 fstat(3, {st_mode=S_IFREG|0644, st_size=31184, ...}) = 0 <0.000009>
+     0.000152 mmap(NULL, 2126400, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fae82153000 <0.000011>
+     0.000153 mprotect(0x7fae82159000, 2097152, PROT_NONE) = 0 <0.000012>
+     0.000193 mmap(0x7fae82359000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7fae82359000 <0.000013>
+     0.000173 close(3)                  = 0 <0.000008>
+     0.000138 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000009>
+     0.000137 open("/usr/lib/x86_64-linux-gnu/libxtables.so.12", O_RDONLY|O_CLOEXEC) = 3 <0.000013>
+     0.000143 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\2401\0\0\0\0\0\0"..., 832) = 832 <0.000009>
+     0.000135 fstat(3, {st_mode=S_IFREG|0644, st_size=51120, ...}) = 0 <0.000009>
+     0.000134 mmap(NULL, 2148184, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fae81f46000 <0.000011>
+     0.000097 mprotect(0x7fae81f52000, 2093056, PROT_NONE) = 0 <0.000009>
+     0.000027 mmap(0x7fae82151000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000) = 0x7fae82151000 <0.000008>
+     0.000035 close(3)                  = 0 <0.000006>
+     0.000028 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000008>
+     0.000030 open("/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000011>
+     0.000030 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200V\0\0\0\0\0\0"..., 832) = 832 <0.000007>
+     0.000027 fstat(3, {st_mode=S_IFREG|0644, st_size=1063328, ...}) = 0 <0.000006>
+     0.000028 mmap(NULL, 3158248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fae81c42000 <0.000008>
+     0.000025 mprotect(0x7fae81d45000, 2093056, PROT_NONE) = 0 <0.000008>
+     0.000024 mmap(0x7fae81f44000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x102000) = 0x7fae81f44000 <0.000008>
+     0.000034 close(3)                  = 0 <0.000006>
+     0.000027 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000008>
+     0.000027 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000010>
+     0.000029 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\4\2\0\0\0\0\0"..., 832) = 832 <0.000007>
+     0.000025 fstat(3, {st_mode=S_IFREG|0755, st_size=1689360, ...}) = 0 <0.000006>
+     0.000025 mmap(NULL, 3795296, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fae818a3000 <0.000007>
+     0.000026 mprotect(0x7fae81a38000, 2097152, PROT_NONE) = 0 <0.000008>
+     0.000024 mmap(0x7fae81c38000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x195000) = 0x7fae81c38000 <0.000009>
+     0.000030 mmap(0x7fae81c3e000, 14688, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fae81c3e000 <0.000008>
+     0.000031 close(3)                  = 0 <0.000006>
+     0.000029 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000007>
+     0.000027 open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3 <0.000010>
+     0.000028 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200\r\0\0\0\0\0\0"..., 832) = 832 <0.000006>
+     0.000026 fstat(3, {st_mode=S_IFREG|0644, st_size=14640, ...}) = 0 <0.000006>
+     0.000025 mmap(NULL, 2109680, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fae8169f000 <0.000007>
+     0.000026 mprotect(0x7fae816a2000, 2093056, PROT_NONE) = 0 <0.000010>
+     0.000071 mmap(0x7fae818a1000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fae818a1000 <0.000009>
+     0.000034 close(3)                  = 0 <0.000007>
+     0.000087 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fae8277c000 <0.000032>
+     0.000123 arch_prctl(ARCH_SET_FS, 0x7fae8277d280) = 0 <0.000006>
+     0.000275 mprotect(0x7fae81c38000, 16384, PROT_READ) = 0 <0.000012>
+     0.000230 mprotect(0x7fae818a1000, 4096, PROT_READ) = 0 <0.000011>
+     0.000186 mprotect(0x7fae81f44000, 4096, PROT_READ) = 0 <0.000011>
+     0.000277 mprotect(0x7fae82151000, 4096, PROT_READ) = 0 <0.000011>
+     0.000234 mprotect(0x7fae82359000, 4096, PROT_READ) = 0 <0.000011>
+     0.000233 mprotect(0x7fae82560000, 4096, PROT_READ) = 0 <0.000010>
+     0.000223 mprotect(0x561772e89000, 4096, PROT_READ) = 0 <0.000009>
+     0.000031 mprotect(0x7fae82785000, 4096, PROT_READ) = 0 <0.000008>
+     0.000026 munmap(0x7fae82780000, 19777) = 0 <0.000012>
+     0.000086 stat("/usr/lib/x86_64-linux-gnu/xtables/libipt_DOCKER-ISOLATION-STAGE-2.so", 0x7ffda87be0d0) = -1 ENOENT (No such file or directory) <0.000011>
+     0.000066 stat("/usr/lib/x86_64-linux-gnu/xtables/libxt_DOCKER-ISOLATION-STAGE-2.so", 0x7ffda87be0d0) = -1 ENOENT (No such file or directory) <0.000007>
+     0.000052 brk(NULL)                 = 0x56177457c000 <0.000006>
+     0.000023 brk(0x56177459d000)       = 0x56177459d000 <0.000007>
+     0.000032 open("/run/xtables.lock", O_RDONLY|O_CREAT, 0600) = 3 <0.000010>
+     0.000032 flock(3, LOCK_EX|LOCK_NB) = 0 <0.000008>
+     0.000025 socket(AF_INET, SOCK_RAW, IPPROTO_RAW) = 4 <0.000012>
+     0.000029 fcntl(4, F_SETFD, FD_CLOEXEC) = 0 <0.000006>
+     0.000023 getsockopt(4, SOL_IP, IPT_SO_GET_INFO, "filter\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., [84]) = 0 <0.000021>
+     0.000044 getsockopt(4, SOL_IP, IPT_SO_GET_ENTRIES, "filter\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., [3224]) = 0 <0.000022>
+     0.000052 stat("/usr/lib/x86_64-linux-gnu/xtables/libipt_standard.so", 0x7ffda87be0d0) = -1 ENOENT (No such file or directory) <0.000008>
+     0.000029 stat("/usr/lib/x86_64-linux-gnu/xtables/libxt_standard.so", {st_mode=S_IFREG|0644, st_size=6208, ...}) = 0 <0.000009>
+     0.000033 open("/usr/lib/x86_64-linux-gnu/xtables/libxt_standard.so", O_RDONLY|O_CLOEXEC) = 5 <0.000008>
+     0.000027 read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\6\0\0\0\0\0\0"..., 832) = 832 <0.000007>
+     0.000310 fstat(5, {st_mode=S_IFREG|0644, st_size=6208, ...}) = 0 <0.000010>
+     0.000374 mmap(NULL, 2101488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7fae8149d000 <0.000012>
+     0.000064 mprotect(0x7fae8149e000, 2093056, PROT_NONE) = 0 <0.000010>
+     0.000027 mmap(0x7fae8169d000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0) = 0x7fae8169d000 <0.000010>
+     0.000039 close(5)                  = 0 <0.000006>
+     0.000040 mprotect(0x7fae8169d000, 4096, PROT_READ) = 0 <0.000008>
+     0.000046 close(4)                  = 0 <0.000011>
+     0.000038 exit_group(0)             = ?
+     0.000084 +++ exited with 0 +++
+     0.000000 execve("/sbin/iptables", ["/sbin/iptables", "--wait", "-t", "filter", "-C", "DOCKER-ISOLATION-STAGE-1", "-i", "docker0", "!", "-o", "docker0", "-j", "DOCKER-ISOLATION-STAGE-2"], [/* 19 vars */]) = 0 <0.000084>
+     0.000367 brk(NULL)                 = 0x5632048d7000 <0.000008>
+     0.000140 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000009>
+     0.000126 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory) <0.000009>
+     0.000123 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3 <0.000037>
+     0.000178 fstat(3, {st_mode=S_IFREG|0644, st_size=19777, ...}) = 0 <0.000008>
+     0.000124 mmap(NULL, 19777, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f67f0d31000 <0.000009>
+     0.000119 close(3)                  = 0 <0.000008>
+     0.000116 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000009>
+     0.000122 open("/usr/lib/x86_64-linux-gnu/libip4tc.so.0", O_RDONLY|O_CLOEXEC) = 3 <0.000014>
+     0.000129 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\30\0\0\0\0\0\0"..., 832) = 832 <0.000009>
+     0.000121 fstat(3, {st_mode=S_IFREG|0644, st_size=27088, ...}) = 0 <0.000008>
+     0.000169 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f67f0d2f000 <0.000009>
+     0.000124 mmap(NULL, 2122304, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f67f090c000 <0.000009>
+     0.000120 mprotect(0x7f67f0912000, 2093056, PROT_NONE) = 0 <0.000010>
+     0.000119 mmap(0x7f67f0b11000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x7f67f0b11000 <0.000011>
+     0.000130 close(3)                  = 0 <0.000007>
+     0.000120 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000009>
+     0.000123 open("/usr/lib/x86_64-linux-gnu/libip6tc.so.0", O_RDONLY|O_CLOEXEC) = 3 <0.000013>
+     0.000134 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\31\0\0\0\0\0\0"..., 832) = 832 <0.000011>
+     0.000117 fstat(3, {st_mode=S_IFREG|0644, st_size=31184, ...}) = 0 <0.000006>
+     0.000027 mmap(NULL, 2126400, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f67f0704000 <0.000008>
+     0.000024 mprotect(0x7f67f070a000, 2097152, PROT_NONE) = 0 <0.000008>
+     0.000023 mmap(0x7f67f090a000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f67f090a000 <0.000008>
+     0.000033 close(3)                  = 0 <0.000005>
+     0.000026 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000007>
+     0.000026 open("/usr/lib/x86_64-linux-gnu/libxtables.so.12", O_RDONLY|O_CLOEXEC) = 3 <0.000010>
+     0.000028 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\2401\0\0\0\0\0\0"..., 832) = 832 <0.000007>
+     0.000024 fstat(3, {st_mode=S_IFREG|0644, st_size=51120, ...}) = 0 <0.000006>
+     0.000023 mmap(NULL, 2148184, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f67f04f7000 <0.000007>
+     0.000024 mprotect(0x7f67f0503000, 2093056, PROT_NONE) = 0 <0.000008>
+     0.000022 mmap(0x7f67f0702000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000) = 0x7f67f0702000 <0.000007>
+     0.000031 close(3)                  = 0 <0.000005>
+     0.000025 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000007>
+     0.000025 open("/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000009>
+     0.000026 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200V\0\0\0\0\0\0"..., 832) = 832 <0.000006>
+     0.000024 fstat(3, {st_mode=S_IFREG|0644, st_size=1063328, ...}) = 0 <0.000006>
+     0.000026 mmap(NULL, 3158248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f67f01f3000 <0.000007>
+     0.000023 mprotect(0x7f67f02f6000, 2093056, PROT_NONE) = 0 <0.000007>
+     0.000023 mmap(0x7f67f04f5000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x102000) = 0x7f67f04f5000 <0.000008>
+     0.000031 close(3)                  = 0 <0.000005>
+     0.000024 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000007>
+     0.000026 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000010>
+     0.000026 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\4\2\0\0\0\0\0"..., 832) = 832 <0.000006>
+     0.000023 fstat(3, {st_mode=S_IFREG|0755, st_size=1689360, ...}) = 0 <0.000006>
+     0.000025 mmap(NULL, 3795296, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f67efe54000 <0.000007>
+     0.000024 mprotect(0x7f67effe9000, 2097152, PROT_NONE) = 0 <0.000009>
+     0.000025 mmap(0x7f67f01e9000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x195000) = 0x7f67f01e9000 <0.000008>
+     0.000029 mmap(0x7f67f01ef000, 14688, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f67f01ef000 <0.000007>
+     0.000041 close(3)                  = 0 <0.000008>
+     0.000044 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000007>
+     0.000036 open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3 <0.000011>
+     0.000075 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200\r\0\0\0\0\0\0"..., 832) = 832 <0.000007>
+     0.000028 fstat(3, {st_mode=S_IFREG|0644, st_size=14640, ...}) = 0 <0.000006>
+     0.000024 mmap(NULL, 2109680, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f67efc50000 <0.000008>
+     0.000247 mprotect(0x7f67efc53000, 2093056, PROT_NONE) = 0 <0.000011>
+     0.000126 mmap(0x7f67efe52000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f67efe52000 <0.000011>
+     0.000134 close(3)                  = 0 <0.000007>
+     0.000128 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f67f0d2d000 <0.000009>
+     0.000132 arch_prctl(ARCH_SET_FS, 0x7f67f0d2e280) = 0 <0.000008>
+     0.000195 mprotect(0x7f67f01e9000, 16384, PROT_READ) = 0 <0.000012>
+     0.000165 mprotect(0x7f67efe52000, 4096, PROT_READ) = 0 <0.000008>
+     0.000090 mprotect(0x7f67f04f5000, 4096, PROT_READ) = 0 <0.000008>
+     0.000056 mprotect(0x7f67f0702000, 4096, PROT_READ) = 0 <0.000007>
+     0.000035 mprotect(0x7f67f090a000, 4096, PROT_READ) = 0 <0.000007>
+     0.000034 mprotect(0x7f67f0b11000, 4096, PROT_READ) = 0 <0.000007>
+     0.000051 mprotect(0x563202b8b000, 4096, PROT_READ) = 0 <0.000008>
+     0.000026 mprotect(0x7f67f0d36000, 4096, PROT_READ) = 0 <0.000007>
+     0.000024 munmap(0x7f67f0d31000, 19777) = 0 <0.000011>
+     0.000078 stat("/usr/lib/x86_64-linux-gnu/xtables/libipt_DOCKER-ISOLATION-STAGE-2.so", 0x7ffc8a21e860) = -1 ENOENT (No such file or directory) <0.000009>
+     0.000032 stat("/usr/lib/x86_64-linux-gnu/xtables/libxt_DOCKER-ISOLATION-STAGE-2.so", 0x7ffc8a21e860) = -1 ENOENT (No such file or directory) <0.000007>
+     0.000045 brk(NULL)                 = 0x5632048d7000 <0.000006>
+     0.000021 brk(0x5632048f8000)       = 0x5632048f8000 <0.000006>
+     0.000265 open("/run/xtables.lock", O_RDONLY|O_CREAT, 0600) = 3 <0.000013>
+     0.000078 flock(3, LOCK_EX|LOCK_NB) = 0 <0.000007>
+     0.000023 socket(AF_INET, SOCK_RAW, IPPROTO_RAW) = 4 <0.000013>
+     0.000029 fcntl(4, F_SETFD, FD_CLOEXEC) = 0 <0.000006>
+     0.000022 getsockopt(4, SOL_IP, IPT_SO_GET_INFO, "filter\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., [84]) = 0 <0.000020>
+     0.000215 getsockopt(4, SOL_IP, IPT_SO_GET_ENTRIES, "filter\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., [3224]) = 0 <0.000027>
+     0.000265 stat("/usr/lib/x86_64-linux-gnu/xtables/libipt_standard.so", 0x7ffc8a21e860) = -1 ENOENT (No such file or directory) <0.000010>
+     0.000240 stat("/usr/lib/x86_64-linux-gnu/xtables/libxt_standard.so", {st_mode=S_IFREG|0644, st_size=6208, ...}) = 0 <0.000036>
+     0.000172 open("/usr/lib/x86_64-linux-gnu/xtables/libxt_standard.so", O_RDONLY|O_CLOEXEC) = 5 <0.000009>
+     0.000029 read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\6\0\0\0\0\0\0"..., 832) = 832 <0.000007>
+     0.000024 fstat(5, {st_mode=S_IFREG|0644, st_size=6208, ...}) = 0 <0.000006>
+     0.000025 mmap(NULL, 2101488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7f67efa4e000 <0.000008>
+     0.000025 mprotect(0x7f67efa4f000, 2093056, PROT_NONE) = 0 <0.000008>
+     0.000023 mmap(0x7f67efc4e000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0) = 0x7f67efc4e000 <0.000009>
+     0.000034 close(5)                  = 0 <0.000006>
+     0.000033 mprotect(0x7f67efc4e000, 4096, PROT_READ) = 0 <0.000007>
+     0.000028 close(4)                  = 0 <0.000130>
+     0.000297 exit_group(0)             = ?
+     0.000290 +++ exited with 0 +++
+     0.000000 execve("/sbin/iptables", ["/sbin/iptables", "--wait", "-t", "filter", "-C", "DOCKER-ISOLATION-STAGE-1", "-i", "docker0", "!", "-o", "docker0", "-j", "DOCKER-ISOLATION-STAGE-2"], [/* 19 vars */]) = 0 <0.000094>
+     0.000599 brk(NULL)                 = 0x55d12c055000 <0.000008>
+     0.000248 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000011>
+     0.000235 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory) <0.000010>
+     0.000231 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3 <0.000013>
+     0.000300 fstat(3, {st_mode=S_IFREG|0644, st_size=19777, ...}) = 0 <0.000009>
+     0.000229 mmap(NULL, 19777, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f3ece512000 <0.000011>
+     0.000227 close(3)                  = 0 <0.000009>
+     0.000223 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000010>
+     0.000281 open("/usr/lib/x86_64-linux-gnu/libip4tc.so.0", O_RDONLY|O_CLOEXEC) = 3 <0.000015>
+     0.000235 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\30\0\0\0\0\0\0"..., 832) = 832 <0.000010>
+     0.000229 fstat(3, {st_mode=S_IFREG|0644, st_size=27088, ...}) = 0 <0.000009>
+     0.000227 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f3ece510000 <0.000010>
+     0.000290 mmap(NULL, 2122304, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f3ece0ed000 <0.000011>
+     0.000227 mprotect(0x7f3ece0f3000, 2093056, PROT_NONE) = 0 <0.000011>
+     0.000226 mmap(0x7f3ece2f2000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x7f3ece2f2000 <0.000013>
+     0.000239 close(3)                  = 0 <0.000009>
+     0.000287 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000010>
+     0.000290 open("/usr/lib/x86_64-linux-gnu/libip6tc.so.0", O_RDONLY|O_CLOEXEC) = 3 <0.000023>
+     0.000317 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\31\0\0\0\0\0\0"..., 832) = 832 <0.000099>
+     0.000371 fstat(3, {st_mode=S_IFREG|0644, st_size=31184, ...}) = 0 <0.000010>
+     0.000236 mmap(NULL, 2126400, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f3ecdee5000 <0.000013>
+     0.000234 mprotect(0x7f3ecdeeb000, 2097152, PROT_NONE) = 0 <0.000011>
+     0.000283 mmap(0x7f3ece0eb000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f3ece0eb000 <0.000015>
+     0.000264 close(3)                  = 0 <0.000008>
+     0.000237 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000012>
+     0.000238 open("/usr/lib/x86_64-linux-gnu/libxtables.so.12", O_RDONLY|O_CLOEXEC) = 3 <0.000017>
+     0.000281 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\2401\0\0\0\0\0\0"..., 832) = 832 <0.000010>
+     0.000233 fstat(3, {st_mode=S_IFREG|0644, st_size=51120, ...}) = 0 <0.000009>
+     0.000233 mmap(NULL, 2148184, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f3ecdcd8000 <0.000010>
+     0.000232 mprotect(0x7f3ecdce4000, 2093056, PROT_NONE) = 0 <0.000011>
+     0.000306 mmap(0x7f3ecdee3000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000) = 0x7f3ecdee3000 <0.000012>
+     0.000246 close(3)                  = 0 <0.000008>
+     0.000235 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000011>
+     0.000234 open("/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000014>
+     0.000226 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200V\0\0\0\0\0\0"..., 832) = 832 <0.000007>
+     0.000029 fstat(3, {st_mode=S_IFREG|0644, st_size=1063328, ...}) = 0 <0.000006>
+     0.000027 mmap(NULL, 3158248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f3ecd9d4000 <0.000008>
+     0.000024 mprotect(0x7f3ecdad7000, 2093056, PROT_NONE) = 0 <0.000008>
+     0.000023 mmap(0x7f3ecdcd6000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x102000) = 0x7f3ecdcd6000 <0.000008>
+     0.000032 close(3)                  = 0 <0.000006>
+     0.000025 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000007>
+     0.000025 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000010>
+     0.000028 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\4\2\0\0\0\0\0"..., 832) = 832 <0.000006>
+     0.000023 fstat(3, {st_mode=S_IFREG|0755, st_size=1689360, ...}) = 0 <0.000006>
+     0.000024 mmap(NULL, 3795296, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f3ecd635000 <0.000007>
+     0.000023 mprotect(0x7f3ecd7ca000, 2097152, PROT_NONE) = 0 <0.000008>
+     0.000024 mmap(0x7f3ecd9ca000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x195000) = 0x7f3ecd9ca000 <0.000008>
+     0.000027 mmap(0x7f3ecd9d0000, 14688, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f3ecd9d0000 <0.000007>
+     0.000029 close(3)                  = 0 <0.000005>
+     0.000027 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000006>
+     0.000026 open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3 <0.000009>
+     0.000026 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200\r\0\0\0\0\0\0"..., 832) = 832 <0.000006>
+     0.000023 fstat(3, {st_mode=S_IFREG|0644, st_size=14640, ...}) = 0 <0.000006>
+     0.000023 mmap(NULL, 2109680, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f3ecd431000 <0.000008>
+     0.000024 mprotect(0x7f3ecd434000, 2093056, PROT_NONE) = 0 <0.000008>
+     0.000023 mmap(0x7f3ecd633000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f3ecd633000 <0.000008>
+     0.000030 close(3)                  = 0 <0.000005>
+     0.000028 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f3ece50e000 <0.000007>
+     0.000030 arch_prctl(ARCH_SET_FS, 0x7f3ece50f280) = 0 <0.000006>
+     0.000065 mprotect(0x7f3ecd9ca000, 16384, PROT_READ) = 0 <0.000009>
+     0.000029 mprotect(0x7f3ecd633000, 4096, PROT_READ) = 0 <0.000008>
+     0.000259 mprotect(0x7f3ecdcd6000, 4096, PROT_READ) = 0 <0.000024>
+     0.003039 mprotect(0x7f3ecdee3000, 4096, PROT_READ) = 0 <0.000022>
+     0.000086 mprotect(0x7f3ece0eb000, 4096, PROT_READ) = 0 <0.000007>
+     0.000067 mprotect(0x7f3ece2f2000, 4096, PROT_READ) = 0 <0.000010>
+     0.000231 mprotect(0x55d12a06e000, 4096, PROT_READ) = 0 <0.000010>
+     0.000127 mprotect(0x7f3ece517000, 4096, PROT_READ) = 0 <0.000010>
+     0.000123 munmap(0x7f3ece512000, 19777) = 0 <0.000016>
+     0.000190 stat("/usr/lib/x86_64-linux-gnu/xtables/libipt_DOCKER-ISOLATION-STAGE-2.so", 0x7ffc56fd1550) = -1 ENOENT (No such file or directory) <0.000013>
+     0.000140 stat("/usr/lib/x86_64-linux-gnu/xtables/libxt_DOCKER-ISOLATION-STAGE-2.so", 0x7ffc56fd1550) = -1 ENOENT (No such file or directory) <0.000008>
+     0.000149 brk(NULL)                 = 0x55d12c055000 <0.000007>
+     0.000119 brk(0x55d12c076000)       = 0x55d12c076000 <0.000009>
+     0.000129 open("/run/xtables.lock", O_RDONLY|O_CREAT, 0600) = 3 <0.000014>
+     0.000133 flock(3, LOCK_EX|LOCK_NB) = 0 <0.000009>
+     0.000120 socket(AF_INET, SOCK_RAW, IPPROTO_RAW) = 4 <0.000013>
+     0.000125 fcntl(4, F_SETFD, FD_CLOEXEC) = 0 <0.000007>
+     0.000137 getsockopt(4, SOL_IP, IPT_SO_GET_INFO, "filter\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., [84]) = 0 <0.000020>
+     0.000044 getsockopt(4, SOL_IP, IPT_SO_GET_ENTRIES, "filter\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., [3224]) = 0 <0.000023>
+     0.000052 stat("/usr/lib/x86_64-linux-gnu/xtables/libipt_standard.so", 0x7ffc56fd1550) = -1 ENOENT (No such file or directory) <0.000008>
+     0.000027 stat("/usr/lib/x86_64-linux-gnu/xtables/libxt_standard.so", {st_mode=S_IFREG|0644, st_size=6208, ...}) = 0 <0.000008>
+     0.000068 open("/usr/lib/x86_64-linux-gnu/xtables/libxt_standard.so", O_RDONLY|O_CLOEXEC) = 5 <0.000009>
+     0.000867 read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\6\0\0\0\0\0\0"..., 832) = 832 <0.000010>
+     0.000130 fstat(5, {st_mode=S_IFREG|0644, st_size=6208, ...}) = 0 <0.000008>
+     0.000126 mmap(NULL, 2101488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7f3ecd22f000 <0.000010>
+     0.000126 mprotect(0x7f3ecd230000, 2093056, PROT_NONE) = 0 <0.000010>
+     0.000129 mmap(0x7f3ecd42f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0) = 0x7f3ecd42f000 <0.000012>
+     0.000137 close(5)                  = 0 <0.000008>
+     0.000134 mprotect(0x7f3ecd42f000, 4096, PROT_READ) = 0 <0.000017>
+     0.000186 close(4)                  = 0 <0.000013>
+     0.000111 exit_group(0)             = ?
+     0.000126 +++ exited with 0 +++
+     0.000000 execve("/sbin/iptables", ["/sbin/iptables", "--wait", "-t", "filter", "-C", "DOCKER-ISOLATION-STAGE-1", "-i", "docker0", "!", "-o", "docker0", "-j", "DOCKER-ISOLATION-STAGE-2"], [/* 19 vars */]) = 0 <0.000134>
+     0.000432 brk(NULL)                 = 0x55d294b31000 <0.000007>
+     0.000132 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000060>
+     0.000204 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory) <0.000008>
+     0.000122 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3 <0.000010>
+     0.000120 fstat(3, {st_mode=S_IFREG|0644, st_size=19777, ...}) = 0 <0.000008>
+     0.000118 mmap(NULL, 19777, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f145c648000 <0.000009>
+     0.000115 close(3)                  = 0 <0.000007>
+     0.000113 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000008>
+     0.000119 open("/usr/lib/x86_64-linux-gnu/libip4tc.so.0", O_RDONLY|O_CLOEXEC) = 3 <0.000013>
+     0.000175 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\30\0\0\0\0\0\0"..., 832) = 832 <0.000009>
+     0.000135 fstat(3, {st_mode=S_IFREG|0644, st_size=27088, ...}) = 0 <0.000008>
+     0.000117 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f145c646000 <0.000008>
+     0.000122 mmap(NULL, 2122304, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f145c223000 <0.000009>
+     0.000180 mprotect(0x7f145c229000, 2093056, PROT_NONE) = 0 <0.000010>
+     0.000115 mmap(0x7f145c428000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x7f145c428000 <0.000010>
+     0.000126 close(3)                  = 0 <0.000007>
+     0.000160 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000024>
+     0.000088 open("/usr/lib/x86_64-linux-gnu/libip6tc.so.0", O_RDONLY|O_CLOEXEC) = 3 <0.000014>
+     0.000037 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\31\0\0\0\0\0\0"..., 832) = 832 <0.000008>
+     0.000033 fstat(3, {st_mode=S_IFREG|0644, st_size=31184, ...}) = 0 <0.000007>
+     0.000032 mmap(NULL, 2126400, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f145c01b000 <0.000009>
+     0.000031 mprotect(0x7f145c021000, 2097152, PROT_NONE) = 0 <0.000010>
+     0.000031 mmap(0x7f145c221000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f145c221000 <0.000011>
+     0.000043 close(3)                  = 0 <0.000007>
+     0.000033 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000010>
+     0.000036 open("/usr/lib/x86_64-linux-gnu/libxtables.so.12", O_RDONLY|O_CLOEXEC) = 3 <0.000013>
+     0.000037 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\2401\0\0\0\0\0\0"..., 832) = 832 <0.000008>
+     0.000033 fstat(3, {st_mode=S_IFREG|0644, st_size=51120, ...}) = 0 <0.000008>
+     0.000032 mmap(NULL, 2148184, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f145be0e000 <0.000009>
+     0.000031 mprotect(0x7f145be1a000, 2093056, PROT_NONE) = 0 <0.000010>
+     0.000048 mmap(0x7f145c019000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000) = 0x7f145c019000 <0.000023>
+     0.000068 close(3)                  = 0 <0.000005>
+     0.000039 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000020>
+     0.000057 open("/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000011>
+     0.000028 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200V\0\0\0\0\0\0"..., 832) = 832 <0.000006>
+     0.000024 fstat(3, {st_mode=S_IFREG|0644, st_size=1063328, ...}) = 0 <0.000005>
+     0.000025 mmap(NULL, 3158248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f145bb0a000 <0.000007>
+     0.000023 mprotect(0x7f145bc0d000, 2093056, PROT_NONE) = 0 <0.000007>
+     0.000021 mmap(0x7f145be0c000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x102000) = 0x7f145be0c000 <0.000007>
+     0.000293 close(3)                  = 0 <0.000007>
+     0.000154 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000009>
+     0.000125 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000013>
+     0.000127 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\4\2\0\0\0\0\0"..., 832) = 832 <0.000008>
+     0.000121 fstat(3, {st_mode=S_IFREG|0755, st_size=1689360, ...}) = 0 <0.000008>
+     0.000130 mmap(NULL, 3795296, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f145b76b000 <0.000010>
+     0.000122 mprotect(0x7f145b900000, 2097152, PROT_NONE) = 0 <0.000011>
+     0.000125 mmap(0x7f145bb00000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x195000) = 0x7f145bb00000 <0.000028>
+     0.000063 mmap(0x7f145bb06000, 14688, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f145bb06000 <0.000008>
+     0.000028 close(3)                  = 0 <0.000007>
+     0.000078 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000007>
+     0.000083 open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3 <0.000010>
+     0.000029 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200\r\0\0\0\0\0\0"..., 832) = 832 <0.000006>
+     0.000060 fstat(3, {st_mode=S_IFREG|0644, st_size=14640, ...}) = 0 <0.000007>
+     0.000025 mmap(NULL, 2109680, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f145b567000 <0.000010>
+     0.000052 mprotect(0x7f145b56a000, 2093056, PROT_NONE) = 0 <0.000008>
+     0.000023 mmap(0x7f145b769000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f145b769000 <0.000008>
+     0.000031 close(3)                  = 0 <0.000005>
+     0.000028 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f145c644000 <0.000006>
+     0.000031 arch_prctl(ARCH_SET_FS, 0x7f145c645280) = 0 <0.000006>
+     0.000070 mprotect(0x7f145bb00000, 16384, PROT_READ) = 0 <0.000008>
+     0.000028 mprotect(0x7f145b769000, 4096, PROT_READ) = 0 <0.000007>
+     0.000033 mprotect(0x7f145be0c000, 4096, PROT_READ) = 0 <0.000007>
+     0.000085 mprotect(0x7f145c019000, 4096, PROT_READ) = 0 <0.000007>
+     0.000035 mprotect(0x7f145c221000, 4096, PROT_READ) = 0 <0.000007>
+     0.000033 mprotect(0x7f145c428000, 4096, PROT_READ) = 0 <0.000011>
+     0.000468 mprotect(0x55d293f66000, 4096, PROT_READ) = 0 <0.000011>
+     0.000245 mprotect(0x7f145c64d000, 4096, PROT_READ) = 0 <0.000010>
+     0.000258 munmap(0x7f145c648000, 19777) = 0 <0.000028>
+     0.000248 stat("/usr/lib/x86_64-linux-gnu/xtables/libipt_DOCKER-ISOLATION-STAGE-2.so", 0x7ffe69733740) = -1 ENOENT (No such file or directory) <0.000010>
+     0.000034 stat("/usr/lib/x86_64-linux-gnu/xtables/libxt_DOCKER-ISOLATION-STAGE-2.so", 0x7ffe69733740) = -1 ENOENT (No such file or directory) <0.000006>
+     0.000045 brk(NULL)                 = 0x55d294b31000 <0.000006>
+     0.000021 brk(0x55d294b52000)       = 0x55d294b52000 <0.000006>
+     0.000029 open("/run/xtables.lock", O_RDONLY|O_CREAT, 0600) = 3 <0.000010>
+     0.000029 flock(3, LOCK_EX|LOCK_NB) = 0 <0.000007>
+     0.000023 socket(AF_INET, SOCK_RAW, IPPROTO_RAW) = 4 <0.000011>
+     0.000028 fcntl(4, F_SETFD, FD_CLOEXEC) = 0 <0.000005>
+     0.000021 getsockopt(4, SOL_IP, IPT_SO_GET_INFO, "filter\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., [84]) = 0 <0.000019>
+     0.000040 getsockopt(4, SOL_IP, IPT_SO_GET_ENTRIES, "filter\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., [3224]) = 0 <0.000020>
+     0.000049 stat("/usr/lib/x86_64-linux-gnu/xtables/libipt_standard.so", 0x7ffe69733740) = -1 ENOENT (No such file or directory) <0.000007>
+     0.000026 stat("/usr/lib/x86_64-linux-gnu/xtables/libxt_standard.so", {st_mode=S_IFREG|0644, st_size=6208, ...}) = 0 <0.000133>
+     0.000296 open("/usr/lib/x86_64-linux-gnu/xtables/libxt_standard.so", O_RDONLY|O_CLOEXEC) = 5 <0.000012>
+     0.000242 read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\6\0\0\0\0\0\0"..., 832) = 832 <0.000007>
+     0.000029 fstat(5, {st_mode=S_IFREG|0644, st_size=6208, ...}) = 0 <0.000006>
+     0.000024 mmap(NULL, 2101488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7f145b365000 <0.000008>
+     0.000026 mprotect(0x7f145b366000, 2093056, PROT_NONE) = 0 <0.000009>
+     0.000024 mmap(0x7f145b565000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0) = 0x7f145b565000 <0.000009>
+     0.000033 close(5)                  = 0 <0.000006>
+     0.000035 mprotect(0x7f145b565000, 4096, PROT_READ) = 0 <0.000009>
+     0.000031 close(4)                  = 0 <0.000011>
+     0.000037 exit_group(0)             = ?
+     0.000359 +++ exited with 0 +++
+     0.000000 execve("/sbin/iptables", ["/sbin/iptables", "--wait", "-t", "filter", "-C", "DOCKER-ISOLATION-STAGE-1", "-i", "docker0", "!", "-o", "docker0", "-j", "DOCKER-ISOLATION-STAGE-2"], [/* 19 vars */]) = 0 <0.000306>
+     0.000989 brk(NULL)                 = 0x560014a08000 <0.000014>
+     0.000269 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000020>
+     0.000257 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory) <0.000017>
+     0.000233 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3 <0.000021>
+     0.000311 fstat(3, {st_mode=S_IFREG|0644, st_size=19777, ...}) = 0 <0.000016>
+     0.000234 mmap(NULL, 19777, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f21498c8000 <0.000017>
+     0.000223 close(3)                  = 0 <0.000014>
+     0.000263 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000018>
+     0.000422 open("/usr/lib/x86_64-linux-gnu/libip4tc.so.0", O_RDONLY|O_CLOEXEC) = 3 <0.000025>
+     0.000328 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\30\0\0\0\0\0\0"..., 832) = 832 <0.000016>
+     0.000363 fstat(3, {st_mode=S_IFREG|0644, st_size=27088, ...}) = 0 <0.000015>
+     0.000168 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f21498c6000 <0.000013>
+     0.000056 mmap(NULL, 2122304, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f21494a3000 <0.000013>
+     0.000044 mprotect(0x7f21494a9000, 2093056, PROT_NONE) = 0 <0.000015>
+     0.000043 mmap(0x7f21496a8000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x7f21496a8000 <0.000017>
+     0.000272 close(3)                  = 0 <0.000015>
+     0.000527 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000017>
+     0.000335 open("/usr/lib/x86_64-linux-gnu/libip6tc.so.0", O_RDONLY|O_CLOEXEC) = 3 <0.000023>
+     0.000313 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\31\0\0\0\0\0\0"..., 832) = 832 <0.000016>
+     0.000279 fstat(3, {st_mode=S_IFREG|0644, st_size=31184, ...}) = 0 <0.000011>
+     0.000050 mmap(NULL, 2126400, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f214929b000 <0.000014>
+     0.000045 mprotect(0x7f21492a1000, 2097152, PROT_NONE) = 0 <0.000015>
+     0.000043 mmap(0x7f21494a1000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f21494a1000 <0.000015>
+     0.000060 close(3)                  = 0 <0.000010>
+     0.000045 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000013>
+     0.000048 open("/usr/lib/x86_64-linux-gnu/libxtables.so.12", O_RDONLY|O_CLOEXEC) = 3 <0.000018>
+     0.000051 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\2401\0\0\0\0\0\0"..., 832) = 832 <0.000011>
+     0.000043 fstat(3, {st_mode=S_IFREG|0644, st_size=51120, ...}) = 0 <0.000011>
+     0.000045 mmap(NULL, 2148184, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f214908e000 <0.000013>
+     0.000043 mprotect(0x7f214909a000, 2093056, PROT_NONE) = 0 <0.000013>
+     0.000041 mmap(0x7f2149299000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000) = 0x7f2149299000 <0.000014>
+     0.000057 close(3)                  = 0 <0.000010>
+     0.000045 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000012>
+     0.000045 open("/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000018>
+     0.000049 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200V\0\0\0\0\0\0"..., 832) = 832 <0.000011>
+     0.000044 fstat(3, {st_mode=S_IFREG|0644, st_size=1063328, ...}) = 0 <0.000017>
+     0.000278 mmap(NULL, 3158248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f2148d8a000 <0.000014>
+     0.000046 mprotect(0x7f2148e8d000, 2093056, PROT_NONE) = 0 <0.000014>
+     0.000043 mmap(0x7f214908c000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x102000) = 0x7f214908c000 <0.000315>
+     0.000633 close(3)                  = 0 <0.000014>
+     0.000164 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000014>
+     0.000052 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000019>
+     0.000053 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\4\2\0\0\0\0\0"..., 832) = 832 <0.000012>
+     0.000046 fstat(3, {st_mode=S_IFREG|0755, st_size=1689360, ...}) = 0 <0.000011>
+     0.000047 mmap(NULL, 3795296, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f21489eb000 <0.000015>
+     0.000047 mprotect(0x7f2148b80000, 2097152, PROT_NONE) = 0 <0.000017>
+     0.000046 mmap(0x7f2148d80000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x195000) = 0x7f2148d80000 <0.000017>
+     0.000055 mmap(0x7f2148d86000, 14688, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f2148d86000 <0.000014>
+     0.000055 close(3)                  = 0 <0.000010>
+     0.000403 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000017>
+     0.000210 open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3 <0.000018>
+     0.000053 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200\r\0\0\0\0\0\0"..., 832) = 832 <0.000012>
+     0.000044 fstat(3, {st_mode=S_IFREG|0644, st_size=14640, ...}) = 0 <0.000011>
+     0.000045 mmap(NULL, 2109680, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f21487e7000 <0.000014>
+     0.000045 mprotect(0x7f21487ea000, 2093056, PROT_NONE) = 0 <0.000016>
+     0.000044 mmap(0x7f21489e9000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f21489e9000 <0.000014>
+     0.000257 close(3)                  = 0 <0.000016>
+     0.000411 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f21498c4000 <0.000013>
+     0.000066 arch_prctl(ARCH_SET_FS, 0x7f21498c5280) = 0 <0.000010>
+     0.000115 mprotect(0x7f2148d80000, 16384, PROT_READ) = 0 <0.000017>
+     0.000055 mprotect(0x7f21489e9000, 4096, PROT_READ) = 0 <0.000014>
+     0.000255 mprotect(0x7f214908c000, 4096, PROT_READ) = 0 <0.000020>
+     0.000567 mprotect(0x7f2149299000, 4096, PROT_READ) = 0 <0.000018>
+     0.000123 mprotect(0x7f21494a1000, 4096, PROT_READ) = 0 <0.000014>
+     0.000064 mprotect(0x7f21496a8000, 4096, PROT_READ) = 0 <0.000014>
+     0.000100 mprotect(0x560013b04000, 4096, PROT_READ) = 0 <0.000184>
+     0.000486 mprotect(0x7f21498cd000, 4096, PROT_READ) = 0 <0.000019>
+     0.000163 munmap(0x7f21498c8000, 19777) = 0 <0.000022>
+     0.000154 stat("/usr/lib/x86_64-linux-gnu/xtables/libipt_DOCKER-ISOLATION-STAGE-2.so", 0x7fffdd4e8740) = -1 ENOENT (No such file or directory) <0.000018>
+     0.000061 stat("/usr/lib/x86_64-linux-gnu/xtables/libxt_DOCKER-ISOLATION-STAGE-2.so", 0x7fffdd4e8740) = -1 ENOENT (No such file or directory) <0.000012>
+     0.000264 brk(NULL)                 = 0x560014a08000 <0.000015>
+     0.000545 brk(0x560014a29000)       = 0x560014a29000 <0.000016>
+     0.000112 open("/run/xtables.lock", O_RDONLY|O_CREAT, 0600) = 3 <0.000020>
+     0.000057 flock(3, LOCK_EX|LOCK_NB) = 0 <0.000012>
+     0.000043 socket(AF_INET, SOCK_RAW, IPPROTO_RAW) = 4 <0.000019>
+     0.000049 fcntl(4, F_SETFD, FD_CLOEXEC) = 0 <0.000010>
+     0.000039 getsockopt(4, SOL_IP, IPT_SO_GET_INFO, "filter\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., [84]) = 0 <0.000031>
+     0.003504 getsockopt(4, SOL_IP, IPT_SO_GET_ENTRIES, "filter\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., [3224]) = 0 <0.000044>
+     0.000150 stat("/usr/lib/x86_64-linux-gnu/xtables/libipt_standard.so", 0x7fffdd4e8740) = -1 ENOENT (No such file or directory) <0.000014>
+     0.000048 stat("/usr/lib/x86_64-linux-gnu/xtables/libxt_standard.so", {st_mode=S_IFREG|0644, st_size=6208, ...}) = 0 <0.000012>
+     0.000202 open("/usr/lib/x86_64-linux-gnu/xtables/libxt_standard.so", O_RDONLY|O_CLOEXEC) = 5 <0.000017>
+     0.000207 read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\6\0\0\0\0\0\0"..., 832) = 832 <0.000014>
+     0.000199 fstat(5, {st_mode=S_IFREG|0644, st_size=6208, ...}) = 0 <0.000012>
+     0.000181 mmap(NULL, 2101488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7f21485e5000 <0.000014>
+     0.000043 mprotect(0x7f21485e6000, 2093056, PROT_NONE) = 0 <0.000014>
+     0.000038 mmap(0x7f21487e5000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0) = 0x7f21487e5000 <0.000015>
+     0.000055 close(5)                  = 0 <0.000008>
+     0.000052 mprotect(0x7f21487e5000, 4096, PROT_READ) = 0 <0.000013>
+     0.000046 close(4)                  = 0 <0.000016>
+     0.000055 exit_group(0)             = ?
+     0.000129 +++ exited with 0 +++
+     0.000000 execve("/sbin/iptables", ["/sbin/iptables", "--wait", "-t", "filter", "-C", "DOCKER-ISOLATION-STAGE-1", "-i", "docker0", "!", "-o", "docker0", "-j", "DOCKER-ISOLATION-STAGE-2"], [/* 19 vars */]) = 0 <0.000253>
+     0.001746 brk(NULL)                 = 0x55db8ad55000 <0.000026>
+     0.001045 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000032>
+     0.000980 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory) <0.000032>
+     0.000961 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3 <0.000038>
+     0.000963 fstat(3, {st_mode=S_IFREG|0644, st_size=19777, ...}) = 0 <0.000196>
+     0.001009 mmap(NULL, 19777, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f4674544000 <0.000033>
+     0.000950 close(3)                  = 0 <0.000096>
+     0.000510 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000023>
+     0.000092 open("/usr/lib/x86_64-linux-gnu/libip4tc.so.0", O_RDONLY|O_CLOEXEC) = 3 <0.000034>
+     0.000711 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\30\0\0\0\0\0\0"..., 832) = 832 <0.000029>
+     0.000223 fstat(3, {st_mode=S_IFREG|0644, st_size=27088, ...}) = 0 <0.000020>
+     0.000088 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4674542000 <0.000022>
+     0.000086 mmap(NULL, 2122304, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f467411f000 <0.000022>
+     0.000810 mprotect(0x7f4674125000, 2093056, PROT_NONE) = 0 <0.000033>
+     0.000177 mmap(0x7f4674324000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x7f4674324000 <0.000030>
+     0.000112 close(3)                  = 0 <0.000018>
+     0.000079 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000023>
+     0.000090 open("/usr/lib/x86_64-linux-gnu/libip6tc.so.0", O_RDONLY|O_CLOEXEC) = 3 <0.000032>
+     0.000091 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\31\0\0\0\0\0\0"..., 832) = 832 <0.000020>
+     0.003149 fstat(3, {st_mode=S_IFREG|0644, st_size=31184, ...}) = 0 <0.000028>
+     0.000228 mmap(NULL, 2126400, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f4673f17000 <0.000025>
+     0.000082 mprotect(0x7f4673f1d000, 2097152, PROT_NONE) = 0 <0.000026>
+     0.000075 mmap(0x7f467411d000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f467411d000 <0.000029>
+     0.000105 close(3)                  = 0 <0.000017>
+     0.000077 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000023>
+     0.000085 open("/usr/lib/x86_64-linux-gnu/libxtables.so.12", O_RDONLY|O_CLOEXEC) = 3 <0.000031>
+     0.000087 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\2401\0\0\0\0\0\0"..., 832) = 832 <0.000019>
+     0.000075 fstat(3, {st_mode=S_IFREG|0644, st_size=51120, ...}) = 0 <0.000017>
+     0.000141 mmap(NULL, 2148184, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f4673d0a000 <0.000023>
+     0.000391 mprotect(0x7f4673d16000, 2093056, PROT_NONE) = 0 <0.000029>
+     0.000371 mmap(0x7f4673f15000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000) = 0x7f4673f15000 <0.000089>
+     0.000372 close(3)                  = 0 <0.000017>
+     0.000144 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000021>
+     0.000139 open("/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000033>
+     0.000094 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200V\0\0\0\0\0\0"..., 832) = 832 <0.000078>
+     0.000142 fstat(3, {st_mode=S_IFREG|0644, st_size=1063328, ...}) = 0 <0.000026>
+     0.000458 mmap(NULL, 3158248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f4673a06000 <0.000023>
+     0.000080 mprotect(0x7f4673b09000, 2093056, PROT_NONE) = 0 <0.000029>
+     0.000812 mmap(0x7f4673d08000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x102000) = 0x7f4673d08000 <0.000030>
+     0.000116 close(3)                  = 0 <0.000017>
+     0.000079 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000021>
+     0.000083 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000207>
+     0.000492 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\4\2\0\0\0\0\0"..., 832) = 832 <0.000020>
+     0.002087 fstat(3, {st_mode=S_IFREG|0755, st_size=1689360, ...}) = 0 <0.000013>
+     0.000059 mmap(NULL, 3795296, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f4673667000 <0.000016>
+     0.000051 mprotect(0x7f46737fc000, 2097152, PROT_NONE) = 0 <0.000015>
+     0.000045 mmap(0x7f46739fc000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x195000) = 0x7f46739fc000 <0.000018>
+     0.000059 mmap(0x7f4673a02000, 14688, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f4673a02000 <0.000014>
+     0.000058 close(3)                  = 0 <0.000011>
+     0.000055 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000015>
+     0.000054 open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3 <0.000026>
+     0.000430 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200\r\0\0\0\0\0\0"..., 832) = 832 <0.000017>
+     0.000226 fstat(3, {st_mode=S_IFREG|0644, st_size=14640, ...}) = 0 <0.000012>
+     0.000051 mmap(NULL, 2109680, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f4673463000 <0.000015>
+     0.000050 mprotect(0x7f4673466000, 2093056, PROT_NONE) = 0 <0.000015>
+     0.000046 mmap(0x7f4673665000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f4673665000 <0.000015>
+     0.000062 close(3)                  = 0 <0.000010>
+     0.000057 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4674540000 <0.000013>
+     0.000061 arch_prctl(ARCH_SET_FS, 0x7f4674541280) = 0 <0.000011>
+     0.000264 mprotect(0x7f46739fc000, 16384, PROT_READ) = 0 <0.000021>
+     0.000325 mprotect(0x7f4673665000, 4096, PROT_READ) = 0 <0.000019>
+     0.000271 mprotect(0x7f4673d08000, 4096, PROT_READ) = 0 <0.000018>
+     0.000300 mprotect(0x7f4673f15000, 4096, PROT_READ) = 0 <0.000018>
+     0.000266 mprotect(0x7f467411d000, 4096, PROT_READ) = 0 <0.000016>
+     0.000146 mprotect(0x7f4674324000, 4096, PROT_READ) = 0 <0.000012>
+     0.000089 mprotect(0x55db8ac6d000, 4096, PROT_READ) = 0 <0.000013>
+     0.000043 mprotect(0x7f4674549000, 4096, PROT_READ) = 0 <0.000012>
+     0.000038 munmap(0x7f4674544000, 19777) = 0 <0.000018>
+     0.000124 stat("/usr/lib/x86_64-linux-gnu/xtables/libipt_DOCKER-ISOLATION-STAGE-2.so", 0x7ffc52f3a600) = -1 ENOENT (No such file or directory) <0.000014>
+     0.000050 stat("/usr/lib/x86_64-linux-gnu/xtables/libxt_DOCKER-ISOLATION-STAGE-2.so", 0x7ffc52f3a600) = -1 ENOENT (No such file or directory) <0.000011>
+     0.000073 brk(NULL)                 = 0x55db8ad55000 <0.000009>
+     0.000035 brk(0x55db8ad76000)       = 0x55db8ad76000 <0.000011>
+     0.000045 open("/run/xtables.lock", O_RDONLY|O_CREAT, 0600) = 3 <0.000015>
+     0.000046 flock(3, LOCK_EX|LOCK_NB) = 0 <0.000011>
+     0.000038 socket(AF_INET, SOCK_RAW, IPPROTO_RAW) = 4 <0.000017>
+     0.000043 fcntl(4, F_SETFD, FD_CLOEXEC) = 0 <0.000013>
+     0.000375 getsockopt(4, SOL_IP, IPT_SO_GET_INFO, "filter\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., [84]) = 0 <0.000029>
+     0.000068 getsockopt(4, SOL_IP, IPT_SO_GET_ENTRIES, "filter\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., [3224]) = 0 <0.000033>
+     0.000114 stat("/usr/lib/x86_64-linux-gnu/xtables/libipt_standard.so", 0x7ffc52f3a600) = -1 ENOENT (No such file or directory) <0.000018>
+     0.001007 stat("/usr/lib/x86_64-linux-gnu/xtables/libxt_standard.so", {st_mode=S_IFREG|0644, st_size=6208, ...}) = 0 <0.000016>
+     0.000216 open("/usr/lib/x86_64-linux-gnu/xtables/libxt_standard.so", O_RDONLY|O_CLOEXEC) = 5 <0.000018>
+     0.000211 read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\6\0\0\0\0\0\0"..., 832) = 832 <0.000014>
+     0.000277 fstat(5, {st_mode=S_IFREG|0644, st_size=6208, ...}) = 0 <0.000013>
+     0.000090 mmap(NULL, 2101488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7f4673261000 <0.000013>
+     0.000042 mprotect(0x7f4673262000, 2093056, PROT_NONE) = 0 <0.000012>
+     0.000039 mmap(0x7f4673461000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0) = 0x7f4673461000 <0.000015>
+     0.000055 close(5)                  = 0 <0.000009>
+     0.000053 mprotect(0x7f4673461000, 4096, PROT_READ) = 0 <0.000013>
+     0.000047 close(4)                  = 0 <0.000016>
+     0.000055 exit_group(0)             = ?
+     0.000128 +++ exited with 0 +++
+     0.000000 execve("/sbin/iptables", ["/sbin/iptables", "--wait", "-t", "filter", "-C", "DOCKER-ISOLATION-STAGE-1", "-i", "docker0", "!", "-o", "docker0", "-j", "DOCKER-ISOLATION-STAGE-2"], [/* 19 vars */]) = 0 <0.000199>
+     0.001307 brk(NULL)                 = 0x55a360d7d000 <0.000021>
+     0.000800 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000026>
+     0.000716 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory) <0.000009>
+     0.000237 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3 <0.000011>
+     0.000271 fstat(3, {st_mode=S_IFREG|0644, st_size=19777, ...}) = 0 <0.000009>
+     0.000259 mmap(NULL, 19777, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f81416f7000 <0.000010>
+     0.000233 close(3)                  = 0 <0.000008>
+     0.000230 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000009>
+     0.000272 open("/usr/lib/x86_64-linux-gnu/libip4tc.so.0", O_RDONLY|O_CLOEXEC) = 3 <0.000014>
+     0.000242 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\30\0\0\0\0\0\0"..., 832) = 832 <0.000009>
+     0.000236 fstat(3, {st_mode=S_IFREG|0644, st_size=27088, ...}) = 0 <0.000008>
+     0.000232 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f81416f5000 <0.000009>
+     0.000278 mmap(NULL, 2122304, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f81412d2000 <0.000010>
+     0.000235 mprotect(0x7f81412d8000, 2093056, PROT_NONE) = 0 <0.000010>
+     0.000205 mmap(0x7f81414d7000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x7f81414d7000 <0.000012>
+     0.000189 close(3)                  = 0 <0.000007>
+     0.000177 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000009>
+     0.000245 open("/usr/lib/x86_64-linux-gnu/libip6tc.so.0", O_RDONLY|O_CLOEXEC) = 3 <0.000013>
+     0.000154 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\31\0\0\0\0\0\0"..., 832) = 832 <0.000009>
+     0.000166 fstat(3, {st_mode=S_IFREG|0644, st_size=31184, ...}) = 0 <0.000009>
+     0.000163 mmap(NULL, 2126400, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f81410ca000 <0.000009>
+     0.000161 mprotect(0x7f81410d0000, 2097152, PROT_NONE) = 0 <0.000011>
+     0.000203 mmap(0x7f81412d0000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f81412d0000 <0.000011>
+     0.000092 close(3)                  = 0 <0.000006>
+     0.000026 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000007>
+     0.000026 open("/usr/lib/x86_64-linux-gnu/libxtables.so.12", O_RDONLY|O_CLOEXEC) = 3 <0.000010>
+     0.000028 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\2401\0\0\0\0\0\0"..., 832) = 832 <0.000006>
+     0.000023 fstat(3, {st_mode=S_IFREG|0644, st_size=51120, ...}) = 0 <0.000006>
+     0.000026 mmap(NULL, 2148184, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f8140ebd000 <0.000007>
+     0.000024 mprotect(0x7f8140ec9000, 2093056, PROT_NONE) = 0 <0.000008>
+     0.000023 mmap(0x7f81410c8000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000) = 0x7f81410c8000 <0.000008>
+     0.000031 close(3)                  = 0 <0.000005>
+     0.000024 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000007>
+     0.000025 open("/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000013>
+     0.000285 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200V\0\0\0\0\0\0"..., 832) = 832 <0.000010>
+     0.000236 fstat(3, {st_mode=S_IFREG|0644, st_size=1063328, ...}) = 0 <0.000009>
+     0.000160 mmap(NULL, 3158248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f8140bb9000 <0.000007>
+     0.000026 mprotect(0x7f8140cbc000, 2093056, PROT_NONE) = 0 <0.000008>
+     0.000023 mmap(0x7f8140ebb000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x102000) = 0x7f8140ebb000 <0.000008>
+     0.000031 close(3)                  = 0 <0.000006>
+     0.000025 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000007>
+     0.000026 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000010>
+     0.000027 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\4\2\0\0\0\0\0"..., 832) = 832 <0.000006>
+     0.000024 fstat(3, {st_mode=S_IFREG|0755, st_size=1689360, ...}) = 0 <0.000005>
+     0.000023 mmap(NULL, 3795296, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f814081a000 <0.000007>
+     0.000023 mprotect(0x7f81409af000, 2097152, PROT_NONE) = 0 <0.000008>
+     0.000023 mmap(0x7f8140baf000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x195000) = 0x7f8140baf000 <0.000131>
+     0.000291 mmap(0x7f8140bb5000, 14688, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f8140bb5000 <0.000011>
+     0.000242 close(3)                  = 0 <0.000008>
+     0.000158 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000007>
+     0.000028 open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3 <0.000010>
+     0.000027 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200\r\0\0\0\0\0\0"..., 832) = 832 <0.000007>
+     0.000024 fstat(3, {st_mode=S_IFREG|0644, st_size=14640, ...}) = 0 <0.000006>
+     0.000025 mmap(NULL, 2109680, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f8140616000 <0.000007>
+     0.000024 mprotect(0x7f8140619000, 2093056, PROT_NONE) = 0 <0.000007>
+     0.000022 mmap(0x7f8140818000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f8140818000 <0.000007>
+     0.000033 close(3)                  = 0 <0.000005>
+     0.000028 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f81416f3000 <0.000007>
+     0.000031 arch_prctl(ARCH_SET_FS, 0x7f81416f4280) = 0 <0.000005>
+     0.000180 mprotect(0x7f8140baf000, 16384, PROT_READ) = 0 <0.000011>
+     0.000248 mprotect(0x7f8140818000, 4096, PROT_READ) = 0 <0.000010>
+     0.000239 mprotect(0x7f8140ebb000, 4096, PROT_READ) = 0 <0.000010>
+     0.000165 mprotect(0x7f81410c8000, 4096, PROT_READ) = 0 <0.000007>
+     0.000036 mprotect(0x7f81412d0000, 4096, PROT_READ) = 0 <0.000007>
+     0.000033 mprotect(0x7f81414d7000, 4096, PROT_READ) = 0 <0.000007>
+     0.000053 mprotect(0x55a360766000, 4096, PROT_READ) = 0 <0.000007>
+     0.000025 mprotect(0x7f81416fc000, 4096, PROT_READ) = 0 <0.000007>
+     0.000022 munmap(0x7f81416f7000, 19777) = 0 <0.000010>
+     0.000076 stat("/usr/lib/x86_64-linux-gnu/xtables/libipt_DOCKER-ISOLATION-STAGE-2.so", 0x7fff95e067c0) = -1 ENOENT (No such file or directory) <0.000008>
+     0.000029 stat("/usr/lib/x86_64-linux-gnu/xtables/libxt_DOCKER-ISOLATION-STAGE-2.so", 0x7fff95e067c0) = -1 ENOENT (No such file or directory) <0.000011>
+     0.001509 brk(NULL)                 = 0x55a360d7d000 <0.000045>
+     0.000167 brk(0x55a360d9e000)       = 0x55a360d9e000 <0.000008>
+     0.000126 open("/run/xtables.lock", O_RDONLY|O_CREAT, 0600) = 3 <0.000011>
+     0.000127 flock(3, LOCK_EX|LOCK_NB) = 0 <0.000008>
+     0.000118 socket(AF_INET, SOCK_RAW, IPPROTO_RAW) = 4 <0.000013>
+     0.000123 fcntl(4, F_SETFD, FD_CLOEXEC) = 0 <0.000007>
+     0.000116 getsockopt(4, SOL_IP, IPT_SO_GET_INFO, "filter\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., [84]) = 0 <0.000020>
+     0.000136 getsockopt(4, SOL_IP, IPT_SO_GET_ENTRIES, "filter\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., [3224]) = 0 <0.000022>
+     0.000170 stat("/usr/lib/x86_64-linux-gnu/xtables/libipt_standard.so", 0x7fff95e067c0) = -1 ENOENT (No such file or directory) <0.000027>
+     0.000049 stat("/usr/lib/x86_64-linux-gnu/xtables/libxt_standard.so", {st_mode=S_IFREG|0644, st_size=6208, ...}) = 0 <0.000007>
+     0.000042 open("/usr/lib/x86_64-linux-gnu/xtables/libxt_standard.so", O_RDONLY|O_CLOEXEC) = 5 <0.000008>
+     0.000027 read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\6\0\0\0\0\0\0"..., 832) = 832 <0.000006>
+     0.000023 fstat(5, {st_mode=S_IFREG|0644, st_size=6208, ...}) = 0 <0.000006>
+     0.000024 mmap(NULL, 2101488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7f8140414000 <0.000008>
+     0.000024 mprotect(0x7f8140415000, 2093056, PROT_NONE) = 0 <0.000008>
+     0.000022 mmap(0x7f8140614000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0) = 0x7f8140614000 <0.000008>
+     0.000032 close(5)                  = 0 <0.000006>
+     0.000031 mprotect(0x7f8140614000, 4096, PROT_READ) = 0 <0.000008>
+     0.000046 close(4)                  = 0 <0.000010>
+     0.000034 exit_group(0)             = ?
+     0.000094 +++ exited with 0 +++
+     0.000000 execve("/sbin/iptables", ["/sbin/iptables", "--wait", "-t", "filter", "-C", "DOCKER-ISOLATION-STAGE-1", "-i", "docker0", "!", "-o", "docker0", "-j", "DOCKER-ISOLATION-STAGE-2"], [/* 19 vars */]) = 0 <0.000401>
+     0.003061 brk(NULL)                 = 0x556106363000 <0.000042>
+     0.001790 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000055>
+     0.001775 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory) <0.000032>
+     0.000963 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3 <0.000037>
+     0.000479 fstat(3, {st_mode=S_IFREG|0644, st_size=19777, ...}) = 0 <0.000029>
+     0.000502 mmap(NULL, 19777, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7efed92c8000 <0.000027>
+     0.000088 close(3)                  = 0 <0.000017>
+     0.000073 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000023>
+     0.000088 open("/usr/lib/x86_64-linux-gnu/libip4tc.so.0", O_RDONLY|O_CLOEXEC) = 3 <0.000034>
+     0.000447 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\30\0\0\0\0\0\0"..., 832) = 832 <0.000030>
+     0.001215 fstat(3, {st_mode=S_IFREG|0644, st_size=27088, ...}) = 0 <0.000037>
+     0.000307 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7efed92c6000 <0.000041>
+     0.000134 mmap(NULL, 2122304, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7efed8ea3000 <0.000024>
+     0.000084 mprotect(0x7efed8ea9000, 2093056, PROT_NONE) = 0 <0.000026>
+     0.000078 mmap(0x7efed90a8000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x7efed90a8000 <0.000022>
+     0.000100 close(3)                  = 0 <0.000014>
+     0.000063 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000017>
+     0.000067 open("/usr/lib/x86_64-linux-gnu/libip6tc.so.0", O_RDONLY|O_CLOEXEC) = 3 <0.003028>
+     0.003086 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\31\0\0\0\0\0\0"..., 832) = 832 <0.000023>
+     0.000481 fstat(3, {st_mode=S_IFREG|0644, st_size=31184, ...}) = 0 <0.000020>
+     0.000320 mmap(NULL, 2126400, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7efed8c9b000 <0.000024>
+     0.000213 mprotect(0x7efed8ca1000, 2097152, PROT_NONE) = 0 <0.000108>
+     0.000871 mmap(0x7efed8ea1000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7efed8ea1000 <0.000020>
+     0.000075 close(3)                  = 0 <0.000010>
+     0.000049 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000015>
+     0.000055 open("/usr/lib/x86_64-linux-gnu/libxtables.so.12", O_RDONLY|O_CLOEXEC) = 3 <0.000021>
+     0.000058 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\2401\0\0\0\0\0\0"..., 832) = 832 <0.000012>
+     0.000047 fstat(3, {st_mode=S_IFREG|0644, st_size=51120, ...}) = 0 <0.000011>
+     0.000048 mmap(NULL, 2148184, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7efed8a8e000 <0.000014>
+     0.000046 mprotect(0x7efed8a9a000, 2093056, PROT_NONE) = 0 <0.000015>
+     0.000220 mmap(0x7efed8c99000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000) = 0x7efed8c99000 <0.000021>
+     0.000270 close(3)                  = 0 <0.000015>
+     0.000165 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000014>
+     0.000054 open("/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000024>
+     0.000936 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200V\0\0\0\0\0\0"..., 832) = 832 <0.000014>
+     0.000055 fstat(3, {st_mode=S_IFREG|0644, st_size=1063328, ...}) = 0 <0.000011>
+     0.000053 mmap(NULL, 3158248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7efed878a000 <0.000015>
+     0.000048 mprotect(0x7efed888d000, 2093056, PROT_NONE) = 0 <0.000015>
+     0.000046 mmap(0x7efed8a8c000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x102000) = 0x7efed8a8c000 <0.000016>
+     0.000063 close(3)                  = 0 <0.000010>
+     0.000315 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000018>
+     0.000252 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000025>
+     0.000336 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\4\2\0\0\0\0\0"..., 832) = 832 <0.000016>
+     0.000249 fstat(3, {st_mode=S_IFREG|0755, st_size=1689360, ...}) = 0 <0.000015>
+     0.000247 mmap(NULL, 3795296, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7efed83eb000 <0.000019>
+     0.000328 mprotect(0x7efed8580000, 2097152, PROT_NONE) = 0 <0.000022>
+     0.000250 mmap(0x7efed8780000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x195000) = 0x7efed8780000 <0.000023>
+     0.000259 mmap(0x7efed8786000, 14688, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7efed8786000 <0.000020>
+     0.000179 close(3)                  = 0 <0.000014>
+     0.000936 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000012>
+     0.000047 open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3 <0.000020>
+     0.000159 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200\r\0\0\0\0\0\0"..., 832) = 832 <0.000014>
+     0.000134 fstat(3, {st_mode=S_IFREG|0644, st_size=14640, ...}) = 0 <0.000009>
+     0.000041 mmap(NULL, 2109680, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7efed81e7000 <0.000017>
+     0.000120 mprotect(0x7efed81ea000, 2093056, PROT_NONE) = 0 <0.000015>
+     0.000109 mmap(0x7efed83e9000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7efed83e9000 <0.000015>
+     0.000058 close(3)                  = 0 <0.000012>
+     0.000124 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7efed92c4000 <0.000015>
+     0.000124 arch_prctl(ARCH_SET_FS, 0x7efed92c5280) = 0 <0.000009>
+     0.000181 mprotect(0x7efed8780000, 16384, PROT_READ) = 0 <0.000019>
+     0.000183 mprotect(0x7efed83e9000, 4096, PROT_READ) = 0 <0.000013>
+     0.000055 mprotect(0x7efed8a8c000, 4096, PROT_READ) = 0 <0.000016>
+     0.000162 mprotect(0x7efed8c99000, 4096, PROT_READ) = 0 <0.000019>
+     0.002228 mprotect(0x7efed8ea1000, 4096, PROT_READ) = 0 <0.000013>
+     0.000064 mprotect(0x7efed90a8000, 4096, PROT_READ) = 0 <0.000012>
+     0.000090 mprotect(0x556105c89000, 4096, PROT_READ) = 0 <0.000012>
+     0.000044 mprotect(0x7efed92cd000, 4096, PROT_READ) = 0 <0.000012>
+     0.000039 munmap(0x7efed92c8000, 19777) = 0 <0.000019>
+     0.000184 stat("/usr/lib/x86_64-linux-gnu/xtables/libipt_DOCKER-ISOLATION-STAGE-2.so", 0x7ffc84689ac0) = -1 ENOENT (No such file or directory) <0.000015>
+     0.000056 stat("/usr/lib/x86_64-linux-gnu/xtables/libxt_DOCKER-ISOLATION-STAGE-2.so", 0x7ffc84689ac0) = -1 ENOENT (No such file or directory) <0.000009>
+     0.000079 brk(NULL)                 = 0x556106363000 <0.000007>
+     0.000030 brk(0x556106384000)       = 0x556106384000 <0.000009>
+     0.000041 open("/run/xtables.lock", O_RDONLY|O_CREAT, 0600) = 3 <0.000014>
+     0.000041 flock(3, LOCK_EX|LOCK_NB) = 0 <0.000010>
+     0.000033 socket(AF_INET, SOCK_RAW, IPPROTO_RAW) = 4 <0.000015>
+     0.000038 fcntl(4, F_SETFD, FD_CLOEXEC) = 0 <0.000008>
+     0.000075 getsockopt(4, SOL_IP, IPT_SO_GET_INFO, "filter\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., [84]) = 0 <0.000026>
+     0.000059 getsockopt(4, SOL_IP, IPT_SO_GET_ENTRIES, "filter\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., [3224]) = 0 <0.000028>
+     0.000071 stat("/usr/lib/x86_64-linux-gnu/xtables/libipt_standard.so", 0x7ffc84689ac0) = -1 ENOENT (No such file or directory) <0.000011>
+     0.000039 stat("/usr/lib/x86_64-linux-gnu/xtables/libxt_standard.so", {st_mode=S_IFREG|0644, st_size=6208, ...}) = 0 <0.000010>
+     0.000043 open("/usr/lib/x86_64-linux-gnu/xtables/libxt_standard.so", O_RDONLY|O_CLOEXEC) = 5 <0.000012>
+     0.000037 read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\6\0\0\0\0\0\0"..., 832) = 832 <0.000009>
+     0.000035 fstat(5, {st_mode=S_IFREG|0644, st_size=6208, ...}) = 0 <0.000008>
+     0.000037 mmap(NULL, 2101488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7efed7fe5000 <0.000011>
+     0.000035 mprotect(0x7efed7fe6000, 2093056, PROT_NONE) = 0 <0.000012>
+     0.000033 mmap(0x7efed81e5000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0) = 0x7efed81e5000 <0.000012>
+     0.000342 close(5)                  = 0 <0.000010>
+     0.000190 mprotect(0x7efed81e5000, 4096, PROT_READ) = 0 <0.000013>
+     0.000183 close(4)                  = 0 <0.000017>
+     0.000189 exit_group(0)             = ?
+     0.000288 +++ exited with 0 +++
+     0.000000 execve("/sbin/iptables", ["/sbin/iptables", "--wait", "-t", "filter", "-C", "DOCKER-ISOLATION-STAGE-1", "-i", "docker0", "!", "-o", "docker0", "-j", "DOCKER-ISOLATION-STAGE-2"], [/* 19 vars */]) = 0 <0.000311>
+     0.002318 brk(NULL)                 = 0x55f279195000 <0.000031>
+     0.001226 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000040>
+     0.001326 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory) <0.000038>
+     0.001240 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3 <0.000044>
+     0.000924 fstat(3, {st_mode=S_IFREG|0644, st_size=19777, ...}) = 0 <0.000025>
+     0.000124 mmap(NULL, 19777, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f979c8a5000 <0.000369>
+     0.000679 close(3)                  = 0 <0.000022>
+     0.000098 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000028>
+     0.000105 open("/usr/lib/x86_64-linux-gnu/libip4tc.so.0", O_RDONLY|O_CLOEXEC) = 3 <0.000041>
+     0.000114 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\30\0\0\0\0\0\0"..., 832) = 832 <0.000025>
+     0.000867 fstat(3, {st_mode=S_IFREG|0644, st_size=27088, ...}) = 0 <0.000025>
+     0.000113 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f979c8a3000 <0.000028>
+     0.000107 mmap(NULL, 2122304, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f979c480000 <0.000028>
+     0.000095 mprotect(0x7f979c486000, 2093056, PROT_NONE) = 0 <0.000609>
+     0.001446 mmap(0x7f979c685000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x7f979c685000 <0.000053>
+     0.002307 close(3)                  = 0 <0.000030>
+     0.000317 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000029>
+     0.001739 open("/usr/lib/x86_64-linux-gnu/libip6tc.so.0", O_RDONLY|O_CLOEXEC) = 3 <0.000030>
+     0.000086 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\31\0\0\0\0\0\0"..., 832) = 832 <0.000017>
+     0.000071 fstat(3, {st_mode=S_IFREG|0644, st_size=31184, ...}) = 0 <0.000016>
+     0.000070 mmap(NULL, 2126400, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f979c278000 <0.000054>
+     0.000113 mprotect(0x7f979c27e000, 2097152, PROT_NONE) = 0 <0.000042>
+     0.000121 mmap(0x7f979c47e000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f979c47e000 <0.000027>
+     0.000100 close(3)                  = 0 <0.000015>
+     0.000070 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000020>
+     0.000077 open("/usr/lib/x86_64-linux-gnu/libxtables.so.12", O_RDONLY|O_CLOEXEC) = 3 <0.000027>
+     0.000139 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\2401\0\0\0\0\0\0"..., 832) = 832 <0.000019>
+     0.000076 fstat(3, {st_mode=S_IFREG|0644, st_size=51120, ...}) = 0 <0.000016>
+     0.000069 mmap(NULL, 2148184, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f979c06b000 <0.000021>
+     0.000068 mprotect(0x7f979c077000, 2093056, PROT_NONE) = 0 <0.000021>
+     0.000065 mmap(0x7f979c276000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000) = 0x7f979c276000 <0.000022>
+     0.000089 close(3)                  = 0 <0.000375>
+     0.000628 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000025>
+     0.000358 open("/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000035>
+     0.000856 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200V\0\0\0\0\0\0"..., 832) = 832 <0.000020>
+     0.000082 fstat(3, {st_mode=S_IFREG|0644, st_size=1063328, ...}) = 0 <0.000018>
+     0.000149 mmap(NULL, 3158248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f979bd67000 <0.000022>
+     0.000075 mprotect(0x7f979be6a000, 2093056, PROT_NONE) = 0 <0.000022>
+     0.000065 mmap(0x7f979c069000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x102000) = 0x7f979c069000 <0.000024>
+     0.000091 close(3)                  = 0 <0.000016>
+     0.000300 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000022>
+     0.000493 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000023>
+     0.000069 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\4\2\0\0\0\0\0"..., 832) = 832 <0.000015>
+     0.000055 fstat(3, {st_mode=S_IFREG|0755, st_size=1689360, ...}) = 0 <0.000013>
+     0.000260 mmap(NULL, 3795296, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f979b9c8000 <0.000018>
+     0.000059 mprotect(0x7f979bb5d000, 2097152, PROT_NONE) = 0 <0.000019>
+     0.000052 mmap(0x7f979bd5d000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x195000) = 0x7f979bd5d000 <0.000164>
+     0.000856 mmap(0x7f979bd63000, 14688, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f979bd63000 <0.000023>
+     0.000137 close(3)                  = 0 <0.000012>
+     0.000062 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000016>
+     0.000061 open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3 <0.000022>
+     0.000185 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200\r\0\0\0\0\0\0"..., 832) = 832 <0.000019>
+     0.000182 fstat(3, {st_mode=S_IFREG|0644, st_size=14640, ...}) = 0 <0.000015>
+     0.001077 mmap(NULL, 2109680, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f979b7c4000 <0.000022>
+     0.000282 mprotect(0x7f979b7c7000, 2093056, PROT_NONE) = 0 <0.000024>
+     0.000272 mmap(0x7f979b9c6000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f979b9c6000 <0.000023>
+     0.000269 close(3)                  = 0 <0.000012>
+     0.000067 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f979c8a1000 <0.000015>
+     0.000072 arch_prctl(ARCH_SET_FS, 0x7f979c8a2280) = 0 <0.000012>
+     0.000126 mprotect(0x7f979bd5d000, 16384, PROT_READ) = 0 <0.000019>
+     0.000065 mprotect(0x7f979b9c6000, 4096, PROT_READ) = 0 <0.000017>
+     0.000072 mprotect(0x7f979c069000, 4096, PROT_READ) = 0 <0.000016>
+     0.000115 mprotect(0x7f979c276000, 4096, PROT_READ) = 0 <0.000016>
+     0.000078 mprotect(0x7f979c47e000, 4096, PROT_READ) = 0 <0.000146>
+     0.000503 mprotect(0x7f979c685000, 4096, PROT_READ) = 0 <0.000020>
+     0.000947 mprotect(0x55f2776e2000, 4096, PROT_READ) = 0 <0.000015>
+     0.000050 mprotect(0x7f979c8aa000, 4096, PROT_READ) = 0 <0.000013>
+     0.000043 munmap(0x7f979c8a5000, 19777) = 0 <0.000020>
+     0.000137 stat("/usr/lib/x86_64-linux-gnu/xtables/libipt_DOCKER-ISOLATION-STAGE-2.so", 0x7ffe493cc0e0) = -1 ENOENT (No such file or directory) <0.000015>
+     0.000056 stat("/usr/lib/x86_64-linux-gnu/xtables/libxt_DOCKER-ISOLATION-STAGE-2.so", 0x7ffe493cc0e0) = -1 ENOENT (No such file or directory) <0.000012>
+     0.000204 brk(NULL)                 = 0x55f279195000 <0.000013>
+     0.000215 brk(0x55f2791b6000)       = 0x55f2791b6000 <0.000015>
+     0.000295 open("/run/xtables.lock", O_RDONLY|O_CREAT, 0600) = 3 <0.000021>
+     0.000232 flock(3, LOCK_EX|LOCK_NB) = 0 <0.000015>
+     0.000219 socket(AF_INET, SOCK_RAW, IPPROTO_RAW) = 4 <0.000022>
+     0.000316 fcntl(4, F_SETFD, FD_CLOEXEC) = 0 <0.000016>
+     0.001232 getsockopt(4, SOL_IP, IPT_SO_GET_INFO, "filter\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., [84]) = 0 <0.000034>
+     0.000252 getsockopt(4, SOL_IP, IPT_SO_GET_ENTRIES, "filter\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., [3224]) = 0 <0.000040>
+     0.000279 stat("/usr/lib/x86_64-linux-gnu/xtables/libipt_standard.so", 0x7ffe493cc0e0) = -1 ENOENT (No such file or directory) <0.000017>
+     0.000122 stat("/usr/lib/x86_64-linux-gnu/xtables/libxt_standard.so", {st_mode=S_IFREG|0644, st_size=6208, ...}) = 0 <0.000016>
+     0.000119 open("/usr/lib/x86_64-linux-gnu/xtables/libxt_standard.so", O_RDONLY|O_CLOEXEC) = 5 <0.000017>
+     0.000096 read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\6\0\0\0\0\0\0"..., 832) = 832 <0.000010>
+     0.000039 fstat(5, {st_mode=S_IFREG|0644, st_size=6208, ...}) = 0 <0.000009>
+     0.000037 mmap(NULL, 2101488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7f979b5c2000 <0.000012>
+     0.000040 mprotect(0x7f979b5c3000, 2093056, PROT_NONE) = 0 <0.000014>
+     0.000037 mmap(0x7f979b7c2000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0) = 0x7f979b7c2000 <0.000014>
+     0.000051 close(5)                  = 0 <0.000009>
+     0.000051 mprotect(0x7f979b7c2000, 4096, PROT_READ) = 0 <0.000012>
+     0.000045 close(4)                  = 0 <0.000015>
+     0.000053 exit_group(0)             = ?
+     0.000121 +++ exited with 0 +++
+     0.000000 execve("/sbin/iptables", ["/sbin/iptables", "--wait", "-t", "filter", "-C", "DOCKER-ISOLATION-STAGE-1", "-i", "docker0", "!", "-o", "docker0", "-j", "DOCKER-ISOLATION-STAGE-2"], [/* 19 vars */]) = 0 <0.000305>
+     0.002274 brk(NULL)                 = 0x55884b269000 <0.000035>
+     0.001331 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000042>
+     0.001227 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory) <0.000040>
+     0.001203 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3 <0.000048>
+     0.001178 fstat(3, {st_mode=S_IFREG|0644, st_size=19777, ...}) = 0 <0.000034>
+     0.000365 mmap(NULL, 19777, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f726109d000 <0.000031>
+     0.000458 close(3)                  = 0 <0.000035>
+     0.000622 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000030>
+     0.000112 open("/usr/lib/x86_64-linux-gnu/libip4tc.so.0", O_RDONLY|O_CLOEXEC) = 3 <0.000040>
+     0.000112 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\30\0\0\0\0\0\0"..., 832) = 832 <0.000025>
+     0.000097 fstat(3, {st_mode=S_IFREG|0644, st_size=27088, ...}) = 0 <0.000023>
+     0.000898 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f726109b000 <0.000029>
+     0.000468 mmap(NULL, 2122304, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7260c78000 <0.000021>
+     0.000075 mprotect(0x7f7260c7e000, 2093056, PROT_NONE) = 0 <0.000021>
+     0.000065 mmap(0x7f7260e7d000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x7f7260e7d000 <0.000025>
+     0.000091 close(3)                  = 0 <0.000015>
+     0.000068 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000021>
+     0.000078 open("/usr/lib/x86_64-linux-gnu/libip6tc.so.0", O_RDONLY|O_CLOEXEC) = 3 <0.000029>
+     0.000080 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\31\0\0\0\0\0\0"..., 832) = 832 <0.000017>
+     0.000069 fstat(3, {st_mode=S_IFREG|0644, st_size=31184, ...}) = 0 <0.000017>
+     0.000069 mmap(NULL, 2126400, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7260a70000 <0.000019>
+     0.000065 mprotect(0x7f7260a76000, 2097152, PROT_NONE) = 0 <0.000020>
+     0.000063 mmap(0x7f7260c76000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f7260c76000 <0.002172>
+     0.002334 close(3)                  = 0 <0.000016>
+     0.000077 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000021>
+     0.000081 open("/usr/lib/x86_64-linux-gnu/libxtables.so.12", O_RDONLY|O_CLOEXEC) = 3 <0.000030>
+     0.000082 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\2401\0\0\0\0\0\0"..., 832) = 832 <0.000018>
+     0.000071 fstat(3, {st_mode=S_IFREG|0644, st_size=51120, ...}) = 0 <0.000018>
+     0.000072 mmap(NULL, 2148184, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7260863000 <0.000027>
+     0.000556 mprotect(0x7f726086f000, 2093056, PROT_NONE) = 0 <0.000028>
+     0.000337 mmap(0x7f7260a6e000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000) = 0x7f7260a6e000 <0.000024>
+     0.000337 close(3)                  = 0 <0.000019>
+     0.001232 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000017>
+     0.000066 open("/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000023>
+     0.000064 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200V\0\0\0\0\0\0"..., 832) = 832 <0.000014>
+     0.000056 fstat(3, {st_mode=S_IFREG|0644, st_size=1063328, ...}) = 0 <0.000014>
+     0.000061 mmap(NULL, 3158248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f726055f000 <0.000017>
+     0.000055 mprotect(0x7f7260662000, 2093056, PROT_NONE) = 0 <0.000017>
+     0.000052 mmap(0x7f7260861000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x102000) = 0x7f7260861000 <0.000019>
+     0.000072 close(3)                  = 0 <0.000012>
+     0.000055 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000016>
+     0.000057 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000020>
+     0.000061 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\4\2\0\0\0\0\0"..., 832) = 832 <0.000014>
+     0.000053 fstat(3, {st_mode=S_IFREG|0755, st_size=1689360, ...}) = 0 <0.000013>
+     0.000054 mmap(NULL, 3795296, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f72601c0000 <0.000016>
+     0.000054 mprotect(0x7f7260355000, 2097152, PROT_NONE) = 0 <0.000081>
+     0.000121 mmap(0x7f7260555000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x195000) = 0x7f7260555000 <0.000020>
+     0.000064 mmap(0x7f726055b000, 14688, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f726055b000 <0.000298>
+     0.000648 close(3)                  = 0 <0.000016>
+     0.000360 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000022>
+     0.000976 open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3 <0.000023>
+     0.000070 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200\r\0\0\0\0\0\0"..., 832) = 832 <0.000014>
+     0.000054 fstat(3, {st_mode=S_IFREG|0644, st_size=14640, ...}) = 0 <0.000012>
+     0.000054 mmap(NULL, 2109680, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f725ffbc000 <0.000017>
+     0.000054 mprotect(0x7f725ffbf000, 2093056, PROT_NONE) = 0 <0.000019>
+     0.000053 mmap(0x7f72601be000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f72601be000 <0.000018>
+     0.000071 close(3)                  = 0 <0.000010>
+     0.000065 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7261099000 <0.000011>
+     0.000059 arch_prctl(ARCH_SET_FS, 0x7f726109a280) = 0 <0.000010>
+     0.000109 mprotect(0x7f7260555000, 16384, PROT_READ) = 0 <0.000015>
+     0.000051 mprotect(0x7f72601be000, 4096, PROT_READ) = 0 <0.000019>
+     0.000401 mprotect(0x7f7260861000, 4096, PROT_READ) = 0 <0.000017>
+     0.000367 mprotect(0x7f7260a6e000, 4096, PROT_READ) = 0 <0.000022>
+     0.003190 mprotect(0x7f7260c76000, 4096, PROT_READ) = 0 <0.000014>
+     0.000068 mprotect(0x7f7260e7d000, 4096, PROT_READ) = 0 <0.000016>
+     0.000137 mprotect(0x55884b1f3000, 4096, PROT_READ) = 0 <0.000014>
+     0.000048 mprotect(0x7f72610a2000, 4096, PROT_READ) = 0 <0.000013>
+     0.000042 munmap(0x7f726109d000, 19777) = 0 <0.000021>
+     0.000145 stat("/usr/lib/x86_64-linux-gnu/xtables/libipt_DOCKER-ISOLATION-STAGE-2.so", 0x7ffdcbe9a500) = -1 ENOENT (No such file or directory) <0.000020>
+     0.000337 stat("/usr/lib/x86_64-linux-gnu/xtables/libxt_DOCKER-ISOLATION-STAGE-2.so", 0x7ffdcbe9a500) = -1 ENOENT (No such file or directory) <0.000014>
+     0.000224 brk(NULL)                 = 0x55884b269000 <0.000011>
+     0.000230 brk(0x55884b28a000)       = 0x55884b28a000 <0.000013>
+     0.000193 open("/run/xtables.lock", O_RDONLY|O_CREAT, 0600) = 3 <0.000018>
+     0.000195 flock(3, LOCK_EX|LOCK_NB) = 0 <0.000013>
+     0.000184 socket(AF_INET, SOCK_RAW, IPPROTO_RAW) = 4 <0.000019>
+     0.000293 fcntl(4, F_SETFD, FD_CLOEXEC) = 0 <0.000011>
+     0.000081 getsockopt(4, SOL_IP, IPT_SO_GET_INFO, "filter\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., [84]) = 0 <0.000028>
+     0.000062 getsockopt(4, SOL_IP, IPT_SO_GET_ENTRIES, "filter\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., [3224]) = 0 <0.000030>
+     0.000079 stat("/usr/lib/x86_64-linux-gnu/xtables/libipt_standard.so", 0x7ffdcbe9a500) = -1 ENOENT (No such file or directory) <0.000012>
+     0.000043 stat("/usr/lib/x86_64-linux-gnu/xtables/libxt_standard.so", {st_mode=S_IFREG|0644, st_size=6208, ...}) = 0 <0.000012>
+     0.000048 open("/usr/lib/x86_64-linux-gnu/xtables/libxt_standard.so", O_RDONLY|O_CLOEXEC) = 5 <0.000014>
+     0.000042 read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\6\0\0\0\0\0\0"..., 832) = 832 <0.000010>
+     0.000039 fstat(5, {st_mode=S_IFREG|0644, st_size=6208, ...}) = 0 <0.000009>
+     0.000038 mmap(NULL, 2101488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7f725fdba000 <0.000013>
+     0.000040 mprotect(0x7f725fdbb000, 2093056, PROT_NONE) = 0 <0.000014>
+     0.000038 mmap(0x7f725ffba000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0) = 0x7f725ffba000 <0.000014>
+     0.000050 close(5)                  = 0 <0.000009>
+     0.000051 mprotect(0x7f725ffba000, 4096, PROT_READ) = 0 <0.000011>
+     0.000044 close(4)                  = 0 <0.000016>
+     0.000054 exit_group(0)             = ?
+     0.000121 +++ exited with 0 +++
+     0.000000 execve("/sbin/iptables", ["/sbin/iptables", "--wait", "-t", "filter", "-C", "DOCKER-ISOLATION-STAGE-1", "-i", "docker0", "!", "-o", "docker0", "-j", "DOCKER-ISOLATION-STAGE-2"], [/* 19 vars */]) = 0 <0.000311>
+     0.002110 brk(NULL)                 = 0x55b38d4cd000 <0.000031>
+     0.001340 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000040>
+     0.001181 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory) <0.000038>
+     0.001185 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3 <0.000048>
+     0.001219 fstat(3, {st_mode=S_IFREG|0644, st_size=19777, ...}) = 0 <0.000037>
+     0.000626 mmap(NULL, 19777, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f736a68f000 <0.000042>
+     0.001178 close(3)                  = 0 <0.000022>
+     0.000528 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000019>
+     0.000078 open("/usr/lib/x86_64-linux-gnu/libip4tc.so.0", O_RDONLY|O_CLOEXEC) = 3 <0.000028>
+     0.000080 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\30\0\0\0\0\0\0"..., 832) = 832 <0.000017>
+     0.000068 fstat(3, {st_mode=S_IFREG|0644, st_size=27088, ...}) = 0 <0.000016>
+     0.000067 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f736a68d000 <0.000019>
+     0.000073 mmap(NULL, 2122304, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f736a26a000 <0.000018>
+     0.000065 mprotect(0x7f736a270000, 2093056, PROT_NONE) = 0 <0.000021>
+     0.000063 mmap(0x7f736a46f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x7f736a46f000 <0.000023>
+     0.000087 close(3)                  = 0 <0.000015>
+     0.000067 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000019>
+     0.000070 open("/usr/lib/x86_64-linux-gnu/libip6tc.so.0", O_RDONLY|O_CLOEXEC) = 3 <0.000537>
+     0.003147 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\31\0\0\0\0\0\0"..., 832) = 832 <0.000021>
+     0.000089 fstat(3, {st_mode=S_IFREG|0644, st_size=31184, ...}) = 0 <0.000017>
+     0.000072 mmap(NULL, 2126400, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f736a062000 <0.000022>
+     0.000070 mprotect(0x7f736a068000, 2097152, PROT_NONE) = 0 <0.000022>
+     0.000068 mmap(0x7f736a268000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f736a268000 <0.000025>
+     0.000098 close(3)                  = 0 <0.000016>
+     0.000321 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000022>
+     0.000400 open("/usr/lib/x86_64-linux-gnu/libxtables.so.12", O_RDONLY|O_CLOEXEC) = 3 <0.000028>
+     0.000282 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\2401\0\0\0\0\0\0"..., 832) = 832 <0.000018>
+     0.000266 fstat(3, {st_mode=S_IFREG|0644, st_size=51120, ...}) = 0 <0.000018>
+     0.000321 mmap(NULL, 2148184, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7369e55000 <0.000017>
+     0.000821 mprotect(0x7f7369e61000, 2093056, PROT_NONE) = 0 <0.000018>
+     0.000058 mmap(0x7f736a060000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000) = 0x7f736a060000 <0.000020>
+     0.000074 close(3)                  = 0 <0.000012>
+     0.000055 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000016>
+     0.000059 open("/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000022>
+     0.000062 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200V\0\0\0\0\0\0"..., 832) = 832 <0.000014>
+     0.000053 fstat(3, {st_mode=S_IFREG|0644, st_size=1063328, ...}) = 0 <0.000013>
+     0.000057 mmap(NULL, 3158248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7369b51000 <0.000015>
+     0.000052 mprotect(0x7f7369c54000, 2093056, PROT_NONE) = 0 <0.000016>
+     0.000048 mmap(0x7f7369e53000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x102000) = 0x7f7369e53000 <0.000016>
+     0.000068 close(3)                  = 0 <0.000011>
+     0.000054 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000065>
+     0.000762 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000023>
+     0.000068 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\4\2\0\0\0\0\0"..., 832) = 832 <0.000013>
+     0.000053 fstat(3, {st_mode=S_IFREG|0755, st_size=1689360, ...}) = 0 <0.000012>
+     0.000054 mmap(NULL, 3795296, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f73697b2000 <0.000017>
+     0.000278 mprotect(0x7f7369947000, 2097152, PROT_NONE) = 0 <0.000025>
+     0.000183 mmap(0x7f7369b47000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x195000) = 0x7f7369b47000 <0.000021>
+     0.000068 mmap(0x7f7369b4d000, 14688, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f7369b4d000 <0.000024>
+     0.000191 close(3)                  = 0 <0.000012>
+     0.000813 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000016>
+     0.000228 open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3 <0.000021>
+     0.000223 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200\r\0\0\0\0\0\0"..., 832) = 832 <0.000015>
+     0.000220 fstat(3, {st_mode=S_IFREG|0644, st_size=14640, ...}) = 0 <0.000015>
+     0.000277 mmap(NULL, 2109680, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f73695ae000 <0.000018>
+     0.000217 mprotect(0x7f73695b1000, 2093056, PROT_NONE) = 0 <0.000020>
+     0.000224 mmap(0x7f73697b0000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f73697b0000 <0.000020>
+     0.000233 close(3)                  = 0 <0.000050>
+     0.000204 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f736a68b000 <0.000013>
+     0.000060 arch_prctl(ARCH_SET_FS, 0x7f736a68c280) = 0 <0.000012>
+     0.002432 mprotect(0x7f7369b47000, 16384, PROT_READ) = 0 <0.000017>
+     0.000060 mprotect(0x7f73697b0000, 4096, PROT_READ) = 0 <0.000013>
+     0.000057 mprotect(0x7f7369e53000, 4096, PROT_READ) = 0 <0.000013>
+     0.000092 mprotect(0x7f736a060000, 4096, PROT_READ) = 0 <0.000013>
+     0.000064 mprotect(0x7f736a268000, 4096, PROT_READ) = 0 <0.000013>
+     0.000115 mprotect(0x7f736a46f000, 4096, PROT_READ) = 0 <0.000014>
+     0.000096 mprotect(0x55b38d456000, 4096, PROT_READ) = 0 <0.000015>
+     0.000048 mprotect(0x7f736a694000, 4096, PROT_READ) = 0 <0.000013>
+     0.000054 munmap(0x7f736a68f000, 19777) = 0 <0.000016>
+     0.000114 stat("/usr/lib/x86_64-linux-gnu/xtables/libipt_DOCKER-ISOLATION-STAGE-2.so", 0x7fffca0bed50) = -1 ENOENT (No such file or directory) <0.000013>
+     0.000048 stat("/usr/lib/x86_64-linux-gnu/xtables/libxt_DOCKER-ISOLATION-STAGE-2.so", 0x7fffca0bed50) = -1 ENOENT (No such file or directory) <0.000010>
+     0.000068 brk(NULL)                 = 0x55b38d4cd000 <0.000008>
+     0.000289 brk(0x55b38d4ee000)       = 0x55b38d4ee000 <0.000013>
+     0.000219 open("/run/xtables.lock", O_RDONLY|O_CREAT, 0600) = 3 <0.000018>
+     0.000096 flock(3, LOCK_EX|LOCK_NB) = 0 <0.000010>
+     0.000035 socket(AF_INET, SOCK_RAW, IPPROTO_RAW) = 4 <0.000015>
+     0.000040 fcntl(4, F_SETFD, FD_CLOEXEC) = 0 <0.000008>
+     0.000033 getsockopt(4, SOL_IP, IPT_SO_GET_INFO, "filter\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., [84]) = 0 <0.000027>
+     0.000060 getsockopt(4, SOL_IP, IPT_SO_GET_ENTRIES, "filter\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., [3224]) = 0 <0.000030>
+     0.000072 stat("/usr/lib/x86_64-linux-gnu/xtables/libipt_standard.so", 0x7fffca0bed50) = -1 ENOENT (No such file or directory) <0.000011>
+     0.000041 stat("/usr/lib/x86_64-linux-gnu/xtables/libxt_standard.so", {st_mode=S_IFREG|0644, st_size=6208, ...}) = 0 <0.000011>
+     0.000218 open("/usr/lib/x86_64-linux-gnu/xtables/libxt_standard.so", O_RDONLY|O_CLOEXEC) = 5 <0.000016>
+     0.000188 read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\6\0\0\0\0\0\0"..., 832) = 832 <0.000013>
+     0.000245 fstat(5, {st_mode=S_IFREG|0644, st_size=6208, ...}) = 0 <0.000012>
+     0.000185 mmap(NULL, 2101488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7f73693ac000 <0.000015>
+     0.000185 mprotect(0x7f73693ad000, 2093056, PROT_NONE) = 0 <0.000016>
+     0.000180 mmap(0x7f73695ac000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0) = 0x7f73695ac000 <0.000017>
+     0.000197 close(5)                  = 0 <0.000011>
+     0.000245 mprotect(0x7f73695ac000, 4096, PROT_READ) = 0 <0.000014>
+     0.000191 close(4)                  = 0 <0.000017>
+     0.000199 exit_group(0)             = ?
+     0.000255 +++ exited with 0 +++
+     0.000000 execve("/sbin/iptables", ["/sbin/iptables", "--wait", "-t", "filter", "-C", "DOCKER-ISOLATION-STAGE-1", "-i", "docker0", "!", "-o", "docker0", "-j", "DOCKER-ISOLATION-STAGE-2"], [/* 19 vars */]) = 0 <0.000155>
+     0.000711 brk(NULL)                 = 0x55ee19d74000 <0.000008>
+     0.000272 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000011>
+     0.000256 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory) <0.000010>
+     0.000298 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3 <0.000012>
+     0.000261 fstat(3, {st_mode=S_IFREG|0644, st_size=19777, ...}) = 0 <0.000009>
+     0.000241 mmap(NULL, 19777, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fadd231f000 <0.000010>
+     0.000243 close(3)                  = 0 <0.000009>
+     0.000295 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000010>
+     0.000249 open("/usr/lib/x86_64-linux-gnu/libip4tc.so.0", O_RDONLY|O_CLOEXEC) = 3 <0.000015>
+     0.000254 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\30\0\0\0\0\0\0"..., 832) = 832 <0.000010>
+     0.000309 fstat(3, {st_mode=S_IFREG|0644, st_size=27088, ...}) = 0 <0.000009>
+     0.000275 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fadd231d000 <0.000009>
+     0.000244 mmap(NULL, 2122304, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fadd1efa000 <0.000010>
+     0.000239 mprotect(0x7fadd1f00000, 2093056, PROT_NONE) = 0 <0.000011>
+     0.000287 mmap(0x7fadd20ff000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x7fadd20ff000 <0.000012>
+     0.000269 close(3)                  = 0 <0.000008>
+     0.000234 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000009>
+     0.000234 open("/usr/lib/x86_64-linux-gnu/libip6tc.so.0", O_RDONLY|O_CLOEXEC) = 3 <0.000014>
+     0.000289 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\31\0\0\0\0\0\0"..., 832) = 832 <0.000009>
+     0.000313 fstat(3, {st_mode=S_IFREG|0644, st_size=31184, ...}) = 0 <0.000009>
+     0.000236 mmap(NULL, 2126400, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fadd1cf2000 <0.000010>
+     0.000267 mprotect(0x7fadd1cf8000, 2097152, PROT_NONE) = 0 <0.000010>
+     0.000246 mmap(0x7fadd1ef8000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7fadd1ef8000 <0.000011>
+     0.000242 close(3)                  = 0 <0.000007>
+     0.000234 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000010>
+     0.000283 open("/usr/lib/x86_64-linux-gnu/libxtables.so.12", O_RDONLY|O_CLOEXEC) = 3 <0.000013>
+     0.000255 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\2401\0\0\0\0\0\0"..., 832) = 832 <0.000009>
+     0.000233 fstat(3, {st_mode=S_IFREG|0644, st_size=51120, ...}) = 0 <0.000008>
+     0.000232 mmap(NULL, 2148184, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fadd1ae5000 <0.000010>
+     0.000239 mprotect(0x7fadd1af1000, 2093056, PROT_NONE) = 0 <0.000010>
+     0.000084 mmap(0x7fadd1cf0000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000) = 0x7fadd1cf0000 <0.000009>
+     0.000034 close(3)                  = 0 <0.000006>
+     0.000025 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000007>
+     0.000027 open("/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000010>
+     0.000028 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200V\0\0\0\0\0\0"..., 832) = 832 <0.000006>
+     0.000023 fstat(3, {st_mode=S_IFREG|0644, st_size=1063328, ...}) = 0 <0.000006>
+     0.000026 mmap(NULL, 3158248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fadd17e1000 <0.000007>
+     0.000024 mprotect(0x7fadd18e4000, 2093056, PROT_NONE) = 0 <0.000008>
+     0.000022 mmap(0x7fadd1ae3000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x102000) = 0x7fadd1ae3000 <0.000008>
+     0.000032 close(3)                  = 0 <0.000005>
+     0.000024 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000007>
+     0.000231 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000012>
+     0.000238 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\4\2\0\0\0\0\0"..., 832) = 832 <0.000009>
+     0.000222 fstat(3, {st_mode=S_IFREG|0755, st_size=1689360, ...}) = 0 <0.000006>
+     0.000028 mmap(NULL, 3795296, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fadd1442000 <0.000008>
+     0.000025 mprotect(0x7fadd15d7000, 2097152, PROT_NONE) = 0 <0.000008>
+     0.000023 mmap(0x7fadd17d7000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x195000) = 0x7fadd17d7000 <0.000009>
+     0.000030 mmap(0x7fadd17dd000, 14688, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fadd17dd000 <0.000008>
+     0.000028 close(3)                  = 0 <0.000006>
+     0.000028 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000007>
+     0.000026 open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3 <0.000010>
+     0.000028 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200\r\0\0\0\0\0\0"..., 832) = 832 <0.000006>
+     0.000024 fstat(3, {st_mode=S_IFREG|0644, st_size=14640, ...}) = 0 <0.000005>
+     0.000023 mmap(NULL, 2109680, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fadd123e000 <0.000008>
+     0.000024 mprotect(0x7fadd1241000, 2093056, PROT_NONE) = 0 <0.000007>
+     0.000022 mmap(0x7fadd1440000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fadd1440000 <0.000053>
+     0.000251 close(3)                  = 0 <0.000006>
+     0.000030 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fadd231b000 <0.000007>
+     0.000099 arch_prctl(ARCH_SET_FS, 0x7fadd231c280) = 0 <0.000051>
+     0.000289 mprotect(0x7fadd17d7000, 16384, PROT_READ) = 0 <0.001726>
+     0.001840 mprotect(0x7fadd1440000, 4096, PROT_READ) = 0 <0.000009>
+     0.000040 mprotect(0x7fadd1ae3000, 4096, PROT_READ) = 0 <0.000007>
+     0.000058 mprotect(0x7fadd1cf0000, 4096, PROT_READ) = 0 <0.000099>
+     0.000222 mprotect(0x7fadd1ef8000, 4096, PROT_READ) = 0 <0.000009>
+     0.000133 mprotect(0x7fadd20ff000, 4096, PROT_READ) = 0 <0.000010>
+     0.000151 mprotect(0x55ee180ef000, 4096, PROT_READ) = 0 <0.000010>
+     0.000123 mprotect(0x7fadd2324000, 4096, PROT_READ) = 0 <0.000010>
+     0.000120 munmap(0x7fadd231f000, 19777) = 0 <0.000014>
+     0.000201 stat("/usr/lib/x86_64-linux-gnu/xtables/libipt_DOCKER-ISOLATION-STAGE-2.so", 0x7ffcf268cbc0) = -1 ENOENT (No such file or directory) <0.000013>
+     0.000068 stat("/usr/lib/x86_64-linux-gnu/xtables/libxt_DOCKER-ISOLATION-STAGE-2.so", 0x7ffcf268cbc0) = -1 ENOENT (No such file or directory) <0.000006>
+     0.000048 brk(NULL)                 = 0x55ee19d74000 <0.000006>
+     0.000021 brk(0x55ee19d95000)       = 0x55ee19d95000 <0.000007>
+     0.000030 open("/run/xtables.lock", O_RDONLY|O_CREAT, 0600) = 3 <0.000010>
+     0.000031 flock(3, LOCK_EX|LOCK_NB) = 0 <0.000007>
+     0.000024 socket(AF_INET, SOCK_RAW, IPPROTO_RAW) = 4 <0.000011>
+     0.000161 fcntl(4, F_SETFD, FD_CLOEXEC) = 0 <0.000006>
+     0.000023 getsockopt(4, SOL_IP, IPT_SO_GET_INFO, "filter\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., [84]) = 0 <0.000019>
+     0.000182 getsockopt(4, SOL_IP, IPT_SO_GET_ENTRIES, "filter\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., [3224]) = 0 <0.000046>
+     0.000389 stat("/usr/lib/x86_64-linux-gnu/xtables/libipt_standard.so", 0x7ffcf268cbc0) = -1 ENOENT (No such file or directory) <0.000008>
+     0.000032 stat("/usr/lib/x86_64-linux-gnu/xtables/libxt_standard.so", {st_mode=S_IFREG|0644, st_size=6208, ...}) = 0 <0.000008>
+     0.000032 open("/usr/lib/x86_64-linux-gnu/xtables/libxt_standard.so", O_RDONLY|O_CLOEXEC) = 5 <0.000008>
+     0.000027 read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\6\0\0\0\0\0\0"..., 832) = 832 <0.000084>
+     0.000171 fstat(5, {st_mode=S_IFREG|0644, st_size=6208, ...}) = 0 <0.000008>
+     0.000125 mmap(NULL, 2101488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7fadd103c000 <0.000010>
+     0.000268 mprotect(0x7fadd103d000, 2093056, PROT_NONE) = 0 <0.000010>
+     0.000122 mmap(0x7fadd123c000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0) = 0x7fadd123c000 <0.000013>
+     0.000177 close(5)                  = 0 <0.000007>
+     0.000069 mprotect(0x7fadd123c000, 4096, PROT_READ) = 0 <0.000012>
+     0.001038 close(4)                  = 0 <0.000013>
+     0.000137 exit_group(0)             = ?
+     0.000183 +++ exited with 0 +++
+     0.000000 execve("/sbin/iptables", ["/sbin/iptables", "--wait", "-t", "filter", "-C", "DOCKER-ISOLATION-STAGE-1", "-i", "docker0", "!", "-o", "docker0", "-j", "DOCKER-ISOLATION-STAGE-2"], [/* 19 vars */]) = 0 <0.000464>
+     0.002312 brk(NULL)                 = 0x5562c7311000 <0.000032>
+     0.001285 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000040>
+     0.001159 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory) <0.000039>
+     0.001361 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3 <0.000047>
+     0.001224 fstat(3, {st_mode=S_IFREG|0644, st_size=19777, ...}) = 0 <0.000036>
+     0.000701 mmap(NULL, 19777, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f725f47c000 <0.000034>
+     0.000112 close(3)                  = 0 <0.000544>
+     0.000788 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000036>
+     0.000137 open("/usr/lib/x86_64-linux-gnu/libip4tc.so.0", O_RDONLY|O_CLOEXEC) = 3 <0.000430>
+     0.000840 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\30\0\0\0\0\0\0"..., 832) = 832 <0.000019>
+     0.000095 fstat(3, {st_mode=S_IFREG|0644, st_size=27088, ...}) = 0 <0.000017>
+     0.000071 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f725f47a000 <0.000020>
+     0.000080 mmap(NULL, 2122304, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f725f057000 <0.000019>
+     0.000067 mprotect(0x7f725f05d000, 2093056, PROT_NONE) = 0 <0.000021>
+     0.000065 mmap(0x7f725f25c000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x7f725f25c000 <0.000024>
+     0.003383 close(3)                  = 0 <0.000025>
+     0.000189 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000023>
+     0.000088 open("/usr/lib/x86_64-linux-gnu/libip6tc.so.0", O_RDONLY|O_CLOEXEC) = 3 <0.000033>
+     0.000085 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\31\0\0\0\0\0\0"..., 832) = 832 <0.000018>
+     0.000071 fstat(3, {st_mode=S_IFREG|0644, st_size=31184, ...}) = 0 <0.000017>
+     0.000070 mmap(NULL, 2126400, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f725ee4f000 <0.000022>
+     0.000072 mprotect(0x7f725ee55000, 2097152, PROT_NONE) = 0 <0.000030>
+     0.000441 mmap(0x7f725f055000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f725f055000 <0.000028>
+     0.000104 close(3)                  = 0 <0.000015>
+     0.000070 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000020>
+     0.000088 open("/usr/lib/x86_64-linux-gnu/libxtables.so.12", O_RDONLY|O_CLOEXEC) = 3 <0.000022>
+     0.000061 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\2401\0\0\0\0\0\0"..., 832) = 832 <0.000019>
+     0.000341 fstat(3, {st_mode=S_IFREG|0644, st_size=51120, ...}) = 0 <0.000018>
+     0.000246 mmap(NULL, 2148184, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f725ec42000 <0.000016>
+     0.000057 mprotect(0x7f725ec4e000, 2093056, PROT_NONE) = 0 <0.000017>
+     0.000051 mmap(0x7f725ee4d000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000) = 0x7f725ee4d000 <0.000018>
+     0.000070 close(3)                  = 0 <0.000012>
+     0.000055 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000015>
+     0.000058 open("/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000021>
+     0.000211 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200V\0\0\0\0\0\0"..., 832) = 832 <0.000019>
+     0.000279 fstat(3, {st_mode=S_IFREG|0644, st_size=1063328, ...}) = 0 <0.000065>
+     0.000262 mmap(NULL, 3158248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f725e93e000 <0.000016>
+     0.000056 mprotect(0x7f725ea41000, 2093056, PROT_NONE) = 0 <0.000016>
+     0.000050 mmap(0x7f725ec40000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x102000) = 0x7f725ec40000 <0.000018>
+     0.000070 close(3)                  = 0 <0.000012>
+     0.000054 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000015>
+     0.000058 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000021>
+     0.000270 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\4\2\0\0\0\0\0"..., 832) = 832 <0.000019>
+     0.000394 fstat(3, {st_mode=S_IFREG|0755, st_size=1689360, ...}) = 0 <0.000016>
+     0.001117 mmap(NULL, 3795296, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f725e59f000 <0.000021>
+     0.000282 mprotect(0x7f725e734000, 2097152, PROT_NONE) = 0 <0.000023>
+     0.000272 mmap(0x7f725e934000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x195000) = 0x7f725e934000 <0.000026>
+     0.000286 mmap(0x7f725e93a000, 14688, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f725e93a000 <0.000019>
+     0.000072 close(3)                  = 0 <0.000012>
+     0.000063 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000016>
+     0.000062 open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3 <0.000022>
+     0.000062 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200\r\0\0\0\0\0\0"..., 832) = 832 <0.000013>
+     0.000054 fstat(3, {st_mode=S_IFREG|0644, st_size=14640, ...}) = 0 <0.000013>
+     0.000054 mmap(NULL, 2109680, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f725e39b000 <0.000013>
+     0.000061 mprotect(0x7f725e39e000, 2093056, PROT_NONE) = 0 <0.000014>
+     0.000042 mmap(0x7f725e59d000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f725e59d000 <0.000014>
+     0.000055 close(3)                  = 0 <0.000010>
+     0.000052 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f725f478000 <0.000011>
+     0.000056 arch_prctl(ARCH_SET_FS, 0x7f725f479280) = 0 <0.000013>
+     0.000556 mprotect(0x7f725e934000, 16384, PROT_READ) = 0 <0.000015>
+     0.000057 mprotect(0x7f725e59d000, 4096, PROT_READ) = 0 <0.000014>
+     0.000059 mprotect(0x7f725ec40000, 4096, PROT_READ) = 0 <0.000013>
+     0.000375 mprotect(0x7f725ee4d000, 4096, PROT_READ) = 0 <0.006934>
+     0.007230 mprotect(0x7f725f055000, 4096, PROT_READ) = 0 <0.000017>
+     0.000211 mprotect(0x7f725f25c000, 4096, PROT_READ) = 0 <0.000014>
+     0.000237 mprotect(0x5562c5af0000, 4096, PROT_READ) = 0 <0.000015>
+     0.000195 mprotect(0x7f725f481000, 4096, PROT_READ) = 0 <0.000016>
+     0.000298 munmap(0x7f725f47c000, 19777) = 0 <0.000037>
+     0.000454 stat("/usr/lib/x86_64-linux-gnu/xtables/libipt_DOCKER-ISOLATION-STAGE-2.so", 0x7ffe62b79be0) = -1 ENOENT (No such file or directory) <0.000019>
+     0.000296 stat("/usr/lib/x86_64-linux-gnu/xtables/libxt_DOCKER-ISOLATION-STAGE-2.so", 0x7ffe62b79be0) = -1 ENOENT (No such file or directory) <0.000013>
+     0.000214 brk(NULL)                 = 0x5562c7311000 <0.000009>
+     0.000159 brk(0x5562c7332000)       = 0x5562c7332000 <0.000012>
+     0.000169 open("/run/xtables.lock", O_RDONLY|O_CREAT, 0600) = 3 <0.000018>
+     0.000215 flock(3, LOCK_EX|LOCK_NB) = 0 <0.000012>
+     0.000285 socket(AF_INET, SOCK_RAW, IPPROTO_RAW) = 4 <0.000017>
+     0.001031 fcntl(4, F_SETFD, FD_CLOEXEC) = 0 <0.000010>
+     0.000158 getsockopt(4, SOL_IP, IPT_SO_GET_INFO, "filter\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., [84]) = 0 <0.000025>
+     0.000193 getsockopt(4, SOL_IP, IPT_SO_GET_ENTRIES, "filter\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., [3224]) = 0 <0.000029>
+     0.000201 stat("/usr/lib/x86_64-linux-gnu/xtables/libipt_standard.so", 0x7ffe62b79be0) = -1 ENOENT (No such file or directory) <0.000013>
+     0.000170 stat("/usr/lib/x86_64-linux-gnu/xtables/libxt_standard.so", {st_mode=S_IFREG|0644, st_size=6208, ...}) = 0 <0.000014>
+     0.000248 open("/usr/lib/x86_64-linux-gnu/xtables/libxt_standard.so", O_RDONLY|O_CLOEXEC) = 5 <0.000016>
+     0.000169 read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\6\0\0\0\0\0\0"..., 832) = 832 <0.000012>
+     0.000158 fstat(5, {st_mode=S_IFREG|0644, st_size=6208, ...}) = 0 <0.000010>
+     0.000156 mmap(NULL, 2101488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7f725e199000 <0.000014>
+     0.000160 mprotect(0x7f725e19a000, 2093056, PROT_NONE) = 0 <0.000014>
+     0.000156 mmap(0x7f725e399000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0) = 0x7f725e399000 <0.000016>
+     0.000245 close(5)                  = 0 <0.000010>
+     0.000173 mprotect(0x7f725e399000, 4096, PROT_READ) = 0 <0.000013>
+     0.000165 close(4)                  = 0 <0.000015>
+     0.000171 exit_group(0)             = ?
+     0.000270 +++ exited with 0 +++
+     0.000000 execve("/sbin/iptables", ["/sbin/iptables", "--wait", "-t", "filter", "-C", "DOCKER-ISOLATION-STAGE-1", "-i", "docker0", "!", "-o", "docker0", "-j", "DOCKER-ISOLATION-STAGE-2"], [/* 19 vars */]) = 0 <0.000125>
+     0.000611 brk(NULL)                 = 0x55f95c5f6000 <0.000012>
+     0.000229 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000014>
+     0.000207 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory) <0.000014>
+     0.000270 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3 <0.000017>
+     0.000204 fstat(3, {st_mode=S_IFREG|0644, st_size=19777, ...}) = 0 <0.000012>
+     0.000196 mmap(NULL, 19777, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fbd50448000 <0.000016>
+     0.000195 close(3)                  = 0 <0.000011>
+     0.000189 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000049>
+     0.000183 open("/usr/lib/x86_64-linux-gnu/libip4tc.so.0", O_RDONLY|O_CLOEXEC) = 3 <0.000018>
+     0.000050 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\30\0\0\0\0\0\0"..., 832) = 832 <0.000010>
+     0.000041 fstat(3, {st_mode=S_IFREG|0644, st_size=27088, ...}) = 0 <0.000014>
+     0.000262 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbd50446000 <0.000014>
+     0.000204 mmap(NULL, 2122304, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fbd50023000 <0.000015>
+     0.000196 mprotect(0x7fbd50029000, 2093056, PROT_NONE) = 0 <0.000016>
+     0.000260 mmap(0x7fbd50228000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x7fbd50228000 <0.000019>
+     0.000214 close(3)                  = 0 <0.000011>
+     0.000197 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000015>
+     0.000203 open("/usr/lib/x86_64-linux-gnu/libip6tc.so.0", O_RDONLY|O_CLOEXEC) = 3 <0.000019>
+     0.000207 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\31\0\0\0\0\0\0"..., 832) = 832 <0.000014>
+     0.000128 fstat(3, {st_mode=S_IFREG|0644, st_size=31184, ...}) = 0 <0.000010>
+     0.000040 mmap(NULL, 2126400, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fbd4fe1b000 <0.000012>
+     0.000040 mprotect(0x7fbd4fe21000, 2097152, PROT_NONE) = 0 <0.000012>
+     0.000096 mmap(0x7fbd50021000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7fbd50021000 <0.000014>
+     0.000054 close(3)                  = 0 <0.000012>
+     0.000124 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000011>
+     0.000043 open("/usr/lib/x86_64-linux-gnu/libxtables.so.12", O_RDONLY|O_CLOEXEC) = 3 <0.000016>
+     0.000045 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\2401\0\0\0\0\0\0"..., 832) = 832 <0.000010>
+     0.000039 fstat(3, {st_mode=S_IFREG|0644, st_size=51120, ...}) = 0 <0.000009>
+     0.000039 mmap(NULL, 2148184, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fbd4fc0e000 <0.000011>
+     0.000038 mprotect(0x7fbd4fc1a000, 2093056, PROT_NONE) = 0 <0.000011>
+     0.000036 mmap(0x7fbd4fe19000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000) = 0x7fbd4fe19000 <0.000012>
+     0.000051 close(3)                  = 0 <0.000008>
+     0.000039 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000011>
+     0.000041 open("/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000016>
+     0.000043 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200V\0\0\0\0\0\0"..., 832) = 832 <0.000010>
+     0.000038 fstat(3, {st_mode=S_IFREG|0644, st_size=1063328, ...}) = 0 <0.000009>
+     0.000040 mmap(NULL, 3158248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fbd4f90a000 <0.000015>
+     0.000088 mprotect(0x7fbd4fa0d000, 2093056, PROT_NONE) = 0 <0.000011>
+     0.000037 mmap(0x7fbd4fc0c000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x102000) = 0x7fbd4fc0c000 <0.000013>
+     0.000051 close(3)                  = 0 <0.000009>
+     0.000040 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000334>
+     0.000597 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000020>
+     0.000452 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\4\2\0\0\0\0\0"..., 832) = 832 <0.000015>
+     0.000380 fstat(3, {st_mode=S_IFREG|0755, st_size=1689360, ...}) = 0 <0.000013>
+     0.000478 mmap(NULL, 3795296, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fbd4f56b000 <0.000015>
+     0.000081 mprotect(0x7fbd4f700000, 2097152, PROT_NONE) = 0 <0.000013>
+     0.000039 mmap(0x7fbd4f900000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x195000) = 0x7fbd4f900000 <0.000015>
+     0.000049 mmap(0x7fbd4f906000, 14688, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fbd4f906000 <0.000012>
+     0.000047 close(3)                  = 0 <0.000008>
+     0.000045 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000011>
+     0.000043 open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3 <0.000015>
+     0.000044 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200\r\0\0\0\0\0\0"..., 832) = 832 <0.000010>
+     0.000039 fstat(3, {st_mode=S_IFREG|0644, st_size=14640, ...}) = 0 <0.000010>
+     0.000039 mmap(NULL, 2109680, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fbd4f367000 <0.000011>
+     0.000039 mprotect(0x7fbd4f36a000, 2093056, PROT_NONE) = 0 <0.000013>
+     0.000038 mmap(0x7fbd4f569000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fbd4f569000 <0.000012>
+     0.000049 close(3)                  = 0 <0.000009>
+     0.000045 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbd50444000 <0.000011>
+     0.000051 arch_prctl(ARCH_SET_FS, 0x7fbd50445280) = 0 <0.000008>
+     0.000095 mprotect(0x7fbd4f900000, 16384, PROT_READ) = 0 <0.000014>
+     0.000047 mprotect(0x7fbd4f569000, 4096, PROT_READ) = 0 <0.000013>
+     0.000102 mprotect(0x7fbd4fc0c000, 4096, PROT_READ) = 0 <0.000275>
+     0.000585 mprotect(0x7fbd4fe19000, 4096, PROT_READ) = 0 <0.000017>
+     0.000458 mprotect(0x7fbd50021000, 4096, PROT_READ) = 0 <0.000016>
+     0.000096 mprotect(0x7fbd50228000, 4096, PROT_READ) = 0 <0.000012>
+     0.000089 mprotect(0x55f95a964000, 4096, PROT_READ) = 0 <0.000012>
+     0.000042 mprotect(0x7fbd5044d000, 4096, PROT_READ) = 0 <0.000012>
+     0.000037 munmap(0x7fbd50448000, 19777) = 0 <0.000018>
+     0.000127 stat("/usr/lib/x86_64-linux-gnu/xtables/libipt_DOCKER-ISOLATION-STAGE-2.so", 0x7ffd04ff3dc0) = -1 ENOENT (No such file or directory) <0.000181>
+     0.000480 stat("/usr/lib/x86_64-linux-gnu/xtables/libxt_DOCKER-ISOLATION-STAGE-2.so", 0x7ffd04ff3dc0) = -1 ENOENT (No such file or directory) <0.000015>
+     0.000139 brk(NULL)                 = 0x55f95c5f6000 <0.000009>
+     0.000037 brk(0x55f95c617000)       = 0x55f95c617000 <0.000011>
+     0.000048 open("/run/xtables.lock", O_RDONLY|O_CREAT, 0600) = 3 <0.000015>
+     0.000049 flock(3, LOCK_EX|LOCK_NB) = 0 <0.000015>
+     0.000435 socket(AF_INET, SOCK_RAW, IPPROTO_RAW) = 4 <0.000020>
+     0.000362 fcntl(4, F_SETFD, FD_CLOEXEC) = 0 <0.000009>
+     0.000040 getsockopt(4, SOL_IP, IPT_SO_GET_INFO, "filter\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., [84]) = 0 <0.000027>
+     0.000065 getsockopt(4, SOL_IP, IPT_SO_GET_ENTRIES, "filter\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., [3224]) = 0 <0.000032>
+     0.000081 stat("/usr/lib/x86_64-linux-gnu/xtables/libipt_standard.so", 0x7ffd04ff3dc0) = -1 ENOENT (No such file or directory) <0.000012>
+     0.000045 stat("/usr/lib/x86_64-linux-gnu/xtables/libxt_standard.so", {st_mode=S_IFREG|0644, st_size=6208, ...}) = 0 <0.000012>
+     0.000047 open("/usr/lib/x86_64-linux-gnu/xtables/libxt_standard.so", O_RDONLY|O_CLOEXEC) = 5 <0.000013>
+     0.000243 read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\6\0\0\0\0\0\0"..., 832) = 832 <0.000015>
+     0.000433 fstat(5, {st_mode=S_IFREG|0644, st_size=6208, ...}) = 0 <0.000013>
+     0.000081 mmap(NULL, 2101488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7fbd4f165000 <0.000013>
+     0.000042 mprotect(0x7fbd4f166000, 2093056, PROT_NONE) = 0 <0.000014>
+     0.000040 mmap(0x7fbd4f365000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0) = 0x7fbd4f365000 <0.000015>
+     0.000056 close(5)                  = 0 <0.000010>
+     0.000054 mprotect(0x7fbd4f365000, 4096, PROT_READ) = 0 <0.000012>
+     0.000048 close(4)                  = 0 <0.000014>
+     0.000235 exit_group(0)             = ?
+     0.000449 +++ exited with 0 +++
+     0.000000 execve("/sbin/iptables", ["/sbin/iptables", "--wait", "-t", "filter", "-C", "DOCKER-ISOLATION-STAGE-1", "-i", "docker0", "!", "-o", "docker0", "-j", "DOCKER-ISOLATION-STAGE-2"], [/* 19 vars */]) = 0 <0.000350>
+     0.001570 brk(NULL)                 = 0x560e4c25c000 <0.000025>
+     0.000941 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000031>
+     0.000885 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory) <0.000030>
+     0.000906 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3 <0.000034>
+     0.000874 fstat(3, {st_mode=S_IFREG|0644, st_size=19777, ...}) = 0 <0.000026>
+     0.000677 mmap(NULL, 19777, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f4e4a759000 <0.000031>
+     0.000510 close(3)                  = 0 <0.000024>
+     0.000557 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000030>
+     0.000512 open("/usr/lib/x86_64-linux-gnu/libip4tc.so.0", O_RDONLY|O_CLOEXEC) = 3 <0.000043>
+     0.000360 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\30\0\0\0\0\0\0"..., 832) = 832 <0.000022>
+     0.000080 fstat(3, {st_mode=S_IFREG|0644, st_size=27088, ...}) = 0 <0.000017>
+     0.000074 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4e4a757000 <0.000028>
+     0.000774 mmap(NULL, 2122304, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f4e4a334000 <0.000023>
+     0.000084 mprotect(0x7f4e4a33a000, 2093056, PROT_NONE) = 0 <0.000024>
+     0.000070 mmap(0x7f4e4a539000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x7f4e4a539000 <0.000025>
+     0.000096 close(3)                  = 0 <0.000016>
+     0.000072 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000029>
+     0.000642 open("/usr/lib/x86_64-linux-gnu/libip6tc.so.0", O_RDONLY|O_CLOEXEC) = 3 <0.000031>
+     0.000093 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\31\0\0\0\0\0\0"..., 832) = 832 <0.000018>
+     0.000075 fstat(3, {st_mode=S_IFREG|0644, st_size=31184, ...}) = 0 <0.000017>
+     0.000073 mmap(NULL, 2126400, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f4e4a12c000 <0.000031>
+     0.001646 mprotect(0x7f4e4a132000, 2097152, PROT_NONE) = 0 <0.000026>
+     0.000083 mmap(0x7f4e4a332000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f4e4a332000 <0.000026>
+     0.000102 close(3)                  = 0 <0.000016>
+     0.000074 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000021>
+     0.000081 open("/usr/lib/x86_64-linux-gnu/libxtables.so.12", O_RDONLY|O_CLOEXEC) = 3 <0.000263>
+     0.000622 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\2401\0\0\0\0\0\0"..., 832) = 832 <0.000025>
+     0.000383 fstat(3, {st_mode=S_IFREG|0644, st_size=51120, ...}) = 0 <0.000024>
+     0.000376 mmap(NULL, 2148184, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f4e49f1f000 <0.000030>
+     0.001861 mprotect(0x7f4e49f2b000, 2093056, PROT_NONE) = 0 <0.000020>
+     0.000062 mmap(0x7f4e4a12a000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000) = 0x7f4e4a12a000 <0.000021>
+     0.000104 close(3)                  = 0 <0.000016>
+     0.000067 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000017>
+     0.000065 open("/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000024>
+     0.000067 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200V\0\0\0\0\0\0"..., 832) = 832 <0.000016>
+     0.000058 fstat(3, {st_mode=S_IFREG|0644, st_size=1063328, ...}) = 0 <0.000015>
+     0.000063 mmap(NULL, 3158248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f4e49c1b000 <0.000018>
+     0.000058 mprotect(0x7f4e49d1e000, 2093056, PROT_NONE) = 0 <0.000018>
+     0.000055 mmap(0x7f4e49f1d000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x102000) = 0x7f4e49f1d000 <0.000019>
+     0.000075 close(3)                  = 0 <0.000013>
+     0.000058 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000016>
+     0.000060 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000021>
+     0.000063 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\4\2\0\0\0\0\0"..., 832) = 832 <0.000015>
+     0.000056 fstat(3, {st_mode=S_IFREG|0755, st_size=1689360, ...}) = 0 <0.000014>
+     0.000446 mmap(NULL, 3795296, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f4e4987c000 <0.000022>
+     0.000288 mprotect(0x7f4e49a11000, 2097152, PROT_NONE) = 0 <0.000023>
+     0.000275 mmap(0x7f4e49c11000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x195000) = 0x7f4e49c11000 <0.000028>
+     0.000346 mmap(0x7f4e49c17000, 14688, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f4e49c17000 <0.000019>
+     0.000077 close(3)                  = 0 <0.000013>
+     0.000065 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory) <0.000017>
+     0.000067 open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3 <0.000023>
+     0.000066 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200\r\0\0\0\0\0\0"..., 832) = 832 <0.000014>
+     0.000058 fstat(3, {st_mode=S_IFREG|0644, st_size=14640, ...}) = 0 <0.000013>
+     0.000062 mmap(NULL, 2109680, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f4e49678000 <0.000017>
+     0.000055 mprotect(0x7f4e4967b000, 2093056, PROT_NONE) = 0 <0.000018>
+     0.000054 mmap(0x7f4e4987a000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f4e4987a000 <0.000018>
+     0.000155 close(3)                  = 0 <0.000012>
+     0.000068 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4e4a755000 <0.000022>
+     0.000328 arch_prctl(ARCH_SET_FS, 0x7f4e4a756280) = 0 <0.000013>
+     0.000138 mprotect(0x7f4e49c11000, 16384, PROT_READ) = 0 <0.000028>
+     0.000791 mprotect(0x7f4e4987a000, 4096, PROT_READ) = 0 <0.000019>
+     0.000083 mprotect(0x7f4e49f1d000, 4096, PROT_READ) = 0 <0.000017>
+     0.000125 mprotect(0x7f4e4a12a000, 4096, PROT_READ) = 0 <0.000017>
+     0.000234 mprotect(0x7f4e4a332000, 4096, PROT_READ) = 0 <0.000020>
+     0.000495 mprotect(0x7f4e4a539000, 4096, PROT_READ) = 0 <0.000014>
+     0.000106 mprotect(0x560e4b886000, 4096, PROT_READ) = 0 <0.000014>
+     0.000049 mprotect(0x7f4e4a75e000, 4096, PROT_READ) = 0 <0.000013>
+     0.000167 munmap(0x7f4e4a759000, 19777) = 0 <0.000025>
+     0.000705 stat("/usr/lib/x86_64-linux-gnu/xtables/libipt_DOCKER-ISOLATION-STAGE-2.so", 0x7ffea44aca00) = -1 ENOENT (No such file or directory) <0.000017>
+     0.000066 stat("/usr/lib/x86_64-linux-gnu/xtables/libxt_DOCKER-ISOLATION-STAGE-2.so", 0x7ffea44aca00) = -1 ENOENT (No such file or directory) <0.000012>
+     0.000213 brk(NULL)                 = 0x560e4c25c000 <0.000014>
+     0.000219 brk(0x560e4c27d000)       = 0x560e4c27d000 <0.000016>
+     0.000390 open("/run/xtables.lock", O_RDONLY|O_CREAT, 0600) = 3 <0.000025>
+     0.001137 flock(3, LOCK_EX|LOCK_NB) = 0 <0.000016>
+     0.000227 socket(AF_INET, SOCK_RAW, IPPROTO_RAW) = 4 <0.000023>
+     0.000227 fcntl(4, F_SETFD, FD_CLOEXEC) = 0 <0.000014>
+     0.000271 getsockopt(4, SOL_IP, IPT_SO_GET_INFO, "filter\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., [84]) = 0 <0.000035>
+     0.000136 getsockopt(4, SOL_IP, IPT_SO_GET_ENTRIES, "filter\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., [3224]) = 0 <0.000037>
+     0.000097 stat("/usr/lib/x86_64-linux-gnu/xtables/libipt_standard.so", 0x7ffea44aca00) = -1 ENOENT (No such file or directory) <0.000015>
+     0.000054 stat("/usr/lib/x86_64-linux-gnu/xtables/libxt_standard.so", {st_mode=S_IFREG|0644, st_size=6208, ...}) = 0 <0.000015>
+     0.000057 open("/usr/lib/x86_64-linux-gnu/xtables/libxt_standard.so", O_RDONLY|O_CLOEXEC) = 5 <0.000016>
+     0.000051 read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\6\0\0\0\0\0\0"..., 832) = 832 <0.000012>
+     0.000046 fstat(5, {st_mode=S_IFREG|0644, st_size=6208, ...}) = 0 <0.000011>
+     0.000045 mmap(NULL, 2101488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7f4e49476000 <0.000014>
+     0.000047 mprotect(0x7f4e49477000, 2093056, PROT_NONE) = 0 <0.000014>
+     0.000044 mmap(0x7f4e49676000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0) = 0x7f4e49676000 <0.000016>
+     0.000062 close(5)                  = 0 <0.000011>
+     0.000062 mprotect(0x7f4e49676000, 4096, PROT_READ) = 0 <0.000017>
+     0.000518 close(4)                  = 0 <0.000018>
+     0.000206 exit_group(0)             = ?
+     0.000272 +++ exited with 0 +++
