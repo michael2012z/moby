@@ -189,18 +189,6 @@ func setupIPTablesInternal(bridgeIface string, addr net.Addr, icc, ipmasq, hairp
 		if err := programChainRule(natRule, "NAT", enable); err != nil {
 			return err
 		}
-		if err := programChainRule(natRule, "NAT", enable); err != nil {
-			return err
-		}
-		if err := programChainRule(natRule, "NAT", enable); err != nil {
-			return err
-		}
-		if err := programChainRule(natRule, "NAT", enable); err != nil {
-			return err
-		}
-		if err := programChainRule(natRule, "NAT", enable); err != nil {
-			return err
-		}
 	}
 	logrus.Debug("setupIPTablesInternal: 2")
 

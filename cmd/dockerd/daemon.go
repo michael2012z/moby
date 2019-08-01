@@ -720,6 +720,7 @@ func configureDaemonLogs(conf *config.Config) error {
 	} else {
 		logrus.SetLevel(logrus.InfoLevel)
 	}
+	// logrus.SetReportCaller(true)
 	logrus.SetFormatter(&logrus.TextFormatter{
 		TimestampFormat: jsonmessage.RFC3339NanoFixed,
 		DisableColors:   conf.RawLogs,

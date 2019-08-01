@@ -437,14 +437,20 @@ func (s *DockerSuite) TestDockerNetworkInspect(c *check.C) {
 }
 
 func (s *DockerSuite) TestDockerNetworkInspectWithID(c *check.C) {
+	logrus.Debug("TestDockerNetworkInspectWithID: flag 0")
 	out, _ := dockerCmd(c, "network", "create", "test2")
 	networkID := strings.TrimSpace(out)
 	assertNwIsAvailable(c, "test2")
+
+	logrus.Debug("TestDockerNetworkInspectWithID: flag 1")
 	out, _ = dockerCmd(c, "network", "inspect", "--format={{ .Id }}", "test2")
 	c.Assert(strings.TrimSpace(out), check.Equals, networkID)
 
+	logrus.Debug("TestDockerNetworkInspectWithID: flag 2")
+
 	out, _ = dockerCmd(c, "network", "inspect", "--format={{ .ID }}", "test2")
 	c.Assert(strings.TrimSpace(out), check.Equals, networkID)
+	logrus.Debug("TestDockerNetworkInspectWithID: flag 3")
 }
 
 func (s *DockerSuite) TestDockerInspectMultipleNetwork(c *check.C) {
