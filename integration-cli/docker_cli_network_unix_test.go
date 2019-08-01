@@ -19,6 +19,7 @@ import (
 	"github.com/docker/docker/integration-cli/cli"
 	"github.com/docker/docker/integration-cli/daemon"
 	testdaemon "github.com/docker/docker/internal/test/daemon"
+	"github.com/docker/docker/pkg/jsonmessage"
 	"github.com/docker/docker/pkg/stringid"
 	"github.com/docker/docker/runconfig"
 	"github.com/docker/libnetwork/driverapi"
@@ -40,6 +41,14 @@ const dummyIPAMDriver = "dummy-ipam-driver"
 var remoteDriverNetworkRequest remoteapi.CreateNetworkRequest
 
 func init() {
+	logrus.SetLevel(logrus.DebugLevel)
+	logrus.SetFormatter(&logrus.TextFormatter{
+		TimestampFormat: jsonmessage.RFC3339NanoFixed,
+		DisableColors:   false,
+		FullTimestamp:   true,
+	})
+	logrus.Debug("++++++++++++++++++++++++++++++++++++++++++++")
+
 	check.Suite(&DockerNetworkSuite{
 		ds: &DockerSuite{},
 	})
