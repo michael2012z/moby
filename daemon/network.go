@@ -4,6 +4,8 @@ import (
 	"context"
 	"fmt"
 	"net"
+	"os"
+	"runtime/trace"
 	"sort"
 	"strconv"
 	"strings"
@@ -292,6 +294,18 @@ func (daemon *Daemon) CreateNetwork(create types.NetworkCreateRequest) (*types.N
 }
 
 func (daemon *Daemon) createNetwork(create types.NetworkCreateRequest, id string, agent bool) (*types.NetworkCreateResponse, error) {
+	michaelf, mierr := os.Create("/go/src/github.com/docker/docker/trace.out")
+	if mierr != nil {
+		panic(mierr)
+	}
+	defer michaelf.Close()
+
+	mierr = trace.Start(michaelf)
+	if mierr != nil {
+		panic(mierr)
+	}
+	defer trace.Stop()
+
 	logrus.Info("--------------------------")
 	logrus.Info("network::createNetwork")
 	lastTime := time.Now()
