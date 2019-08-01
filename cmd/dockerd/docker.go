@@ -74,6 +74,7 @@ func main() {
 	}
 
 	// initial log formatting; this setting is updated after the daemon configuration is loaded.
+	// logrus.SetReportCaller(true)
 	logrus.SetFormatter(&logrus.TextFormatter{
 		TimestampFormat: jsonmessage.RFC3339NanoFixed,
 		FullTimestamp:   true,
