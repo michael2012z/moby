@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"net"
 	"strings"
+	"time"
 
 	"github.com/docker/docker/integration-cli/checker"
 	"github.com/docker/docker/integration-cli/daemon"
@@ -178,11 +179,16 @@ func (s *DockerSuite) TestInfoDisplaysStoppedContainers(c *check.C) {
 func (s *DockerSuite) TestInfoDebug(c *check.C) {
 	testRequires(c, testEnv.IsLocalDaemon, DaemonIsLinux)
 
+	fmt.Println("michael: -------------------------------")
+	fmt.Println("michael: ", time.Now())
 	d := daemon.New(c, dockerBinary, dockerdBinary, testdaemon.WithEnvironment(testEnv.Execution))
+	fmt.Println("michael: New: ", time.Now())
 	d.Start(c, "--debug")
+	fmt.Println("michael: Start: ", time.Now())
 	defer d.Stop(c)
 
 	out, err := d.Cmd("--debug", "info")
+	fmt.Println("michael: info: ", time.Now())
 	assert.NilError(c, err)
 	c.Assert(out, checker.Contains, "Debug Mode (client): true\n")
 	c.Assert(out, checker.Contains, "Debug Mode (server): true\n")

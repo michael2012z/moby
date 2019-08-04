@@ -232,6 +232,7 @@ RUN apt-get update && apt-get install -y \
 	libprotobuf-c1 \
 	libnet1 \
 	libnl-3-200 \
+	emacs \
 	--no-install-recommends
 COPY --from=swagger /build/swagger* /usr/local/bin/
 COPY --from=frozen-images /build/ /docker-frozen-images
