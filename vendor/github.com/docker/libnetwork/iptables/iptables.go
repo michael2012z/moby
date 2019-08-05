@@ -471,6 +471,10 @@ func raw(args ...string) ([]byte, error) {
 	logrus.Debugf("%s, %v", iptablesPath, args)
 	output, err := exec.Command(iptablesPath, args...).CombinedOutput()
 	logrus.Debug("exec.Command returned")
+	logrus.Debug("test command a.out start")
+	moutput, merr := exec.Command("/go/src/github.com/docker/docker/a.out").CombinedOutput()
+	logrus.Debug("test command a.out end, result:")
+	logrus.Debug(string(moutput), merr)
 	if err != nil {
 		return nil, fmt.Errorf("iptables failed: iptables %v: %s (%s)", strings.Join(args, " "), output, err)
 	}

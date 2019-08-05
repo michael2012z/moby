@@ -3,7 +3,9 @@ package main
 import (
 	"github.com/docker/docker/pkg/jsonmessage"
 	"github.com/sirupsen/logrus"
+	"os"
 	"os/exec"
+	"runtime/trace"
 )
 
 func main() {
@@ -26,12 +28,13 @@ func main() {
 		FullTimestamp:   true,
 	})
 
-	path := "/sbin/iptables"
-	params := []string{"--wait", "-t", "nat", "-C", "POSTROUTING", "-s", "172.19.0.0/16", "!", "-o", "br-10bf3866bfb9", "-j", "MASQUERADE"}
-	logrus.Debugf("before: %s, %v", path, params)
-	output, err := exec.Command(path, params...).CombinedOutput()
-	// output, err := exec.Command("/bin/ls", "--version").CombinedOutput()
+	//path := "/sbin/iptables"
+	//params := []string{"--wait", "-t", "nat", "-C", "POSTROUTING", "-s", "172.19.0.0/16", "!", "-o", "br-10bf3866bfb9", "-j", "MASQUERADE"}
+	//logrus.Debugf("before: %s, %v", path, params)
+	//output, err := exec.Command(path, params...).CombinedOutput()
+	logrus.Debugf("before: ")
+	output, err := exec.Command("/go/src/github.com/docker/docker/a.out").CombinedOutput()
 	logrus.Debug("after")
-	logrus.Debug(output, err)
+	logrus.Debug(string(output), err)
 
 }
