@@ -471,13 +471,30 @@ func raw(args ...string) ([]byte, error) {
 	logrus.Debugf("%s, %v", iptablesPath, args)
 	output, err := exec.Command(iptablesPath, args...).CombinedOutput()
 	logrus.Debug("exec.Command returned")
+
+	if err != nil {
+		return nil, fmt.Errorf("iptables failed: iptables %v: %s (%s)", strings.Join(args, " "), output, err)
+	}
+
+	logrus.Debug("test command /bin/ls start")
+	loutput, lerr := exec.Command("/bin/ls").CombinedOutput()
+	logrus.Debug("test command /bin/ls end, result:")
+	logrus.Debug(string(loutput), lerr)
+
+	logrus.Debug("test command /bin/ls --version start")
+	loutput, lerr = exec.Command("/bin/ls", "--version").CombinedOutput()
+	logrus.Debug("test command /bin/ls --version end, result:")
+	logrus.Debug(string(loutput), lerr)
+
+	logrus.Debug("test command ./ls start")
+	loutput, lerr = exec.Command("/go/src/github.com/docker/docker/ls").CombinedOutput()
+	logrus.Debug("test command ./ls end, result:")
+	logrus.Debug(string(loutput), lerr)
+
 	logrus.Debug("test command a.out start")
 	moutput, merr := exec.Command("/go/src/github.com/docker/docker/a.out").CombinedOutput()
 	logrus.Debug("test command a.out end, result:")
 	logrus.Debug(string(moutput), merr)
-	if err != nil {
-		return nil, fmt.Errorf("iptables failed: iptables %v: %s (%s)", strings.Join(args, " "), output, err)
-	}
 
 	return filterOutput(startTime, output, args...), err
 }
