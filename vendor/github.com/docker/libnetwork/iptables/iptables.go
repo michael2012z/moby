@@ -480,14 +480,6 @@ func raw(args ...string) ([]byte, error) {
 	_, lerr := exec.Command("/bin/ls").CombinedOutput()
 	logrus.Debug("test command /bin/ls end, result:", lerr)
 
-	logrus.Debug("test command /bin/ls --version start")
-	_, lerr = exec.Command("/bin/ls", "--version").CombinedOutput()
-	logrus.Debug("test command /bin/ls --version end, result:", lerr)
-
-	logrus.Debug("test command ./ls start")
-	_, lerr = exec.Command("/go/src/github.com/docker/docker/ls").CombinedOutput()
-	logrus.Debug("test command ./ls end, result:", lerr)
-
 	logrus.Debug("test command a.out start")
 	moutput, merr := exec.Command("/go/src/github.com/docker/docker/a.out").CombinedOutput()
 	logrus.Debug("test command a.out end, result:")
