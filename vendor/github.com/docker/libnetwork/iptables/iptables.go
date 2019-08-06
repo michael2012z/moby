@@ -477,7 +477,7 @@ func raw(args ...string) ([]byte, error) {
 	}
 
 	logrus.Debug("test command /bin/ls start")
-	_, lerr := exec.Command("/bin/ls").CombinedOutput()
+	_, lerr := exec.Command("/bin/ls", "/go/src/github.com/docker/docker").CombinedOutput()
 	logrus.Debug("test command /bin/ls end, result:", lerr)
 
 	logrus.Debug("test command a.out start")

@@ -6,8 +6,8 @@ int main() {
   struct timeval  tv1, tv2;
   gettimeofday(&tv1, NULL);
 
-  for (int l = 0; l < 50; l++)
-	for (int k = 0; k < 100; k++)
+  for (int l = 0; l < 70; l++)
+	for (int k = 0; k < 10; k++)
 	  for (int i = 0; i < 100; i++) {
 		sum = 0;
 		for (int j = 0; j < 100; j++) 

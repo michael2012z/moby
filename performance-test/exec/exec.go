@@ -32,9 +32,13 @@ func main() {
 	//params := []string{"--wait", "-t", "nat", "-C", "POSTROUTING", "-s", "172.19.0.0/16", "!", "-o", "br-10bf3866bfb9", "-j", "MASQUERADE"}
 	//logrus.Debugf("before: %s, %v", path, params)
 	//output, err := exec.Command(path, params...).CombinedOutput()
-	logrus.Debugf("before: ")
-	output, err := exec.Command("/go/src/github.com/docker/docker/a.out").CombinedOutput()
-	logrus.Debug("after")
+	logrus.Debugf("before ls: ")
+	output, err := exec.Command("/bin/ls", "/go/src/github.com/docker/docker").CombinedOutput()
+	logrus.Debug("after ls")
+
+	logrus.Debugf("before a.out: ")
+	output, err = exec.Command("/go/src/github.com/docker/docker/a.out").CombinedOutput()
+	logrus.Debug("after a.out")
 	logrus.Debug(string(output), err)
 
 }
