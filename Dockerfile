@@ -259,6 +259,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	libprotobuf-c1 \
 	libnet1 \
 	libnl-3-200 \
+	emacs \
+	patch \
 	&& rm -rf /var/lib/apt/lists/*
 
 RUN pip3 install yamllint==1.16.0
@@ -291,3 +293,4 @@ ENTRYPOINT ["hack/dind"]
 FROM dev AS final
 # Upload docker source
 COPY . /go/src/github.com/docker/docker
+
