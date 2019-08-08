@@ -289,6 +289,9 @@ func (d *Daemon) StartWithLogFile(out *os.File, providedArgs ...string) error {
 		args = append(args, "--storage-driver", d.storageDriver)
 	}
 
+	fmt.Println("cmd: ", dockerdBinary)
+	fmt.Println("params: ", args)
+
 	args = append(args, providedArgs...)
 	d.cmd = exec.Command(dockerdBinary, args...)
 	d.cmd.Env = append(os.Environ(), "DOCKER_SERVICE_PREFER_OFFLINE_IMAGE=1")

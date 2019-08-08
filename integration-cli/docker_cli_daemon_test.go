@@ -1012,21 +1012,27 @@ func (s *DockerDaemonSuite) TestDaemonUlimitDefaults(c *check.C) {
 
 // #11315
 func (s *DockerDaemonSuite) TestDaemonRestartRenameContainer(c *check.C) {
+	fmt.Println("++++++++++++++++++++++++++++++++++ 0: ", time.Now())
 	s.d.StartWithBusybox(c)
 
+	fmt.Println("++++++++++++++++++++++++++++++++++ 1: ", time.Now())
 	if out, err := s.d.Cmd("run", "--name=test", "busybox"); err != nil {
 		c.Fatal(err, out)
 	}
 
+	fmt.Println("++++++++++++++++++++++++++++++++++ 2: ", time.Now())
 	if out, err := s.d.Cmd("rename", "test", "test2"); err != nil {
 		c.Fatal(err, out)
 	}
 
+	fmt.Println("++++++++++++++++++++++++++++++++++ 3: ", time.Now())
 	s.d.Restart(c)
 
+	fmt.Println("++++++++++++++++++++++++++++++++++ 4: ", time.Now())
 	if out, err := s.d.Cmd("start", "test2"); err != nil {
 		c.Fatal(err, out)
 	}
+	fmt.Println("++++++++++++++++++++++++++++++++++ 5: ", time.Now())
 }
 
 func (s *DockerDaemonSuite) TestDaemonLoggingDriverDefault(c *check.C) {

@@ -42,7 +42,6 @@ import (
 	dopts "github.com/docker/docker/opts"
 	"github.com/docker/docker/pkg/authorization"
 	"github.com/docker/docker/pkg/homedir"
-	"github.com/docker/docker/pkg/jsonmessage"
 	"github.com/docker/docker/pkg/pidfile"
 	"github.com/docker/docker/pkg/plugingetter"
 	"github.com/docker/docker/pkg/signal"
@@ -720,8 +719,9 @@ func configureDaemonLogs(conf *config.Config) error {
 	} else {
 		logrus.SetLevel(logrus.InfoLevel)
 	}
+	//logrus.SetReportCaller(true)
 	logrus.SetFormatter(&logrus.TextFormatter{
-		TimestampFormat: jsonmessage.RFC3339NanoFixed,
+		TimestampFormat: "15:04:05.000", //jsonmessage.RFC3339NanoFixed,
 		DisableColors:   conf.RawLogs,
 		FullTimestamp:   true,
 	})
