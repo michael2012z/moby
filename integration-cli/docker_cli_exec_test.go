@@ -249,12 +249,12 @@ func (s *DockerSuite) TestExecCgroup(c *check.C) {
 	testRequires(c, NotUserNamespace)
 	testRequires(c, DaemonIsLinux)
 	fmt.Println("---------------------------------------")
-	fmt.Println("TestExecCgroup 0")
+	fmt.Println("TestExecCgroup 0", time.Now())
 	dockerCmd(c, "run", "-d", "--name", "testing", "busybox", "top")
-	fmt.Println("TestExecCgroup 1")
+	fmt.Println("TestExecCgroup 1", time.Now())
 
 	out, _ := dockerCmd(c, "exec", "testing", "cat", "/proc/1/cgroup")
-	fmt.Println("TestExecCgroup 2")
+	fmt.Println("TestExecCgroup 2", time.Now())
 
 	containerCgroups := sort.StringSlice(strings.Split(out, "\n"))
 
@@ -262,7 +262,7 @@ func (s *DockerSuite) TestExecCgroup(c *check.C) {
 	var mu sync.Mutex
 	var execCgroups []sort.StringSlice
 	errChan := make(chan error)
-	fmt.Println("TestExecCgroup 3")
+	fmt.Println("TestExecCgroup 3", time.Now())
 
 	// exec a few times concurrently to get consistent failure
 	for i := 0; i < 5; i++ {
@@ -284,7 +284,7 @@ func (s *DockerSuite) TestExecCgroup(c *check.C) {
 	wg.Wait()
 	close(errChan)
 
-	fmt.Println("TestExecCgroup 4")
+	fmt.Println("TestExecCgroup 4", time.Now())
 
 	for err := range errChan {
 		assert.NilError(c, err)
@@ -304,8 +304,7 @@ func (s *DockerSuite) TestExecCgroup(c *check.C) {
 			c.Fatal("cgroups mismatched")
 		}
 	}
-	fmt.Println("TestExecCgroup 5")
-
+	fmt.Println("TestExecCgroup 5", time.Now())
 }
 
 func (s *DockerSuite) TestExecInspectID(c *check.C) {
