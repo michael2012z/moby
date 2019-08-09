@@ -248,15 +248,22 @@ func (s *DockerSuite) TestExecCgroup(c *check.C) {
 	// Not applicable on Windows - using Linux specific functionality
 	testRequires(c, NotUserNamespace)
 	testRequires(c, DaemonIsLinux)
+	fmt.Println("---------------------------------------")
+	fmt.Println("TestExecCgroup 0")
 	dockerCmd(c, "run", "-d", "--name", "testing", "busybox", "top")
+	fmt.Println("TestExecCgroup 1")
 
 	out, _ := dockerCmd(c, "exec", "testing", "cat", "/proc/1/cgroup")
+	fmt.Println("TestExecCgroup 2")
+
 	containerCgroups := sort.StringSlice(strings.Split(out, "\n"))
 
 	var wg sync.WaitGroup
 	var mu sync.Mutex
 	var execCgroups []sort.StringSlice
 	errChan := make(chan error)
+	fmt.Println("TestExecCgroup 3")
+
 	// exec a few times concurrently to get consistent failure
 	for i := 0; i < 5; i++ {
 		wg.Add(1)
@@ -277,6 +284,8 @@ func (s *DockerSuite) TestExecCgroup(c *check.C) {
 	wg.Wait()
 	close(errChan)
 
+	fmt.Println("TestExecCgroup 4")
+
 	for err := range errChan {
 		assert.NilError(c, err)
 	}
@@ -295,6 +304,8 @@ func (s *DockerSuite) TestExecCgroup(c *check.C) {
 			c.Fatal("cgroups mismatched")
 		}
 	}
+	fmt.Println("TestExecCgroup 5")
+
 }
 
 func (s *DockerSuite) TestExecInspectID(c *check.C) {
