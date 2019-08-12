@@ -1,0 +1,221 @@
+root@531a02a724df:/go/src/github.com/docker/docker# TEST_SKIP_INTEGRATION=1 TESTFLAGS='-check.f DockerSuite.TestExecCgroup' hack/make.sh test-integration
+
+Removing bundles/
+
+---> Making bundle: test-integration (in bundles/test-integration)
+Skipping integration tests since TESTFLAGS includes integration-cli only flags
+Building test suite binary ./integration-cli/test.main
+---> Making bundle: .integration-daemon-start (in bundles/test-integration)
+Using test binary docker
+DEBU[2019-08-12T02:38:10.638326155Z] Calling GET /_ping                           
+DEBU[2019-08-12T02:38:10.644679778Z] Calling GET /v1.30/version                   
+skipping daemon start, since daemon appears to be already started
+---> Making bundle: .integration-daemon-setup (in bundles/test-integration)
+DEBU[2019-08-12T02:38:10.718150575Z] Calling GET /_ping                           
+DEBU[2019-08-12T02:38:10.720237702Z] Calling GET /v1.30/version                   
+DEBU[2019-08-12T02:38:10.774333209Z] Calling GET /_ping                           
+DEBU[2019-08-12T02:38:10.776264549Z] Calling GET /v1.30/version                   
+---> Making bundle: .ensure-emptyfs (in bundles/test-integration)
+DEBU[2019-08-12T02:38:10.832878746Z] Calling GET /_ping                           
+DEBU[2019-08-12T02:38:10.834090196Z] Calling GET /v1.30/images/emptyfs/json       
+Error: No such image: emptyfs
+DEBU[2019-08-12T02:38:10.903634120Z] Calling GET /_ping                           
+DEBU[2019-08-12T02:38:10.905017255Z] Calling POST /v1.30/images/load?quiet=1      
+DEBU[2019-08-12T02:38:10.998190366Z] Applying tar in /var/lib/docker/overlay2/6c04bfefd885c8f5e68e0aff4678c8c408cd8d12832a50431dff3dbd45401ef6/diff  storage-driver=overlay2
+DEBU[2019-08-12T02:38:11.133138808Z] Applied tar sha256:84ff92691f909a05b224e1c56abb4864f01b4f8e3c854e4bb4c7baf1d3f6d652 to 6c04bfefd885c8f5e68e0aff4678c8c408cd8d12832a50431dff3dbd45401ef6, size: 0 
+Running integration-test (iteration 1)
+Running /go/src/github.com/docker/docker/integration-cli flags=-check.v -check.timeout=10m -test.timeout=360m -check.f DockerSuite.TestExecCgroup 
+DEBU[2019-08-12T02:38:11.292657359Z] Calling GET /v1.41/info                      
+DEBU[2019-08-12T02:38:11.319892597Z] Calling GET /v1.41/images/busybox:latest/json 
+DEBU[2019-08-12T02:38:11.321512912Z] Calling GET /v1.41/images/busybox:glibc/json 
+DEBU[2019-08-12T02:38:11.322716012Z] Calling GET /v1.41/images/hello-world:frozen/json 
+DEBU[2019-08-12T02:38:11.323754076Z] Calling GET /v1.41/images/debian:jessie/json 
+DEBU[2019-08-12T02:38:11.326325912Z] Calling POST /v1.41/images/load?quiet=1      
+DEBU[2019-08-12T02:38:11.907621781Z] Applying tar in /var/lib/docker/overlay2/967028d1d8369328ea59ee7de4b17ffd4c8e3d94142d99e9998c9f4d85f63141/diff  storage-driver=overlay2
+DEBU[2019-08-12T02:38:15.932473376Z] Applied tar sha256:1c03fa2ed4b8f26199ff9423fb645506e900e936877476562a639ccea74d70d1 to 967028d1d8369328ea59ee7de4b17ffd4c8e3d94142d99e9998c9f4d85f63141, size: 117155851 
+DEBU[2019-08-12T02:38:15.936938255Z] Applying tar in /var/lib/docker/overlay2/2ddbc8c5db10585b30658b769dc676d8607cda16b818f7b1607e1260035c14f7/diff  storage-driver=overlay2
+DEBU[2019-08-12T02:38:16.874715860Z] Applied tar sha256:54ae23e8c50dde2d28408a659ab859a4e22d435a89059c4840136ff1473be8b8 to 2ddbc8c5db10585b30658b769dc676d8607cda16b818f7b1607e1260035c14f7, size: 43254338 
+DEBU[2019-08-12T02:38:16.878499745Z] Applying tar in /var/lib/docker/overlay2/5b5c4abfbf03deac1c410f8225097c1066961551799e430778cbcf08f87f262a/diff  storage-driver=overlay2
+DEBU[2019-08-12T02:38:20.178434732Z] Applied tar sha256:8dba140ec26908a2bf8b67b96d2e9aa43b1c10c5beb5e13111ce541e7fbdfe5a to 5b5c4abfbf03deac1c410f8225097c1066961551799e430778cbcf08f87f262a, size: 118030121 
+DEBU[2019-08-12T02:38:20.181154506Z] Applying tar in /var/lib/docker/overlay2/13a5b23b4b89ea30627df9c6b9367785a8f0ef03be611ebc95b1da899dfeb2b3/diff  storage-driver=overlay2
+DEBU[2019-08-12T02:38:26.875677475Z] Applied tar sha256:1171252b40f203603eea07a0d23d1f06eb98f2c271fd770e24a129dc97ea154b to 13a5b23b4b89ea30627df9c6b9367785a8f0ef03be611ebc95b1da899dfeb2b3, size: 282890548 
+Loaded image: buildpack-deps:jessie
+DEBU[2019-08-12T02:38:26.881486142Z] Applying tar in /var/lib/docker/overlay2/0b1572e66306a13160b402713da16d6349914fb718c2c9d8de564115e033fcba/diff  storage-driver=overlay2
+DEBU[2019-08-12T02:38:27.041998507Z] Applied tar sha256:cb4c5ffc2e2deb0ff326a7d0b08838ad8d6d35805016128a33ff03d0985ba66d to 0b1572e66306a13160b402713da16d6349914fb718c2c9d8de564115e033fcba, size: 1261457 
+Loaded image: busybox:latest
+DEBU[2019-08-12T02:38:27.047466753Z] Applying tar in /var/lib/docker/overlay2/26b6d1256eeb26cf324fe650b125d3d5f8ff4f6bf9615493caed85b1e451bc70/diff  storage-driver=overlay2
+DEBU[2019-08-12T02:38:27.307273519Z] Applied tar sha256:61dffe98df9c510b000ca176a6b147f3599b55d62d53c0426c9b06435e738d5f to 26b6d1256eeb26cf324fe650b125d3d5f8ff4f6bf9615493caed85b1e451bc70, size: 3547125 
+Loaded image: busybox:glibc
+Loaded image: debian:jessie
+DEBU[2019-08-12T02:38:27.313367163Z] Applying tar in /var/lib/docker/overlay2/f9b1480a22edadee24ad2650b23cc1921718807c5904817de7285bd88636b3de/diff  storage-driver=overlay2
+DEBU[2019-08-12T02:38:27.408725441Z] Applied tar sha256:43f78149878d1160506c09771a8eefca8d1deeb427176a1564d2d3ea2cb048f3 to f9b1480a22edadee24ad2650b23cc1921718807c5904817de7285bd88636b3de, size: 4752 
+Loaded image: hello-world:latest
+DEBU[2019-08-12T02:38:27.535489409Z] Calling POST /v1.41/images/hello-world:latest/tag?repo=hello-world&tag=frozen 
+DEBU[2019-08-12T02:38:27.541249731Z] Calling DELETE /v1.41/images/hello-world:latest?noprune=1 
+INFO: Testing against a local daemon
+DEBU[2019-08-12T02:38:27.547976322Z] Calling GET /v1.41/containers/json?all=1&limit=0 
+DEBU[2019-08-12T02:38:27.549449050Z] Calling GET /v1.41/images/json?all=1&filters=%7B%22dangling%22%3A%7B%22false%22%3Atrue%7D%7D 
+DEBU[2019-08-12T02:38:27.554177107Z] Calling GET /v1.41/networks                  
+DEBU[2019-08-12T02:38:27.557788057Z] Calling GET /v1.41/volumes                   
+DEBU[2019-08-12T02:38:27.557863801Z] VolumeStore.Find                              ByType=service.CustomFilter ByValue=0x1441498
+DEBU[2019-08-12T02:38:27.559040353Z] Calling GET /v1.41/plugins                   
+---------------------------------------
+TestExecCgroup 0 2019-08-12 02:38:27.572019925 +0000 UTC m=+16.386532616
+DEBU[2019-08-12T02:38:27.612643050Z] Calling GET /_ping                           
+DEBU[2019-08-12T02:38:27.622170958Z] Calling POST /v1.30/containers/create?name=testing 
+DEBU[2019-08-12T02:38:27.623947311Z] form data: {"AttachStderr":false,"AttachStdin":false,"AttachStdout":false,"Cmd":["top"],"Domainname":"","Entrypoint":null,"Env":[],"HostConfig":{"AutoRemove":false,"Binds":null,"BlkioDeviceReadBps":null,"BlkioDeviceReadIOps":null,"BlkioDeviceWriteBps":null,"BlkioDeviceWriteIOps":null,"BlkioWeight":0,"BlkioWeightDevice":null,"CapAdd":null,"CapDrop":null,"Cgroup":"","CgroupParent":"","ConsoleSize":[0,0],"ContainerIDFile":"","CpuCount":0,"CpuPercent":0,"CpuPeriod":0,"CpuQuota":0,"CpuRealtimePeriod":0,"CpuRealtimeRuntime":0,"CpuShares":0,"CpusetCpus":"","CpusetMems":"","DeviceCgroupRules":null,"Devices":[],"DiskQuota":0,"Dns":[],"DnsOptions":[],"DnsSearch":[],"ExtraHosts":null,"GroupAdd":null,"IOMaximumBandwidth":0,"IOMaximumIOps":0,"IpcMode":"","Isolation":"","KernelMemory":0,"Links":null,"LogConfig":{"Config":{},"Type":""},"Memory":0,"MemoryReservation":0,"MemorySwap":0,"MemorySwappiness":-1,"NanoCpus":0,"NetworkMode":"default","OomKillDisable":false,"OomScoreAdj":0,"PidMode":"","PidsLimit":0,"PortBindings":{},"Privileged":false,"PublishAllPorts":false,"ReadonlyRootfs":false,"RestartPolicy":{"MaximumRetryCount":0,"Name":"no"},"SecurityOpt":null,"ShmSize":0,"UTSMode":"","Ulimits":null,"UsernsMode":"","VolumeDriver":"","VolumesFrom":null},"Hostname":"","Image":"busybox","Labels":{},"NetworkingConfig":{"EndpointsConfig":{}},"OnBuild":null,"OpenStdin":false,"StdinOnce":false,"Tty":false,"User":"","Volumes":{},"WorkingDir":""} 
+DEBU[2019-08-12T02:38:27.645758299Z] container mounted via layerStore: &{/var/lib/docker/overlay2/f7559bf83838490d3f81106bacd7ecab4bee46d4ce452f328db5274dadcfba30/merged 0x3ded3c0 0x3ded3c0} 
+DEBU[2019-08-12T02:38:27.652130119Z] Calling POST /v1.30/containers/3633b44c856beb95679144f33271eb5f2695e8f0c429b3440d530e2ad47b978e/wait?condition=next-exit 
+DEBU[2019-08-12T02:38:27.654544869Z] Calling POST /v1.30/containers/3633b44c856beb95679144f33271eb5f2695e8f0c429b3440d530e2ad47b978e/start 
+DEBU[2019-08-12T02:38:27.659997566Z] container mounted via layerStore: &{/var/lib/docker/overlay2/f7559bf83838490d3f81106bacd7ecab4bee46d4ce452f328db5274dadcfba30/merged 0x3ded3c0 0x3ded3c0} 
+DEBU[2019-08-12T02:38:27.661097324Z] Assigning addresses for endpoint testing's interface on network bridge 
+DEBU[2019-08-12T02:38:27.661190267Z] RequestAddress(LocalDefault/172.18.0.0/16, <nil>, map[]) 
+DEBU[2019-08-12T02:38:27.661308957Z] Request address PoolID:172.18.0.0/16 App: ipam/default/data, ID: LocalDefault/172.18.0.0/16, DBIndex: 0x0, Bits: 65536, Unselected: 65533, Sequence: (0xc0000000, 1)->(0x0, 2046)->(0x1, 1)->end Curr:0 Serial:false PrefAddress:<nil>  
+DEBU[2019-08-12T02:38:27.665257129Z] Assigning addresses for endpoint testing's interface on network bridge 
+DEBU[2019-08-12T02:38:27.668156038Z] Programming external connectivity on endpoint testing (e795f53a4ef463c982e03c5bb611f0323c80c1f0cd435cbd9db73f254f5fb877) 
+DEBU[2019-08-12T02:38:27.668586352Z] EnableService 3633b44c856beb95679144f33271eb5f2695e8f0c429b3440d530e2ad47b978e START 
+DEBU[2019-08-12T02:38:27.668630198Z] EnableService 3633b44c856beb95679144f33271eb5f2695e8f0c429b3440d530e2ad47b978e DONE 
+DEBU[2019-08-12T02:38:27.671181936Z] bundle dir created                            bundle=/var/run/docker/containerd/3633b44c856beb95679144f33271eb5f2695e8f0c429b3440d530e2ad47b978e module=libcontainerd namespace=moby root=/var/lib/docker/overlay2/f7559bf83838490d3f81106bacd7ecab4bee46d4ce452f328db5274dadcfba30/merged
+DEBU[2019-08-12T02:38:27.681523677Z] event published                               ns=moby topic="/containers/create" type=containerd.events.ContainerCreate
+INFO[2019-08-12T02:38:27.700638589Z] shim containerd-shim started                  address="/containerd-shim/moby/3633b44c856beb95679144f33271eb5f2695e8f0c429b3440d530e2ad47b978e/shim.sock" debug=true pid=7572
+time="2019-08-12T02:38:27Z" level=debug msg="registering ttrpc server" 
+time="2019-08-12T02:38:27Z" level=debug msg="serving api on unix socket" socket="[inherited from parent]" 
+DEBU[2019-08-12T02:38:28.031714534Z] sandbox set key processing took 150.567091ms for container 3633b44c856beb95679144f33271eb5f2695e8f0c429b3440d530e2ad47b978e 
+DEBU[2019-08-12T02:38:28.124518474Z] event published                               ns=moby topic="/tasks/create" type=containerd.events.TaskCreate
+DEBU[2019-08-12T02:38:28.125432848Z] event                                         module=libcontainerd namespace=moby topic=/tasks/create
+DEBU[2019-08-12T02:38:28.178777516Z] event published                               ns=moby topic="/tasks/start" type=containerd.events.TaskStart
+DEBU[2019-08-12T02:38:28.179325821Z] event                                         module=libcontainerd namespace=moby topic=/tasks/start
+TestExecCgroup 1 2019-08-12 02:38:28.214812123 +0000 UTC m=+17.029324914
+DEBU[2019-08-12T02:38:28.257932890Z] Calling GET /_ping                           
+DEBU[2019-08-12T02:38:28.263284346Z] Calling GET /v1.30/containers/testing/json   
+DEBU[2019-08-12T02:38:28.270999405Z] Calling POST /v1.30/containers/testing/exec  
+DEBU[2019-08-12T02:38:28.271255633Z] form data: {"AttachStderr":true,"AttachStdin":false,"AttachStdout":true,"Cmd":["cat","/proc/1/cgroup"],"Detach":false,"DetachKeys":"","Env":null,"Privileged":false,"Tty":false,"User":""} 
+DEBU[2019-08-12T02:38:28.272590723Z] Calling POST /v1.30/exec/dc4ff7db01da488a143c4f8790c5f63cb685efe10600fc528a49de18dba2081b/start 
+DEBU[2019-08-12T02:38:28.272840152Z] form data: {"AttachStderr":true,"AttachStdin":false,"AttachStdout":true,"Cmd":["cat","/proc/1/cgroup"],"Detach":false,"DetachKeys":"","Env":null,"Privileged":false,"Tty":false,"User":""} 
+DEBU[2019-08-12T02:38:28.273225820Z] starting exec command dc4ff7db01da488a143c4f8790c5f63cb685efe10600fc528a49de18dba2081b in container 3633b44c856beb95679144f33271eb5f2695e8f0c429b3440d530e2ad47b978e 
+DEBU[2019-08-12T02:38:28.279902565Z] attach: stdout: begin                        
+DEBU[2019-08-12T02:38:28.279943312Z] attach: stderr: begin                        
+DEBU[2019-08-12T02:38:28.456961955Z] event published                               ns=moby topic="/tasks/exec-started" type=containerd.events.TaskExecStarted
+DEBU[2019-08-12T02:38:28.457590053Z] event                                         module=libcontainerd namespace=moby topic=/tasks/exec-started
+DEBU[2019-08-12T02:38:28.506334553Z] event published                               ns=moby topic="/tasks/exit" type=containerd.events.TaskExit
+DEBU[2019-08-12T02:38:28.507415614Z] event                                         module=libcontainerd namespace=moby topic=/tasks/exit
+DEBU[2019-08-12T02:38:28.507790682Z] attach: stdout: end                          
+DEBU[2019-08-12T02:38:28.507908323Z] attach: stderr: end                          
+DEBU[2019-08-12T02:38:28.508072259Z] attach done                                  
+DEBU[2019-08-12T02:38:28.508694707Z] Calling GET /v1.30/exec/dc4ff7db01da488a143c4f8790c5f63cb685efe10600fc528a49de18dba2081b/json 
+
+
+TestExecCgroup 2 2019-08-12 02:38:28.522852431 +0000 UTC m=+17.337365172
+TestExecCgroup 3 2019-08-12 02:38:28.522908176 +0000 UTC m=+17.337420867
+DEBU[2019-08-12T02:38:28.550818308Z] Calling GET /_ping                           
+DEBU[2019-08-12T02:38:28.552642106Z] Calling GET /_ping                           
+DEBU[2019-08-12T02:38:28.553601426Z] Calling GET /v1.30/containers/testing/json   
+DEBU[2019-08-12T02:38:28.557400661Z] Calling GET /v1.30/containers/testing/json   
+DEBU[2019-08-12T02:38:28.562886205Z] Calling POST /v1.30/containers/testing/exec  
+DEBU[2019-08-12T02:38:28.563268273Z] form data: {"AttachStderr":true,"AttachStdin":false,"AttachStdout":true,"Cmd":["cat","/proc/self/cgroup"],"Detach":false,"DetachKeys":"","Env":null,"Privileged":false,"Tty":false,"User":""} 
+DEBU[2019-08-12T02:38:28.563960816Z] Calling POST /v1.30/containers/testing/exec  
+DEBU[2019-08-12T02:38:28.564200246Z] form data: {"AttachStderr":true,"AttachStdin":false,"AttachStdout":true,"Cmd":["cat","/proc/self/cgroup"],"Detach":false,"DetachKeys":"","Env":null,"Privileged":false,"Tty":false,"User":""} 
+DEBU[2019-08-12T02:38:28.564760649Z] Calling POST /v1.30/exec/d97269f2baaae6f18e6a7b4aab98106ee6c273375a1ca0a70c7381cdad4e2721/start 
+DEBU[2019-08-12T02:38:28.565235010Z] form data: {"AttachStderr":true,"AttachStdin":false,"AttachStdout":true,"Cmd":["cat","/proc/self/cgroup"],"Detach":false,"DetachKeys":"","Env":null,"Privileged":false,"Tty":false,"User":""} 
+DEBU[2019-08-12T02:38:28.565263408Z] Calling GET /_ping                           
+DEBU[2019-08-12T02:38:28.565512587Z] Calling POST /v1.30/exec/8adb35277f7360a9fd205f10110ff08b49be16c226a377a285228df7649f50ca/start 
+DEBU[2019-08-12T02:38:28.565809712Z] starting exec command d97269f2baaae6f18e6a7b4aab98106ee6c273375a1ca0a70c7381cdad4e2721 in container 3633b44c856beb95679144f33271eb5f2695e8f0c429b3440d530e2ad47b978e 
+DEBU[2019-08-12T02:38:28.566040843Z] Calling GET /_ping                           
+DEBU[2019-08-12T02:38:28.566146684Z] form data: {"AttachStderr":true,"AttachStdin":false,"AttachStdout":true,"Cmd":["cat","/proc/self/cgroup"],"Detach":false,"DetachKeys":"","Env":null,"Privileged":false,"Tty":false,"User":""} 
+DEBU[2019-08-12T02:38:28.566927519Z] Calling GET /v1.30/containers/testing/json   
+DEBU[2019-08-12T02:38:28.567309288Z] starting exec command 8adb35277f7360a9fd205f10110ff08b49be16c226a377a285228df7649f50ca in container 3633b44c856beb95679144f33271eb5f2695e8f0c429b3440d530e2ad47b978e 
+DEBU[2019-08-12T02:38:28.567827645Z] Calling GET /v1.30/containers/testing/json   
+DEBU[2019-08-12T02:38:28.569350268Z] Calling GET /_ping                           
+DEBU[2019-08-12T02:38:28.570029812Z] attach: stderr: begin                        
+DEBU[2019-08-12T02:38:28.570053260Z] attach: stdout: begin                        
+DEBU[2019-08-12T02:38:28.570102806Z] Calling GET /v1.30/containers/testing/json   
+DEBU[2019-08-12T02:38:28.571505939Z] attach: stdout: begin                        
+DEBU[2019-08-12T02:38:28.571540886Z] attach: stderr: begin                        
+DEBU[2019-08-12T02:38:28.576659961Z] Calling POST /v1.30/containers/testing/exec  
+DEBU[2019-08-12T02:38:28.576884992Z] form data: {"AttachStderr":true,"AttachStdin":false,"AttachStdout":true,"Cmd":["cat","/proc/self/cgroup"],"Detach":false,"DetachKeys":"","Env":null,"Privileged":false,"Tty":false,"User":""} 
+DEBU[2019-08-12T02:38:28.582498976Z] Calling POST /v1.30/containers/testing/exec  
+DEBU[2019-08-12T02:38:28.582753305Z] form data: {"AttachStderr":true,"AttachStdin":false,"AttachStdout":true,"Cmd":["cat","/proc/self/cgroup"],"Detach":false,"DetachKeys":"","Env":null,"Privileged":false,"Tty":false,"User":""} 
+DEBU[2019-08-12T02:38:28.768130204Z] event published                               ns=moby topic="/tasks/exec-started" type=containerd.events.TaskExecStarted
+DEBU[2019-08-12T02:38:28.768675308Z] event                                         module=libcontainerd namespace=moby topic=/tasks/exec-started
+DEBU[2019-08-12T02:38:28.800018604Z] Calling POST /v1.30/containers/testing/exec  
+DEBU[2019-08-12T02:38:28.800457768Z] form data: {"AttachStderr":true,"AttachStdin":false,"AttachStdout":true,"Cmd":["cat","/proc/self/cgroup"],"Detach":false,"DetachKeys":"","Env":null,"Privileged":false,"Tty":false,"User":""} 
+DEBU[2019-08-12T02:38:28.841196633Z] event published                               ns=moby topic="/tasks/exit" type=containerd.events.TaskExit
+DEBU[2019-08-12T02:38:28.841574802Z] event                                         module=libcontainerd namespace=moby topic=/tasks/exit
+DEBU[2019-08-12T02:38:28.943005725Z] event published                               ns=moby topic="/tasks/exec-started" type=containerd.events.TaskExecStarted
+DEBU[2019-08-12T02:38:28.943524382Z] event                                         module=libcontainerd namespace=moby topic=/tasks/exec-started
+DEBU[2019-08-12T02:38:28.976266812Z] attach: stderr: end                          
+DEBU[2019-08-12T02:38:28.976296659Z] attach: stdout: end                          
+DEBU[2019-08-12T02:38:28.976381202Z] attach done                                  
+DEBU[2019-08-12T02:38:28.977017300Z] Calling GET /v1.30/exec/8adb35277f7360a9fd205f10110ff08b49be16c226a377a285228df7649f50ca/json 
+DEBU[2019-08-12T02:38:28.977490710Z] Calling POST /v1.30/exec/7edec4e37de3fe672b30b9884d32599e7ab4adcba2b9a3ea4e4b940fdefcea7e/start 
+DEBU[2019-08-12T02:38:28.977755688Z] form data: {"AttachStderr":true,"AttachStdin":false,"AttachStdout":true,"Cmd":["cat","/proc/self/cgroup"],"Detach":false,"DetachKeys":"","Env":null,"Privileged":false,"Tty":false,"User":""} 
+DEBU[2019-08-12T02:38:28.977811434Z] Calling POST /v1.30/exec/ae40b07bbc3e6787dee6ba567fa24b514f6253c58ea169b8f5e831fa72b9965a/start 
+DEBU[2019-08-12T02:38:28.978041015Z] starting exec command 7edec4e37de3fe672b30b9884d32599e7ab4adcba2b9a3ea4e4b940fdefcea7e in container 3633b44c856beb95679144f33271eb5f2695e8f0c429b3440d530e2ad47b978e 
+DEBU[2019-08-12T02:38:28.977763988Z] Calling POST /v1.30/exec/c16c6c640e47bcbd83546647d3f18bf33b816c9eecc31cb41fdf1b5871a0b0ef/start 
+DEBU[2019-08-12T02:38:28.978314592Z] form data: {"AttachStderr":true,"AttachStdin":false,"AttachStdout":true,"Cmd":["cat","/proc/self/cgroup"],"Detach":false,"DetachKeys":"","Env":null,"Privileged":false,"Tty":false,"User":""} 
+DEBU[2019-08-12T02:38:28.978471129Z] form data: {"AttachStderr":true,"AttachStdin":false,"AttachStdout":true,"Cmd":["cat","/proc/self/cgroup"],"Detach":false,"DetachKeys":"","Env":null,"Privileged":false,"Tty":false,"User":""} 
+DEBU[2019-08-12T02:38:28.978747556Z] starting exec command c16c6c640e47bcbd83546647d3f18bf33b816c9eecc31cb41fdf1b5871a0b0ef in container 3633b44c856beb95679144f33271eb5f2695e8f0c429b3440d530e2ad47b978e 
+DEBU[2019-08-12T02:38:28.978919892Z] starting exec command ae40b07bbc3e6787dee6ba567fa24b514f6253c58ea169b8f5e831fa72b9965a in container 3633b44c856beb95679144f33271eb5f2695e8f0c429b3440d530e2ad47b978e 
+DEBU[2019-08-12T02:38:28.982057531Z] attach: stdout: begin                        
+DEBU[2019-08-12T02:38:28.982078579Z] attach: stderr: begin                        
+DEBU[2019-08-12T02:38:28.984897395Z] attach: stdout: begin                        
+DEBU[2019-08-12T02:38:28.984900495Z] attach: stderr: begin                        
+DEBU[2019-08-12T02:38:28.984925343Z] attach: stdout: begin                        
+DEBU[2019-08-12T02:38:28.984927092Z] attach: stderr: begin                        
+DEBU[2019-08-12T02:38:29.005410641Z] event published                               ns=moby topic="/tasks/exit" type=containerd.events.TaskExit
+DEBU[2019-08-12T02:38:29.005789059Z] event                                         module=libcontainerd namespace=moby topic=/tasks/exit
+DEBU[2019-08-12T02:38:29.210819125Z] event published                               ns=moby topic="/tasks/exec-started" type=containerd.events.TaskExecStarted
+DEBU[2019-08-12T02:38:29.211275387Z] event                                         module=libcontainerd namespace=moby topic=/tasks/exec-started
+DEBU[2019-08-12T02:38:29.246680996Z] attach: stderr: end                          
+DEBU[2019-08-12T02:38:29.246695795Z] attach: stdout: end                          
+DEBU[2019-08-12T02:38:29.246778238Z] attach done                                  
+DEBU[2019-08-12T02:38:29.247577671Z] Calling GET /v1.30/exec/d97269f2baaae6f18e6a7b4aab98106ee6c273375a1ca0a70c7381cdad4e2721/json 
+DEBU[2019-08-12T02:38:29.289815912Z] event published                               ns=moby topic="/tasks/exit" type=containerd.events.TaskExit
+DEBU[2019-08-12T02:38:29.290185532Z] event                                         module=libcontainerd namespace=moby topic=/tasks/exit
+DEBU[2019-08-12T02:38:29.435589151Z] event published                               ns=moby topic="/tasks/exec-started" type=containerd.events.TaskExecStarted
+DEBU[2019-08-12T02:38:29.436058213Z] event                                         module=libcontainerd namespace=moby topic=/tasks/exec-started
+DEBU[2019-08-12T02:38:29.492246994Z] event published                               ns=moby topic="/tasks/exit" type=containerd.events.TaskExit
+DEBU[2019-08-12T02:38:29.492596815Z] event                                         module=libcontainerd namespace=moby topic=/tasks/exit
+DEBU[2019-08-12T02:38:29.651637902Z] event published                               ns=moby topic="/tasks/exec-started" type=containerd.events.TaskExecStarted
+DEBU[2019-08-12T02:38:29.652127711Z] event                                         module=libcontainerd namespace=moby topic=/tasks/exec-started
+DEBU[2019-08-12T02:38:29.724554644Z] event published                               ns=moby topic="/tasks/exit" type=containerd.events.TaskExit
+DEBU[2019-08-12T02:38:29.724978909Z] event                                         module=libcontainerd namespace=moby topic=/tasks/exit
+DEBU[2019-08-12T02:38:29.834212634Z] attach: stdout: end                          
+DEBU[2019-08-12T02:38:29.834320775Z] attach: stderr: end                          
+DEBU[2019-08-12T02:38:29.834486711Z] attach done                                  
+DEBU[2019-08-12T02:38:29.835211351Z] Calling GET /v1.30/exec/7edec4e37de3fe672b30b9884d32599e7ab4adcba2b9a3ea4e4b940fdefcea7e/json 
+DEBU[2019-08-12T02:38:30.017873975Z] attach: stdout: end                          
+DEBU[2019-08-12T02:38:30.017999165Z] attach: stderr: end                          
+DEBU[2019-08-12T02:38:30.018097957Z] attach done                                  
+DEBU[2019-08-12T02:38:30.018848944Z] Calling GET /v1.30/exec/c16c6c640e47bcbd83546647d3f18bf33b816c9eecc31cb41fdf1b5871a0b0ef/json 
+DEBU[2019-08-12T02:38:30.178330694Z] attach: stdout: end                          
+DEBU[2019-08-12T02:38:30.178472382Z] attach: stderr: end                          
+DEBU[2019-08-12T02:38:30.178608421Z] attach done                                  
+DEBU[2019-08-12T02:38:30.179181974Z] Calling GET /v1.30/exec/ae40b07bbc3e6787dee6ba567fa24b514f6253c58ea169b8f5e831fa72b9965a/json 
+TestExecCgroup 4 2019-08-12 02:38:30.186469468 +0000 UTC m=+19.000982209
+
+
+TestExecCgroup 5 2019-08-12 02:38:30.186728947 +0000 UTC m=+19.001241638
+DEBU[2019-08-12T02:38:30.188497450Z] Calling GET /v1.41/containers/json?all=1&filters=%7B%22status%22%3A%7B%22paused%22%3Atrue%7D%7D&limit=0 
+DEBU[2019-08-12T02:38:30.189511565Z] Calling GET /v1.41/containers/json?all=1&limit=0 
+DEBU[2019-08-12T02:38:30.194504701Z] Calling DELETE /v1.41/containers/3633b44c856beb95679144f33271eb5f2695e8f0c429b3440d530e2ad47b978e?force=1&v=1 
+DEBU[2019-08-12T02:38:30.194647689Z] Sending kill signal 9 to container 3633b44c856beb95679144f33271eb5f2695e8f0c429b3440d530e2ad47b978e 
+DEBU[2019-08-12T02:38:30.396725100Z] event published                               ns=moby topic="/tasks/exit" type=containerd.events.TaskExit
+DEBU[2019-08-12T02:38:30.396939132Z] event                                         module=libcontainerd namespace=moby topic=/tasks/exit
+INFO[2019-08-12T02:38:30.497774254Z] shim reaped                                   id=3633b44c856beb95679144f33271eb5f2695e8f0c429b3440d530e2ad47b978e
+DEBU[2019-08-12T02:38:30.504652033Z] event published                               ns=moby topic="/tasks/delete" type=containerd.events.TaskDelete
+DEBU[2019-08-12T02:38:30.505129143Z] event                                         module=libcontainerd namespace=moby topic=/tasks/delete
+INFO[2019-08-12T02:38:30.505217236Z] ignoring event                                module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+DEBU[2019-08-12T02:38:30.506166757Z] Revoking external connectivity on endpoint testing (e795f53a4ef463c982e03c5bb611f0323c80c1f0cd435cbd9db73f254f5fb877) 
+DEBU[2019-08-12T02:38:30.514023254Z] DeleteConntrackEntries purged ipv4:0, ipv6:0 
+DEBU[2019-08-12T02:38:30.618320889Z] Releasing addresses for endpoint testing's interface on network bridge 
+DEBU[2019-08-12T02:38:30.618409032Z] ReleaseAddress(LocalDefault/172.18.0.0/16, 172.18.0.2) 
+DEBU[2019-08-12T02:38:30.618570119Z] Released address PoolID:LocalDefault/172.18.0.0/16, Address:172.18.0.2 Sequence:App: ipam/default/data, ID: LocalDefault/172.18.0.0/16, DBIndex: 0x0, Bits: 65536, Unselected: 65532, Sequence: (0xe0000000, 1)->(0x0, 2046)->(0x1, 1)->end Curr:3 
+DEBU[2019-08-12T02:38:30.627290644Z] event published                               ns=moby topic="/containers/delete" type=containerd.events.ContainerDelete
+DEBU[2019-08-12T02:38:30.639303696Z] Calling GET /v1.41/images/json               
+DEBU[2019-08-12T02:38:30.652603991Z] Calling GET /v1.41/volumes                   
+DEBU[2019-08-12T02:38:30.652918265Z] VolumeStore.Find                              ByType=service.CustomFilter ByValue=0x1441498
+DEBU[2019-08-12T02:38:30.657115366Z] Calling GET /v1.41/networks                  
+DEBU[2019-08-12T02:38:30.659060405Z] Calling GET /v1.41/plugins                   
+PASS: docker_cli_exec_test.go:247: DockerSuite.TestExecCgroup	2.615s
+OK: 1 passed
