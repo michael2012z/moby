@@ -16,6 +16,7 @@ import (
 	"github.com/docker/docker/integration-cli/checker"
 	"github.com/docker/docker/integration-cli/cli/build"
 	"github.com/go-check/check"
+	"github.com/sirupsen/logrus"
 	"gotest.tools/assert"
 	"gotest.tools/icmd"
 )
@@ -350,34 +351,48 @@ func (s *DockerSuite) TestVolumeCLILsFilterLabels(c *check.C) {
 }
 
 func (s *DockerSuite) TestVolumeCLILsFilterDrivers(c *check.C) {
+	logrus.SetLevel(logrus.DebugLevel)
+	// initial log formatting; this setting is updated after the daemon configuration is loaded.
+	logrus.SetFormatter(&logrus.TextFormatter{
+		TimestampFormat: "15:04:05.000",
+		FullTimestamp:   true,
+	})
+	logrus.Debug("---------------------------------------")
+	logrus.Debug("TestVolumeCLILsFilterDrivers 0")
 	// using default volume driver local to create volumes
 	testVol1 := "testvol-1"
 	_, _, err := dockerCmdWithError("volume", "create", testVol1)
 	assert.NilError(c, err)
 
+	logrus.Debug("TestVolumeCLILsFilterDrivers 1")
 	testVol2 := "testvol-2"
 	_, _, err = dockerCmdWithError("volume", "create", testVol2)
 	assert.NilError(c, err)
 
+	logrus.Debug("TestVolumeCLILsFilterDrivers 2")
 	// filter with driver=local
 	out, _ := dockerCmd(c, "volume", "ls", "--filter", "driver=local")
 	c.Assert(out, checker.Contains, "testvol-1\n", check.Commentf("expected volume 'testvol-1' in output"))
 	c.Assert(out, checker.Contains, "testvol-2\n", check.Commentf("expected volume 'testvol-2' in output"))
 
+	logrus.Debug("TestVolumeCLILsFilterDrivers 3")
 	// filter with driver=invaliddriver
 	out, _ = dockerCmd(c, "volume", "ls", "--filter", "driver=invaliddriver")
 	outArr := strings.Split(strings.TrimSpace(out), "\n")
 	c.Assert(len(outArr), check.Equals, 1, check.Commentf("\n%s", out))
 
+	logrus.Debug("TestVolumeCLILsFilterDrivers 4")
 	// filter with driver=loca
 	out, _ = dockerCmd(c, "volume", "ls", "--filter", "driver=loca")
 	outArr = strings.Split(strings.TrimSpace(out), "\n")
 	c.Assert(len(outArr), check.Equals, 1, check.Commentf("\n%s", out))
 
+	logrus.Debug("TestVolumeCLILsFilterDrivers 5")
 	// filter with driver=
 	out, _ = dockerCmd(c, "volume", "ls", "--filter", "driver=")
 	outArr = strings.Split(strings.TrimSpace(out), "\n")
 	c.Assert(len(outArr), check.Equals, 1, check.Commentf("\n%s", out))
+	logrus.Debug("TestVolumeCLILsFilterDrivers 6")
 }
 
 func (s *DockerSuite) TestVolumeCLIRmForceUsage(c *check.C) {
