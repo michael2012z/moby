@@ -247,6 +247,12 @@ func (s *DockerSuite) TestExecStopNotHanging(c *check.C) {
 }
 
 func (s *DockerSuite) TestExecCgroup(c *check.C) {
+	logrus.SetLevel(logrus.DebugLevel)
+	// initial log formatting; this setting is updated after the daemon configuration is loaded.
+	logrus.SetFormatter(&logrus.TextFormatter{
+		TimestampFormat: "15:04:05.000",
+		FullTimestamp:   true,
+	})
 	// Not applicable on Windows - using Linux specific functionality
 	testRequires(c, NotUserNamespace)
 	testRequires(c, DaemonIsLinux)
