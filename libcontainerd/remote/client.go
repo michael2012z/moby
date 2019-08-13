@@ -243,6 +243,9 @@ func (c *client) Start(ctx context.Context, id, checkpointDir string, withStdin 
 // the Start call. stdinCloseSync channel should be closed after Start exec
 // process.
 func (c *client) Exec(ctx context.Context, containerID, processID string, spec *specs.Process, withStdin bool, attachStdio libcontainerdtypes.StdioCallback) (int, error) {
+
+	logrus.Debug("libcontainerd client.Exec 0")
+
 	ctr, err := c.getContainer(ctx, containerID)
 	if err != nil {
 		return -1, err
@@ -277,6 +280,8 @@ func (c *client) Exec(ctx context.Context, containerID, processID string, spec *
 		}
 	}()
 
+	logrus.Debug("libcontainerd client.Exec 1")
+
 	p, err = t.Exec(ctx, processID, spec, func(id string) (cio.IO, error) {
 		rio, err = c.createIO(fifos, containerID, processID, stdinCloseSync, attachStdio)
 		return rio, err
@@ -288,6 +293,8 @@ func (c *client) Exec(ctx context.Context, containerID, processID string, spec *
 		}
 		return -1, wrapError(err)
 	}
+
+	logrus.Debug("libcontainerd client.Exec 2")
 
 	// Signal c.createIO that it can call CloseIO
 	//
@@ -303,6 +310,8 @@ func (c *client) Exec(ctx context.Context, containerID, processID string, spec *
 		p.Delete(ctx)
 		return -1, wrapError(err)
 	}
+
+	logrus.Debug("libcontainerd client.Exec 3")
 	return int(p.Pid()), nil
 }
 

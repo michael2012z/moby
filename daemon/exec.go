@@ -156,6 +156,8 @@ func (d *Daemon) ContainerExecStart(ctx context.Context, name string, stdin io.R
 		cStdout, cStderr io.Writer
 	)
 
+	logrus.Debug("ContainerExecStart 0")
+
 	ec, err := d.getExecConfig(name)
 	if err != nil {
 		return errExecNotFound(name)
@@ -175,12 +177,16 @@ func (d *Daemon) ContainerExecStart(ctx context.Context, name string, stdin io.R
 	ec.Running = true
 	ec.Unlock()
 
+	logrus.Debug("ContainerExecStart 1")
+
 	c := d.containers.Get(ec.ContainerID)
 	logrus.Debugf("starting exec command %s in container %s", ec.ID, c.ID)
 	attributes := map[string]string{
 		"execID": ec.ID,
 	}
 	d.LogContainerEventWithAttributes(c, "exec_start: "+ec.Entrypoint+" "+strings.Join(ec.Args, " "), attributes)
+
+	logrus.Debug("ContainerExecStart 2")
 
 	defer func() {
 		if err != nil {
@@ -239,6 +245,8 @@ func (d *Daemon) ContainerExecStart(ctx context.Context, name string, stdin io.R
 		p.Cwd = "/"
 	}
 
+	logrus.Debug("ContainerExecStart 3")
+
 	if err := d.execSetPlatformOpt(c, ec, p); err != nil {
 		return err
 	}
@@ -257,9 +265,11 @@ func (d *Daemon) ContainerExecStart(ctx context.Context, name string, stdin io.R
 	ec.StreamConfig.AttachStreams(&attachConfig)
 	attachErr := ec.StreamConfig.CopyStreams(ctx, &attachConfig)
 
+	logrus.Debug("ContainerExecStart 4")
 	// Synchronize with libcontainerd event loop
 	ec.Lock()
 	c.ExecCommands.Lock()
+	logrus.Debug("ContainerExecStart 5")
 	systemPid, err := d.containerd.Exec(ctx, c.ID, ec.ID, p, cStdin != nil, ec.InitializeStdio)
 	// the exec context should be ready, or error happened.
 	// close the chan to notify readiness
@@ -273,6 +283,7 @@ func (d *Daemon) ContainerExecStart(ctx context.Context, name string, stdin io.R
 	c.ExecCommands.Unlock()
 	ec.Unlock()
 
+	logrus.Debug("ContainerExecStart 6")
 	select {
 	case <-ctx.Done():
 		logrus.Debugf("Sending TERM signal to process %v in container %v", name, c.ID)
@@ -300,6 +311,8 @@ func (d *Daemon) ContainerExecStart(ctx context.Context, name string, stdin io.R
 			d.LogContainerEventWithAttributes(c, "exec_detach", attributes)
 		}
 	}
+
+	logrus.Debug("ContainerExecStart 7")
 	return nil
 }
 

@@ -73,6 +73,7 @@ func main() {
 	}
 
 	logrus.SetLevel(logrus.DebugLevel)
+	//logrus.SetReportCaller(true)
 	// initial log formatting; this setting is updated after the daemon configuration is loaded.
 	logrus.SetFormatter(&logrus.TextFormatter{
 		TimestampFormat: "15:04:05.000",
