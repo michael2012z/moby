@@ -300,6 +300,7 @@ func (c *client) Exec(ctx context.Context, containerID, processID string, spec *
 	//
 	// the stdin of exec process will be created after p.Start in containerd
 	defer close(stdinCloseSync)
+	logrus.Debug("libcontainerd client.Exec 3")
 
 	if err = p.Start(ctx); err != nil {
 		// use new context for cleanup because old one may be cancelled by user, but leave a timeout to make sure
@@ -311,7 +312,7 @@ func (c *client) Exec(ctx context.Context, containerID, processID string, spec *
 		return -1, wrapError(err)
 	}
 
-	logrus.Debug("libcontainerd client.Exec 3")
+	logrus.Debug("libcontainerd client.Exec 4")
 	return int(p.Pid()), nil
 }
 

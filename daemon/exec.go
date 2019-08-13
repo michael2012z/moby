@@ -266,10 +266,10 @@ func (d *Daemon) ContainerExecStart(ctx context.Context, name string, stdin io.R
 	attachErr := ec.StreamConfig.CopyStreams(ctx, &attachConfig)
 
 	logrus.Debug("ContainerExecStart 4")
+
 	// Synchronize with libcontainerd event loop
 	ec.Lock()
 	c.ExecCommands.Lock()
-	logrus.Debug("ContainerExecStart 5")
 	systemPid, err := d.containerd.Exec(ctx, c.ID, ec.ID, p, cStdin != nil, ec.InitializeStdio)
 	// the exec context should be ready, or error happened.
 	// close the chan to notify readiness
