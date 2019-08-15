@@ -6,6 +6,8 @@ import (
 	"io"
 	"net/http"
 
+	"github.com/sirupsen/logrus"
+
 	"github.com/docker/docker/api/server/httputils"
 	"github.com/docker/docker/api/types/filters"
 	volumetypes "github.com/docker/docker/api/types/volume"
@@ -43,6 +45,7 @@ func (v *volumeRouter) getVolumeByName(ctx context.Context, w http.ResponseWrite
 }
 
 func (v *volumeRouter) postVolumesCreate(ctx context.Context, w http.ResponseWriter, r *http.Request, vars map[string]string) error {
+	logrus.Debug("postVolumesCreate 0")
 	if err := httputils.ParseForm(r); err != nil {
 		return err
 	}
@@ -51,6 +54,7 @@ func (v *volumeRouter) postVolumesCreate(ctx context.Context, w http.ResponseWri
 		return err
 	}
 
+	logrus.Debug("postVolumesCreate 1")
 	var req volumetypes.VolumeCreateBody
 	if err := json.NewDecoder(r.Body).Decode(&req); err != nil {
 		if err == io.EOF {
@@ -59,6 +63,8 @@ func (v *volumeRouter) postVolumesCreate(ctx context.Context, w http.ResponseWri
 		return errdefs.InvalidParameter(err)
 	}
 
+	logrus.Debug("postVolumesCreate 2")
+	logrus.Debug(v.backend)
 	volume, err := v.backend.Create(ctx, req.Name, req.Driver, opts.WithCreateOptions(req.DriverOpts), opts.WithCreateLabels(req.Labels))
 	if err != nil {
 		return err

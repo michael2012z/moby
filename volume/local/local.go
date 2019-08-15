@@ -19,6 +19,7 @@ import (
 	"github.com/docker/docker/pkg/mount"
 	"github.com/docker/docker/volume"
 	"github.com/pkg/errors"
+	"github.com/sirupsen/logrus"
 )
 
 // VolumeDataPathName is the name of the directory where the volume data is stored.
@@ -133,6 +134,7 @@ func (r *Root) Name() string {
 // the underlying directory tree required for this volume in the
 // process.
 func (r *Root) Create(name string, opts map[string]string) (volume.Volume, error) {
+	logrus.Debug("volume local Create 0")
 	if err := r.validateName(name); err != nil {
 		return nil, err
 	}
