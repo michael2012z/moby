@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"context"
 	"encoding/json"
+	"fmt"
 	"io/ioutil"
 	"path/filepath"
 	"sort"
@@ -316,6 +317,9 @@ func assertAttachedStream(t *testing.T, attach types.HijackedResponse, expect st
 	buf := bytes.NewBuffer(nil)
 	_, err := stdcopy.StdCopy(buf, buf, attach.Reader)
 	assert.NilError(t, err)
+	fmt.Println("-------------------")
+	fmt.Println("buf: ", buf.String())
+	fmt.Println("expect: ", expect)
 	assert.Check(t, is.Contains(buf.String(), expect))
 }
 
