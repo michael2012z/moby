@@ -6,6 +6,8 @@ import (
 	"strings"
 	"time"
 
+	"github.com/sirupsen/logrus"
+
 	"github.com/docker/docker/integration-cli/daemon"
 	"github.com/docker/docker/integration-cli/environment"
 	"github.com/pkg/errors"
@@ -111,6 +113,7 @@ func Docker(cmd icmd.Cmd, cmdOperators ...CmdOperator) *icmd.Result {
 			Error: err,
 		}
 	}
+	logrus.Info("michael: docker command: ", cmd.Command)
 	return icmd.RunCmd(cmd)
 }
 
